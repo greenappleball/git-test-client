@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.2.0)
+  - SwiftyMarkdown (0.3.1)
 
 DEPENDENCIES:
   - Alamofire
+  - SwiftyMarkdown
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  SwiftyMarkdown: 7968642d89b771510e98f91d307af2e8bb51ce94
 
-PODFILE CHECKSUM: 2ea0e773c4c46f51d650534169028669a20f4ced
+PODFILE CHECKSUM: 64c919244d269c02e80d6d2a706c7b65f2e8ce63
 
 COCOAPODS: 1.1.1
