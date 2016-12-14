@@ -41,4 +41,17 @@ class NetworkService: NSObject {
             completionHandler(results.items!)
         }
     }
+
+    func loadReadme(for repository: Repository, completionHandler: @escaping (Readme) -> Void) {
+        guard let url = repository.url else {
+            return
+        }
+
+        Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
+            guard let result = response.result.value else {
+                return
+            }
+            completionHandler(result)
+        }
+    }
 }

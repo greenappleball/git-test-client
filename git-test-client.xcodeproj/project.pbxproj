@@ -22,6 +22,8 @@
 		F2BD662E1E00416400D28B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD662C1E00416400D28B8B /* Main.storyboard */; };
 		F2BD66301E00497200D28B8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD662F1E00497200D28B8B /* DetailViewController.swift */; };
 		F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66311E013A2700D28B8B /* WebViewController.swift */; };
+		F2BD66341E0143A900D28B8B /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66331E0143A900D28B8B /* Readme.swift */; };
+		F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66371E014A7000D28B8B /* String+adding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		F2BD662D1E00416400D28B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2BD662F1E00497200D28B8B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F2BD66311E013A2700D28B8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F2BD66331E0143A900D28B8B /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
+		F2BD66371E014A7000D28B8B /* String+adding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+adding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +150,10 @@
 				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
 				F2BD66281E001B8100D28B8B /* Repository.swift */,
 				F2BD662A1E0036C100D28B8B /* SearchResult.swift */,
+				F2BD66331E0143A900D28B8B /* Readme.swift */,
 				F2BD662F1E00497200D28B8B /* DetailViewController.swift */,
 				F2BD66311E013A2700D28B8B /* WebViewController.swift */,
+				F2BD66371E014A7000D28B8B /* String+adding.swift */,
 			);
 			path = "git-test-client";
 			sourceTree = "<group>";
@@ -360,8 +366,10 @@
 				F2BD662B1E0036C100D28B8B /* SearchResult.swift in Sources */,
 				F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */,
 				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
+				F2BD66341E0143A900D28B8B /* Readme.swift in Sources */,
 				F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */,
 				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
+				F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */,
 				F2BD66291E001B8100D28B8B /* Repository.swift in Sources */,
 				F2BD66301E00497200D28B8B /* DetailViewController.swift in Sources */,
 			);
