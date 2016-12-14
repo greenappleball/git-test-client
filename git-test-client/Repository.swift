@@ -16,6 +16,7 @@ class Repository: Mappable {
     var full_name: String?
     var description: String?
     var owner: Owner?
+    var html_url: String?
 
     // Mappable
     required init?(map: Map){
@@ -26,6 +27,7 @@ class Repository: Mappable {
         id <- map["id"]
         url <- map["url"]
         name <- map["name"]
+        html_url <- map["html_url"]
         full_name <- map["full_name"]
         description <- map["description"]
     }
@@ -36,6 +38,7 @@ class Owner: Mappable {
     var url: String?
     var type: String?
     var login: String?
+    var html_url: String?
     var avatar_url: String?
 
     required init?(map: Map){
@@ -46,6 +49,7 @@ class Owner: Mappable {
         url <- map["url"]
         type <- map["type"]
         login <- map["login"]
+        html_url <- map["html_url"]
         avatar_url <- map["avatar_url"]
     }
 }

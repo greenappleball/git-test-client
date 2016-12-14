@@ -114,11 +114,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="8T2-2R-otQ"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Je8-l5-j7n">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="yS1-va-MbR">
+                            <connections>
+                                <segue destination="egU-Y7-Lni" kind="show" identifier="showWeb" id="2r7-d6-ma7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fE5-gh-Xrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1809" y="-188"/>
+        </scene>
+        <!--Web source-->
+        <scene sceneID="H3B-pe-TFa">
+            <objects>
+                <viewController id="egU-Y7-Lni" customClass="WebViewController" customModule="git_test_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fea-nl-YlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="XcN-YI-HZA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kga-Zb-2CA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Web source" id="wN7-na-fE0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKL-dP-B3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2536.8000000000002" y="-188.45577211394306"/>
         </scene>
         <!--Repositories-->
         <scene sceneID="rIG-ZA-UuE">

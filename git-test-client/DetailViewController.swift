@@ -15,4 +15,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         self.title = repository?.full_name
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showWeb"{
+            self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
+            let vc = segue.destination as? WebViewController
+            vc?.repository = self.repository
+        }
+    }
 }
