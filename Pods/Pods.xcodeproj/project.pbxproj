@@ -7,157 +7,163 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000657B09AF9B64204E16018F1787CE9 /* Down-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFA2F9CB802826890A03A983A473D1E /* Down-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00E153632A414101E0A66AE23569802B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9021B9F96E549510DE30F9A39CF72 /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		079D990738735591330332B5F2551AE4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CEBB7E4FF764CFA7C5B6B3AC39A70A /* NetworkReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0959E8C1285280DD012DC9A1A01BCD82 /* DownLaTeXRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36248B6343B959837BF28FAB859D9F /* DownLaTeXRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0AEA5216FC0D276FA1D6F81B3CFC09CE /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = BD0AB38F521D149D362E6B6311748C4B /* blocks.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0B38537C8B0C629E96E7BF06AD6BBF50 /* Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177E4BEB262D6C2CC2A49AE45D498A5 /* Down.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0B6116EFFB8759509C8823544BE3D136 /* COPYING in Sources */ = {isa = PBXBuildFile; fileRef = 5FAF10CF456C79616B77DB2906D8A4D9 /* COPYING */; };
-		0BBCDE202048946C5C064CBC206399F1 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FED1D300B44A87059A61B59A40901B /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0C8D2787A722FC732DB1734048FC9A98 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = E464F3E0EEF476778F4EE88D3CDCE703 /* debug.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0E7CDF86A1E9D9DF8005EEDBEC10CC6C /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BF32D13B3256FA465E5CF73A97B4FDA /* html.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0EE49A3F35C38DEEF07F64537C05B5F9 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 00B571DA1C968FF3E29EBC0F3B1A0A63 /* cmark_ctype.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		101196ABC005109025EA3E0A0089E5EC /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = ED81F8D03A049FD5A8D4247D4C2DB99F /* scanners.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		11C420C76FF34BAB9834FB5C8FC33D53 /* DownASTRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0545DC4D9E99AD6FEC063FFC59DEB /* DownASTRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000657B09AF9B64204E16018F1787CE9 /* Down-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 307AC0A2B8772BBEC465E66296E5454C /* Down-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E153632A414101E0A66AE23569802B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F43113024EB023D6B3662DC4C8BF9A /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		079D990738735591330332B5F2551AE4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769CC0466FB22DF30E006AA6B4502EE5 /* NetworkReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0959E8C1285280DD012DC9A1A01BCD82 /* DownLaTeXRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B5CB2B8E37D701B4939F5F8AB923D /* DownLaTeXRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0AEA5216FC0D276FA1D6F81B3CFC09CE /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = AA1ADB601BD719BA7A8FD51C3EDC19A3 /* blocks.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0B38537C8B0C629E96E7BF06AD6BBF50 /* Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D161D8C388EB3EC048032377B107A8F /* Down.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0B6116EFFB8759509C8823544BE3D136 /* COPYING in Sources */ = {isa = PBXBuildFile; fileRef = 00C04AD80CDD709A595E015A577F89F6 /* COPYING */; };
+		0BBCDE202048946C5C064CBC206399F1 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5085BCF13F897B6CED89A903E4B8D8 /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0C8D2787A722FC732DB1734048FC9A98 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 28600D84CC8387EDB6BDD0B1661CFD13 /* debug.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E7CDF86A1E9D9DF8005EEDBEC10CC6C /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = FC813204CF2FEBE6384D16A34CE8827B /* html.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0EE49A3F35C38DEEF07F64537C05B5F9 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 4903030D05B6EBC17015381B0EC3BEC6 /* cmark_ctype.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		101196ABC005109025EA3E0A0089E5EC /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAA2D6581D4510D08A7F5E13FFF151 /* scanners.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		11C420C76FF34BAB9834FB5C8FC33D53 /* DownASTRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB509843067E50B730B9FA71DAE0539 /* DownASTRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1215629D558162CE728B27386DA02D1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
-		14CECE238604E1D44104E5BCD14EB2BE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57FCEDDBCECBF3CE888CD9CDE5C06F /* SessionDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		164781197625A3149B3BDBCAA2AC8CC3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4271DA2BDCEBE29993F2DA0F144F1CA1 /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1674976E5691AC6C3F018C2E42683218 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DE212337BECE412C95F5199AC5236D /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16D891CC8577AB06135484213BDFEFD7 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FBA1C3A54BB9828BC0C1E2351671EA5 /* inlines.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1764F3F9A07FAFC097016995F0B8190A /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E447111C81D6F4CE06A2FD031725A /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		187DFAE2A203649E9E39A8DEF2C93F18 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EB54141472ED33BF2C47D445AE042 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		192A95A4AC7C06AC37B1669A9D5DD113 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F60E2FCDAA62F3FA00B5A89C487FEC /* render.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1AEF32A0C152DD4487ADD0ED87F57AAA /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E158BADA724B2ACD1E871B8A618B7 /* ImmutableMappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F26A06E81999F887013493F4A2A23C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BF68BC5E00AEC673F987CB8F00CB98D /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = FA21B2CCA36358CC844D59699AA88F40 /* cmark_version.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E700B6B42338788F1362D06A8BF657A /* DownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D884FDE063A04685B66964F756A5D /* DownErrors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1F072713E2EAC4D31F06EA5FDAD59982 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F173A89A6DFB2AB937454A0F1195E /* iterator.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		20113E09ADF2B6297A0A7D098B0C410B /* Down.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EB9EF2DFEC73F08FA407623F1A55C79 /* Down.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		204944D67267632DD7CD4BEFB60AC389 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B57955AC8542676B003EA5AD5796089 /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14CECE238604E1D44104E5BCD14EB2BE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1087410AADB338027065EA59AC70416 /* SessionDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		164781197625A3149B3BDBCAA2AC8CC3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7DE1D7892F89A293D749D5426519B8 /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1674976E5691AC6C3F018C2E42683218 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB650AB04A8B799A317A982017EB8567 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16D891CC8577AB06135484213BDFEFD7 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 96345F73AF066E37E1C599C13DD01998 /* inlines.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1764F3F9A07FAFC097016995F0B8190A /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4420CCA940D4245E4163281B257960B /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		187DFAE2A203649E9E39A8DEF2C93F18 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25A09CEE398DABE2098779E5ACE9A2 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		18FE70ED14474EE6A49E85DE9C5E4C17 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF5F9903F889BF4AEE785A9994FAA55 /* AlamofireImage-dummy.m */; };
+		192A95A4AC7C06AC37B1669A9D5DD113 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = E33F374B40AF0F348579AF1679A88002 /* render.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1AEF32A0C152DD4487ADD0ED87F57AAA /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626763B735B212819EF4E4E0191FDC6 /* ImmutableMappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 844C089A8E7B099EB80D2E07797F5F30 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BF68BC5E00AEC673F987CB8F00CB98D /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C392C3D8D1DB781FC9C118FE8F48E72 /* cmark_version.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E40F586CC2B0D325CAF7458AC4F9238 /* Pods-General-git-test-client-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBAE32B07D57DE4A5E2DD156A98D887 /* Pods-General-git-test-client-dummy.m */; };
+		1E700B6B42338788F1362D06A8BF657A /* DownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2A35884F9887E59804B77DB5E0E54E /* DownErrors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1F072713E2EAC4D31F06EA5FDAD59982 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = EBD7983CB066DA4F08F3015F72BEC720 /* iterator.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		20113E09ADF2B6297A0A7D098B0C410B /* Down.h in Headers */ = {isa = PBXBuildFile; fileRef = 05069FB71F876EFB7EDB2ED2FBD374D3 /* Down.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204944D67267632DD7CD4BEFB60AC389 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D7702172B6BD8FEA2DD1B85C95F05 /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		210E1BBF27B80CD317A58C9F9F2C658C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
-		245BA04B2B81AB44A9D781FD18CD85B0 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EBC4E63CC4A1235E3FAB81280A804B /* TransformOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		249BEC20A95460C784F48DF9AC00A302 /* AlamofireObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4560433E0AA40D860F9AEF668F029 /* AlamofireObjectMapper-dummy.m */; };
-		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A03F172DD7E8FABABE022C90742A0710 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		294EDB4CAB3477B1A936A20126360093 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDEA0F295B2A8949069B583E550F85 /* module.modulemap */; };
-		2B4847BDDB387E3008422C26E935DFA4 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E7C1A7D9D81793ABBC9F27590D6F7 /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2B58B070F9D7324583D01EE906BC918C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEECE2A92EA8E77E1B4F989E30426DEC /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2D18F9406569EE50B907F33E2CB4132A /* Down-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF001F66BF916487FF75DBC1E074B41 /* Down-dummy.m */; };
-		2FBBC5545BE5C8749E21A8D578945A59 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EABD49B02C0EF7F554DC6BAE6E9067E /* man.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		308DFE92355D03121E6FD34F68CD750B /* DownXMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178DBAA3F8CE55EF142AAB50B449B454 /* DownXMLRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		343B30C989188B77FB1149FED753A63C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EE3D1BA50110CCE7E331E88CB3D55 /* ServerTrustPolicy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3DF303997668323BCECDF5E82F9490DB /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A9586CD00F20AADD43718FC46EE57A /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3E853C2A16C14CF03F940107658EC3B0 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC47C018A66716F4B1A84BD781F9162 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		431F5C370FFA87881060920C108FB2CB /* Pods-General-git-test-client-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E070BC0E22A53E3CE625AD2E6472BC /* Pods-General-git-test-client-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44330E3B11E04DBAF9BF2AF5529EEBBC /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2E3F11C89C51521CCA20B7CC449B93 /* parser.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4502AD8B167A0A3D4C4D59837FBDA262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
-		468446246C31037127AB0A849901C388 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC23DFAC082BDAB51DE79A8868734CB /* cmark_ctype.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46E4923967E3431712D1D20BD2AD6C6B /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D436F471789E01FCD42C904016602 /* houdini_html_u.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		483AEDC253A30902144C50045B850782 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = E570C52FB5B76ACA58317DC0BA44DECC /* houdini_html_e.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4D33295A5DDC30F20FF99CD983F14E3B /* DownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F09879F7C27002FB06A25584DF7BEFA /* DownView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4DD6D7274709B4B711C6975FD2ECF175 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 47157936ABA427264A8788BBA5FC48B0 /* cmark.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		245BA04B2B81AB44A9D781FD18CD85B0 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76013F2C6AC9181EDA449AE015D464F /* TransformOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		245DAEE5793271CA5BECA7A816092142 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
+		249BEC20A95460C784F48DF9AC00A302 /* AlamofireObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD32A7EE8CBC192D313BB183DD4BAAA /* AlamofireObjectMapper-dummy.m */; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15624D68CF6D1A553E0EEEC4307302F6 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		294EDB4CAB3477B1A936A20126360093 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = EA8E38A8FAD86A5A66B69B42AC09EC39 /* module.modulemap */; };
+		2B4847BDDB387E3008422C26E935DFA4 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ECDB333586A4E53A2C9A691E3ABB14 /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2B58B070F9D7324583D01EE906BC918C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB24EB9A15C74983D5C37A30FD7689 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2D18F9406569EE50B907F33E2CB4132A /* Down-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6474773BCE598B8B1BE87FE83A3EF742 /* Down-dummy.m */; };
+		2FBBC5545BE5C8749E21A8D578945A59 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = BBAC89C37D9D9D0A64F190AB72231733 /* man.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		308DFE92355D03121E6FD34F68CD750B /* DownXMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A48A2673E86554A78335DEFFF6689 /* DownXMLRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		32EDA9ED83F4442303A46839027E152E /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A10C6B6EA9B703212E5C85B98C0AD9AF /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		343B30C989188B77FB1149FED753A63C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C5DD16D27517E80B6A3CCD221B788 /* ServerTrustPolicy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		36840E12F93D5E0D201B1D998B96EEB9 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A17339448EB8C0E53597FB83DBF6C /* UIImageView+AlamofireImage.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3DF303997668323BCECDF5E82F9490DB /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B1036FE7D1E712280AE7CA13A0129 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3E853C2A16C14CF03F940107658EC3B0 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71B8A07799A85FCB09D696E93C1304 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		44330E3B11E04DBAF9BF2AF5529EEBBC /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = BBBBE8A1FDFC33B4339D42BCA39ECFB2 /* parser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		468446246C31037127AB0A849901C388 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBE4C8C48D21A255B8A72F4C2771F8A /* cmark_ctype.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46E4923967E3431712D1D20BD2AD6C6B /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CDC77E8EF9B74239B6412F77C9CD27BB /* houdini_html_u.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		483AEDC253A30902144C50045B850782 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E586A92DAB9210F2E710FC019DFDA83 /* houdini_html_e.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4D33295A5DDC30F20FF99CD983F14E3B /* DownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65B9C3533E56319F28927C2A3A0ED00 /* DownView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4DD6D7274709B4B711C6975FD2ECF175 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FAF777262B3D7850EA43241186F318 /* cmark.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4E144A5F6A61AACDFDFF8E00A4E5C17B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C4D862FDE4FEEA0C81FDC8BCD922C3 /* Alamofire.framework */; };
-		4EB6BE72DDD21CEEF431CCE5991F4B77 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA7C98637DC878446DE8207E74827E2 /* inlines.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5053854247477596A9081FEF7691290C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E76B3F1F84574AE0B749B25F1763688 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		50AB5E6AB3B93BEDB9ADC97A93539FB0 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82490BF2CAA6081821D4F719598643 /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		53C5669A2D20EC54A02EBAAC708D5E6B /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5FC733F84E7A7669A0E000036DA9A5 /* xml.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		54CCA62548C87ACC04113CA8828C3B32 /* NSAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9369057150918A6AE238E3CCF76C440E /* NSAttributedString+HTML.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		550F3F1B72DA9C3061D3E8B756FE0D61 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6973055FC691797A1CF8D91A3506FF /* utf8.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		57FAF69B07F0D4D5AFD778B1AADC8CD8 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = DAF252AE9D4847CCB9C2C6F4A4CF04F0 /* references.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		58812AABBC0A1E7AE019752424DF31A7 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D55BDAEC4F54A34FA0F11AED4BFB6 /* MultipartFormData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5B1CCF775E8B99EFDAF99B7C31039A03 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFF1DF1F8430404061B2FE9F2B8ECD6 /* buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5E25BCD30BDE2E7A68D1A6FAF7253AD4 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C39BD0C0C9B9BAD3253D88A6593166 /* DispatchQueue+Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5EC3CB6EF388864B5C4217DFC6B49EC2 /* case_fold_switch.inc in Sources */ = {isa = PBXBuildFile; fileRef = 1570277CE81EDCFBB3959A720CB50F23 /* case_fold_switch.inc */; };
-		645734934F0DAC3FBDACD808CD54AE73 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96D9FA31AB1199005588A14FF9741BC /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6540CC4D369A32F6DE54AFA8D5D6FAF9 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF9DF5BDA5C97F3D43CD1EBFB8C7C6 /* Alamofire-dummy.m */; };
-		69A78C28C14D54FB91E3C44E97A8155D /* DownAttributedStringRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8122FAD5E33BB0F4DC03D0A32F554 /* DownAttributedStringRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6F76CB3215AA05177A3EFA337961B9FD /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EA73873C9D6ABA71F3C50760ED03053 /* cmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4EB6BE72DDD21CEEF431CCE5991F4B77 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0D16F3F96F6BC002596E5BA9FFCC3A /* inlines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5053854247477596A9081FEF7691290C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC8BDDDAA2B29B9FBBA321B2EECB76 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		50AB5E6AB3B93BEDB9ADC97A93539FB0 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61AC47C303AC27CC5D692C88E3A2CFA /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		53C5669A2D20EC54A02EBAAC708D5E6B /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 2726E0271D83DB7599F1BA46A62A75DD /* xml.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		54CCA62548C87ACC04113CA8828C3B32 /* NSAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BC0C834AB659B0929B46B9F0E2C9F8 /* NSAttributedString+HTML.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		550F3F1B72DA9C3061D3E8B756FE0D61 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = D17A2B71087B3D8E5F9936F01E06D9EE /* utf8.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57FAF69B07F0D4D5AFD778B1AADC8CD8 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 147CAA6E3BB87CBB1D5B8BA759DDF81C /* references.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		58812AABBC0A1E7AE019752424DF31A7 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CFC6AC78DC90B7D60F6A0D353D927 /* MultipartFormData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5B1CCF775E8B99EFDAF99B7C31039A03 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E37FF4389BFDA34479F8AA6CCDFC0BD4 /* buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E25BCD30BDE2E7A68D1A6FAF7253AD4 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E8E230652D181C09B688B3C6DE8CA /* DispatchQueue+Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5EC3CB6EF388864B5C4217DFC6B49EC2 /* case_fold_switch.inc in Sources */ = {isa = PBXBuildFile; fileRef = 8288891E409B24AC2AAB75223B371C03 /* case_fold_switch.inc */; };
+		60E47009DC055C6C140154BC96B5C58C /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BE933D413E8020F8F96DAF9E75F21 /* Image.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		613167D898FF421A6F75D1FE5D145B9B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C4D862FDE4FEEA0C81FDC8BCD922C3 /* Alamofire.framework */; };
+		645734934F0DAC3FBDACD808CD54AE73 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D109D48CDC86811C0DBC0C3B2A5CEA /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6540CC4D369A32F6DE54AFA8D5D6FAF9 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3F4D29F349059F8C54F9BA2582D78E /* Alamofire-dummy.m */; };
+		69A78C28C14D54FB91E3C44E97A8155D /* DownAttributedStringRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9426415842F6E5326547723B5A102 /* DownAttributedStringRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6F76CB3215AA05177A3EFA337961B9FD /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 33F6D5DA38FC822CDBA82DDE946AB799 /* cmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		730D522B5A4040272D501AC0EDEE2C5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
-		731CF9298D7CD8F1071548107BBCC44F /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE0B7AF1861D763BC4CD20492839276 /* iterator.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		76634613964147E1EC079BE6457DF510 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1518A8C9773EFD271822C108CC9F951 /* HexColorTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		774956761D16E8738F63727A988F9F98 /* DownCommonMarkRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF9EBC3079A93719411A487BD12F8E /* DownCommonMarkRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7800242EB559ED216DA3F86A40F506ED /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = E859A9DE8511A524C9FA02AEF4E9254F /* cmark_export.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		78F4229B4A746A38341474FEB9DADB25 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19545D29DDFC95D39D644A634C8FDE /* ParameterEncoding.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7BE32500F19D20C12FE80F35A03FEE09 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC04448AD93242B1D57F5AF71C49495 /* scanners.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		731CF9298D7CD8F1071548107BBCC44F /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = D06110E6D8BA71A01ADBCAEF66A3F047 /* iterator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76634613964147E1EC079BE6457DF510 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5832894778EC75379F04CF0D40BE6DF3 /* HexColorTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		774956761D16E8738F63727A988F9F98 /* DownCommonMarkRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E9A99D789FE5FB207E8119728CAEA6 /* DownCommonMarkRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7800242EB559ED216DA3F86A40F506ED /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = B16780DF4A64729C5CB1FDA4E2C902F9 /* cmark_export.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78F4229B4A746A38341474FEB9DADB25 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09854D9D54C3B405A90D24B95C7A589 /* ParameterEncoding.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7BE32500F19D20C12FE80F35A03FEE09 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ED6CC6FFB006F807805E0C687DF1FD /* scanners.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		82B33F223516A2AA7DA2985E5A954B88 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED793EEB96ADDBC9991225580950774 /* ObjectMapper.framework */; };
-		83C9D84D18F068C8E7DB4E13A3892EF2 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = E1EDF0D188FFBB23D0D3FFF0899F6130 /* houdini.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		83EA7147D8AC3C38F2387F461DF58C84 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC8C15DAFDACDD2C84E395381E8B46F /* references.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8B49B99BD5FEB39EEB1264F9497C8F3B /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BB733052AFB4F5EFA541861B8375E /* EnumOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8D4048D7C2D620A234537C5C2F705AE0 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0FA10962F29E7C43D6E3E73C5DC08 /* MapError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8DEF1E42CF7FB03E3B9DE9FC81228CAE /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = CE31981C6A716FCA02E6EEB0EB5ADA2D /* buffer.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8E293AE6588DEB29148A95316A4FAB98 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 360B2DB8B2CDA5A866CC042A921C1619 /* node.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8EC11CA26BF537F56332125FA6507E3B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1471119F37D7F358F41AD5167D56482A /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8F5C0849D2757FC5A7C81B81BA3813C3 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26653BB2EC801BF84818D997885F928B /* ResponseSerialization.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		92D19453D90A9EBB92C8891FA59B9D44 /* DownGroffRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D13FB44471F6264FBBDBFC88971094C /* DownGroffRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		93E057E9ABE9F1848D32AB73FFC9D5E3 /* DownOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95843244AC85FE8761B6A99BE35BF3BB /* DownOptions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		949004AD4C11BA93B2E5875ED2CE7C80 /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E51A6F38AD2A85E5900DD234681118 /* AlamofireObjectMapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		94A76FFDEBE9C06258A4C105C725548F /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 51AD3AFB46787D0D8A638D064B24DC30 /* chunk.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		95472D631E50B2D3FFA87AC970BE42F3 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A2DCFA4402B2E7D4BBDBE0C85AFFB /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		981EFF1371FCE40F1907DA262743B93E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341C5D8D00F060D48177275717765A3 /* Notifications.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		83C9D84D18F068C8E7DB4E13A3892EF2 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F4481068DEA5212177E404D6A170C4 /* houdini.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83EA7147D8AC3C38F2387F461DF58C84 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = 408E15C73686A513E4CEAA94FE78BC3A /* references.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85B4114292AEC3C6DCD2F9500A064F9B /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A92CD39820A071654B253BA355FAA5B /* UIImage+AlamofireImage.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8B49B99BD5FEB39EEB1264F9497C8F3B /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F927A7FFB8E1FAEF14A4CED27F9A23A /* EnumOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8D4048D7C2D620A234537C5C2F705AE0 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D19FC13A0AFC587B7827FE722CA8AA /* MapError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8DEF1E42CF7FB03E3B9DE9FC81228CAE /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A545E8E085776E88FAA5E7580976BC6B /* buffer.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8E293AE6588DEB29148A95316A4FAB98 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 44237BEE611A06B3AF8375A06C928E99 /* node.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8E8782574C94CD3893B888B6A011C66A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
+		8EC11CA26BF537F56332125FA6507E3B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 14674A6601FFC8A3896A49D938218D44 /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F5C0849D2757FC5A7C81B81BA3813C3 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7F897BD9A0FDF2C22940823429BCC /* ResponseSerialization.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		92D19453D90A9EBB92C8891FA59B9D44 /* DownGroffRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512603BD6B78726B709F391958AE2E /* DownGroffRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		93E057E9ABE9F1848D32AB73FFC9D5E3 /* DownOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5EACA260B40E86212A5C5401B11E1 /* DownOptions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		949004AD4C11BA93B2E5875ED2CE7C80 /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4337457AA54DD65519CE4B410F6AB7 /* AlamofireObjectMapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94A76FFDEBE9C06258A4C105C725548F /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 65396DE60F447A3AE4AAC0B644C778B4 /* chunk.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95472D631E50B2D3FFA87AC970BE42F3 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEEF53B349FE7033DA7E6783FF98A6 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		981EFF1371FCE40F1907DA262743B93E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568CB827FBDD747EE9D4A09049045784 /* Notifications.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		98DF470CA8F6DD132AFAC1398FCD579C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832558E89E69CFD3307BD943A9DDEB6F /* CoreGraphics.framework */; };
-		9F09C56CFA4A4220D6E49D4AA6C40A59 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 496BD1578B4E7E3FFBADCA54D886DF14 /* utf8.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9D9717AC018F075F378E52B078CDBFB5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E98901ED7AD9BB6E1F05FED2B6CE9 /* ImageDownloader.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9DBB6831E79F70D2E8C4DFD169E228E2 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EF94F37C90FDB4CDBA19C189A108C /* Request+AlamofireImage.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9E686D93A33DD9756B0C21B68BD7D758 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557D98D222D1A7D4AD562DF9D620E3C /* ImageFilter.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F09C56CFA4A4220D6E49D4AA6C40A59 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = ADA0ED04EFB2C8C1374909C9C6DC79E7 /* utf8.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
-		A0A196E7E9FFCEA5B45709E2E7CAF9C3 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF4BF18A3702CCDCA02721DA2EFD6B7 /* node.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A353CBD6BCC28B94F0BADC26499B4F3C /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DF526112C4DF430FE6C3A3BA5BF4ADE /* latex.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A402D3C68DABBE7782BD7A08F0343951 /* DownHTMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B55D6F3AAF3E3CAFF3CFB26FA7083 /* DownHTMLRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D57249403BE25F7AAFF09802359D1757 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD2C576F50E67B2417C1D17FBF5E32B2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866048437B7F5AB29A4CC355CC571E95 /* AFError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AFD5FE3046485ABCD6F3BE77EF7296F6 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E6D0C9E147B0069A03613CBF320CF /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B6734134DB5607CEA6813FB65AC022C0 /* DownRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6D7A798B673DD50AF228B09A99FF6 /* DownRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BBD137B909DABB38B1027FE318FC4059 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C74377F9018B42492CA6D8AEB9A8E /* DataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BBD95F833FFDF494438D1CA79C757F95 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13B3410F3BB9D2C01135946029340F /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BE0D6FE1AE27D1EEDD95E45F95DF6C79 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E046E235F82C8F22FB92C3E6B3817E81 /* MBProgressHUD-dummy.m */; };
-		C5FD57751548EFFA6567AFD2EB47CD56 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686722E5769187FFE881D0D7B3E72D1 /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C7F669B51BD5CE83A6EC01AC66BE35AE /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88F0E18029EF50E1A383001FAC33A /* commonmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CFE2DEA6F6E5621B220864D58FB9B7C9 /* entities.inc in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D93650A37A9CF1E05C3BE3E629C89 /* entities.inc */; };
-		D265E175F30A3DE0F8048272EF361B9B /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD2AF57A30588E61894AD51DA3B7C4 /* render.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D4FA889738E538B9A77090A557ED41F2 /* String+ToHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADFFE39AEA8EC08BB6BEE4659D27DCB /* String+ToHTML.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A0A196E7E9FFCEA5B45709E2E7CAF9C3 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 1363246AA61C0A9F075A7F3FE43F4CE5 /* node.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A133EAE3F50C55B4E1A03A5F9D6B3A4B /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FEFC929769BF49BE7D411082FB89EB /* UIButton+AlamofireImage.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A353CBD6BCC28B94F0BADC26499B4F3C /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C573B37047B5BC67B5D364419BD67DB /* latex.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A402D3C68DABBE7782BD7A08F0343951 /* DownHTMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7735F4988ACE9B4F212ADAC1388A697B /* DownHTMLRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9D15BD87FB5BDD3955409337A2A66B /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2C576F50E67B2417C1D17FBF5E32B2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084A3A20B63BC03BF52A0B0A17263B9 /* AFError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AFD5FE3046485ABCD6F3BE77EF7296F6 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63CF9E59E006E3DD8CD2FCFF907595 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B6734134DB5607CEA6813FB65AC022C0 /* DownRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD079E44867B395AFC435035A44DF40 /* DownRenderable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BBD137B909DABB38B1027FE318FC4059 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF465F2ED8CDEC7B7DE34069E30E0942 /* DataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BBD95F833FFDF494438D1CA79C757F95 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45E674C2C7ADF439B381703CA6A7D /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BE0D6FE1AE27D1EEDD95E45F95DF6C79 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F782AD14A00E6775D86CAD038FC247B /* MBProgressHUD-dummy.m */; };
+		C5FD57751548EFFA6567AFD2EB47CD56 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A8B47B9A671F3B7FD1617EB71FF25 /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C7F669B51BD5CE83A6EC01AC66BE35AE /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 432250C2A4139280B8DA78DD717575CB /* commonmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CFCD28EE5FB5417AA4BE23F3EE9E61C6 /* Pods-General-git-test-client-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E070BC0E22A53E3CE625AD2E6472BC /* Pods-General-git-test-client-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE2DEA6F6E5621B220864D58FB9B7C9 /* entities.inc in Sources */ = {isa = PBXBuildFile; fileRef = 4C07953B62D7BA32EC141AAB706BD425 /* entities.inc */; };
+		D265E175F30A3DE0F8048272EF361B9B /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 36B93AB833601533A78A7334D1E7021E /* render.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D4FA889738E538B9A77090A557ED41F2 /* String+ToHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800717244E9DE1E44043299D0BEC658F /* String+ToHTML.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D51A0163C26006A2332C71B5140B2A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */; };
-		D5686072DEC1A0E14F8C100FCC873F73 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B36BFD9EF38AD3071D4F530F433EACD /* TaskDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D72C346EF325806E640428989924BB18 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70327EC76A24AE4B835CCF740BC0E12B /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D86EE09DBDAFFCA1D19C0CABD1807DD0 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910699F4ECD89226F30F7C79530D08F1 /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D5686072DEC1A0E14F8C100FCC873F73 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E815DBB3FF4070D6B74B3A78189BA /* TaskDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D72C346EF325806E640428989924BB18 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84B4F704712876BD460B7C9343F9B8 /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D86EE09DBDAFFCA1D19C0CABD1807DD0 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6BDB5140794526934C79D78157503C /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DA3FBCF3B21EB18151C3BC2645107E0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86A65FB12B14353FE1E868266D729FC /* QuartzCore.framework */; };
-		E039E628E8F6279EAC3617C256396FD2 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE5810FF0F563A45455CCD98752E7 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E198F398404F07805E5189165F3C1E64 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B78C82E92F18A4D7B98700AF1EB8E /* Timeline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E1FDB8EB49DCBA9C697BF5EE4103D28A /* AlamofireObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16513B9622B7F464BC11789AE2608CFF /* AlamofireObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E687BC0D3FD9E8DA6C546EADD45F5BE4 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = DA4B7EA4AB42F80FB2018D743A6AFBE2 /* houdini_href_e.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E96F9D9AC2CBC32D907EF5C081E5D13E /* html_unescape.h in Headers */ = {isa = PBXBuildFile; fileRef = 91A04ACA06CD629E834EBF9D59726CE7 /* html_unescape.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EADEDF90C005FB2A92DC4885475A1817 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E56D5F04B7FE33A289BAD2FC3E0F0DF /* ObjectMapper-dummy.m */; };
-		EBA0781A1E2822CF7DFD56ACD394A63E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CF5254D055C00C927C76EC80CF829 /* Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F021390659C13707C0DC06BEDE20DA7F /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A6771F268FC6C8D0823159D5C015 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F0B89DE0DF4D5162721A2E6D4DF90173 /* DownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA2340F4D2055563A5D9ECD22D5BDE60 /* DownView.bundle */; };
-		F8BDF358D849BA508AEA1E5A94772516 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80209EEC492F2C5C11380B0F50ACA015 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FFA5CAEC08BBB8CB3464F3FE0F28CD72 /* Pods-General-git-test-client-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBAE32B07D57DE4A5E2DD156A98D887 /* Pods-General-git-test-client-dummy.m */; };
+		E039E628E8F6279EAC3617C256396FD2 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90276A8AC5864C767847D8A7AB414BF3 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E198F398404F07805E5189165F3C1E64 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257252E765C969AE70D1FF6FDD41AE28 /* Timeline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E1FDB8EB49DCBA9C697BF5EE4103D28A /* AlamofireObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AAB64C979A4D716BCEB834E48FEC2 /* AlamofireObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E687BC0D3FD9E8DA6C546EADD45F5BE4 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B81B3F56677BEE46B9ACF82AF3393 /* houdini_href_e.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E96F9D9AC2CBC32D907EF5C081E5D13E /* html_unescape.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C480C5BB9FE185B07750F98D84A74A0 /* html_unescape.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EADEDF90C005FB2A92DC4885475A1817 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF8C0069D731553F660075626923FF /* ObjectMapper-dummy.m */; };
+		EBA0781A1E2822CF7DFD56ACD394A63E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE5268AA1488CCE694BABD871EB35C /* Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F021390659C13707C0DC06BEDE20DA7F /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E18E5047EB64DC1D8BA041F4790DA8 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F0B89DE0DF4D5162721A2E6D4DF90173 /* DownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16F078AB5BB7889B1008CF160563FF4A /* DownView.bundle */; };
+		F254CF02931202CD44537EAD61D27BE8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233D494F1A45C908F4D0D8E82875880 /* ImageCache.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F8BDF358D849BA508AEA1E5A94772516 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420D735B5B43B1C3FEE11E58DDA6ADCB /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FF0007F0502C85600F98BC8E62F739D2 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18358757FD9D87195DB549CE8D8143E3 /* AFIError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1947C24836A9D4B08C13B29971B4A7EB /* PBXContainerItemProxy */ = {
+		04E53853D9572EA9299CF82E3B820B5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
+			remoteGlobalIDString = 9502FB01641FBABB78522037E882757B;
+			remoteInfo = AlamofireObjectMapper;
 		};
-		3C1D4706DB12942ADA4B50225BBE7284 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43134A787828ADAA327E8EB54C1E5F6B;
-			remoteInfo = Down;
-		};
-		5FA06A916A793D28A6D14C122A822F69 /* PBXContainerItemProxy */ = {
+		12A64FD1C03FC44878B070C56F7ABFC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
 			remoteInfo = MBProgressHUD;
 		};
-		8130289B94E2D83538702D77D72FC42A /* PBXContainerItemProxy */ = {
+		82370B887A1B805FE99FE4DB5DE8DB66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9502FB01641FBABB78522037E882757B;
-			remoteInfo = AlamofireObjectMapper;
+			remoteGlobalIDString = 9EFE4C70245EE2857D336B8B9FA4E825;
+			remoteInfo = AlamofireImage;
 		};
 		A04F064E4A878D0A36386C26C1925C4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -166,12 +172,19 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		B3B174D3B350424EAAD52501F4933A7B /* PBXContainerItemProxy */ = {
+		A1758AA696D56310AA192B587162169A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F5622F3B18DF497981AB58C6D1FC72F;
-			remoteInfo = ObjectMapper;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		A1D13135FF1D8E4CDA21DD6CFA50899A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43134A787828ADAA327E8EB54C1E5F6B;
+			remoteInfo = Down;
 		};
 		C2A743750D8435124390DA2CA737665B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -180,171 +193,193 @@
 			remoteGlobalIDString = 2F5622F3B18DF497981AB58C6D1FC72F;
 			remoteInfo = ObjectMapper;
 		};
+		D7994FB6DC6593B37A1840A21193B8B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F5622F3B18DF497981AB58C6D1FC72F;
+			remoteInfo = ObjectMapper;
+		};
+		FE976B7861025D669BA0CDF4C76DDBAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001EF0776087896EDE96200647391C8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00B571DA1C968FF3E29EBC0F3B1A0A63 /* cmark_ctype.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark_ctype.c; path = Source/cmark/cmark_ctype.c; sourceTree = "<group>"; };
-		02FED1D300B44A87059A61B59A40901B /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
-		03A9586CD00F20AADD43718FC46EE57A /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		00C04AD80CDD709A595E015A577F89F6 /* COPYING */ = {isa = PBXFileReference; includeInIndex = 1; name = COPYING; path = Source/cmark/COPYING; sourceTree = "<group>"; };
+		05069FB71F876EFB7EDB2ED2FBD374D3 /* Down.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Down.h; path = Source/Down.h; sourceTree = "<group>"; };
 		06C4D862FDE4FEEA0C81FDC8BCD922C3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BF32D13B3256FA465E5CF73A97B4FDA /* html.c */ = {isa = PBXFileReference; includeInIndex = 1; name = html.c; path = Source/cmark/html.c; sourceTree = "<group>"; };
-		0E2E3F11C89C51521CCA20B7CC449B93 /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = Source/cmark/parser.h; sourceTree = "<group>"; };
+		0A50C20C21CAC3C7B0154FFE04376339 /* Down-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Down-prefix.pch"; sourceTree = "<group>"; };
+		0AD079E44867B395AFC435035A44DF40 /* DownRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownRenderable.swift; path = Source/Renderers/DownRenderable.swift; sourceTree = "<group>"; };
+		0B1B22F41A549CC31E65C220D0A95237 /* AlamofireObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireObjectMapper.xcconfig; sourceTree = "<group>"; };
+		0C63CF9E59E006E3DD8CD2FCFF907595 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		0CDBBB80EC570B26333C936C674891CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D161D8C388EB3EC048032377B107A8F /* Down.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Down.swift; path = Source/Down.swift; sourceTree = "<group>"; };
+		0D2A35884F9887E59804B77DB5E0E54E /* DownErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownErrors.swift; path = "Source/Enums & Options/DownErrors.swift"; sourceTree = "<group>"; };
+		0E3C5DD16D27517E80B6A3CCD221B788 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		0E3DD7EC365260EF6553D96A7E1D4949 /* Pods-General-git-test-client-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-General-git-test-client-resources.sh"; sourceTree = "<group>"; };
-		0EABD49B02C0EF7F554DC6BAE6E9067E /* man.c */ = {isa = PBXFileReference; includeInIndex = 1; name = man.c; path = Source/cmark/man.c; sourceTree = "<group>"; };
-		0EB9EF2DFEC73F08FA407623F1A55C79 /* Down.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Down.h; path = Source/Down.h; sourceTree = "<group>"; };
-		10F8122FAD5E33BB0F4DC03D0A32F554 /* DownAttributedStringRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownAttributedStringRenderable.swift; path = Source/Renderers/DownAttributedStringRenderable.swift; sourceTree = "<group>"; };
-		117B55D6F3AAF3E3CAFF3CFB26FA7083 /* DownHTMLRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownHTMLRenderable.swift; path = Source/Renderers/DownHTMLRenderable.swift; sourceTree = "<group>"; };
-		1471119F37D7F358F41AD5167D56482A /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Source/cmark/config.h; sourceTree = "<group>"; };
+		0E7B8A9C855FF0842FAA028D62BB0A27 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		0F71B8A07799A85FCB09D696E93C1304 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		0F782AD14A00E6775D86CAD038FC247B /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		10D7F897BD9A0FDF2C22940823429BCC /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1363246AA61C0A9F075A7F3FE43F4CE5 /* node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = node.h; path = Source/cmark/node.h; sourceTree = "<group>"; };
+		14674A6601FFC8A3896A49D938218D44 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Source/cmark/config.h; sourceTree = "<group>"; };
+		147CAA6E3BB87CBB1D5B8BA759DDF81C /* references.c */ = {isa = PBXFileReference; includeInIndex = 1; name = references.c; path = Source/cmark/references.c; sourceTree = "<group>"; };
 		148BDE3B3EE2C2B5309BFC8CE1CF85D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1570277CE81EDCFBB3959A720CB50F23 /* case_fold_switch.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = case_fold_switch.inc; path = Source/cmark/case_fold_switch.inc; sourceTree = "<group>"; };
-		16513B9622B7F464BC11789AE2608CFF /* AlamofireObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		178DBAA3F8CE55EF142AAB50B449B454 /* DownXMLRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownXMLRenderable.swift; path = Source/Renderers/DownXMLRenderable.swift; sourceTree = "<group>"; };
-		1AA4560433E0AA40D860F9AEF668F029 /* AlamofireObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		1AC47C018A66716F4B1A84BD781F9162 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
-		1B9E158BADA724B2ACD1E871B8A618B7 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
-		1F638434E632B9D81C1E1D9E4BE11BCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F60E2FCDAA62F3FA00B5A89C487FEC /* render.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = render.h; path = Source/cmark/render.h; sourceTree = "<group>"; };
+		15624D68CF6D1A553E0EEEC4307302F6 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		163A8B47B9A671F3B7FD1617EB71FF25 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		16F078AB5BB7889B1008CF160563FF4A /* DownView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DownView.bundle; path = Resources/DownView.bundle; sourceTree = "<group>"; };
+		1716F021F00386A80CE3AE67263AFEC2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18358757FD9D87195DB549CE8D8143E3 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
+		19ECDB333586A4E53A2C9A691E3ABB14 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		1B0D16F3F96F6BC002596E5BA9FFCC3A /* inlines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inlines.h; path = Source/cmark/inlines.h; sourceTree = "<group>"; };
+		1C392C3D8D1DB781FC9C118FE8F48E72 /* cmark_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_version.h; path = Source/cmark/cmark_version.h; sourceTree = "<group>"; };
+		1F8B70E0E58ECED8D882465960F27A88 /* AlamofireObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		22E9A99D789FE5FB207E8119728CAEA6 /* DownCommonMarkRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownCommonMarkRenderable.swift; path = Source/Renderers/DownCommonMarkRenderable.swift; sourceTree = "<group>"; };
+		257252E765C969AE70D1FF6FDD41AE28 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		262EBA0FC1EE481405F71944914FFA85 /* Pods-General-git-test-client-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-General-git-test-client-acknowledgements.markdown"; sourceTree = "<group>"; };
-		26653BB2EC801BF84818D997885F928B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		278D5440C8ABCFB7138E95380EEE38DF /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		2BC04448AD93242B1D57F5AF71C49495 /* scanners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanners.h; path = Source/cmark/scanners.h; sourceTree = "<group>"; };
-		2CFA2F9CB802826890A03A983A473D1E /* Down-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Down-umbrella.h"; sourceTree = "<group>"; };
-		2FF001F66BF916487FF75DBC1E074B41 /* Down-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Down-dummy.m"; sourceTree = "<group>"; };
-		360B2DB8B2CDA5A866CC042A921C1619 /* node.c */ = {isa = PBXFileReference; includeInIndex = 1; name = node.c; path = Source/cmark/node.c; sourceTree = "<group>"; };
-		39309CA41B40A02965F612AF3B1CF494 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireObjectMapper.framework; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3969A6771F268FC6C8D0823159D5C015 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
-		3DBF9EBC3079A93719411A487BD12F8E /* DownCommonMarkRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownCommonMarkRenderable.swift; path = Source/Renderers/DownCommonMarkRenderable.swift; sourceTree = "<group>"; };
-		3E4C4EEF2F958775B9E806F76DB067BB /* AlamofireObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireObjectMapper.xcconfig; sourceTree = "<group>"; };
-		42484639F797B7D8BE022935EC1BE730 /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
-		4271DA2BDCEBE29993F2DA0F144F1CA1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		43D69F2CA2E3565B1FB792365031DF0F /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		45C39BD0C0C9B9BAD3253D88A6593166 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		47157936ABA427264A8788BBA5FC48B0 /* cmark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark.h; path = Source/cmark/cmark.h; sourceTree = "<group>"; };
-		479BE498F50EF01D3594D936BC966A11 /* Down.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Down.xcconfig; sourceTree = "<group>"; };
-		496BD1578B4E7E3FFBADCA54D886DF14 /* utf8.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utf8.c; path = Source/cmark/utf8.c; sourceTree = "<group>"; };
-		4A1CF5254D055C00C927C76EC80CF829 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		4A3EE3D1BA50110CCE7E331E88CB3D55 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		4B36BFD9EF38AD3071D4F530F433EACD /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		4DF0545DC4D9E99AD6FEC063FFC59DEB /* DownASTRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownASTRenderable.swift; path = Source/Renderers/DownASTRenderable.swift; sourceTree = "<group>"; };
-		4F3D436F471789E01FCD42C904016602 /* houdini_html_u.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_u.c; path = Source/cmark/houdini_html_u.c; sourceTree = "<group>"; };
-		51AD3AFB46787D0D8A638D064B24DC30 /* chunk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chunk.h; path = Source/cmark/chunk.h; sourceTree = "<group>"; };
+		2726E0271D83DB7599F1BA46A62A75DD /* xml.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xml.c; path = Source/cmark/xml.c; sourceTree = "<group>"; };
+		28600D84CC8387EDB6BDD0B1661CFD13 /* debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = debug.h; path = Source/cmark/debug.h; sourceTree = "<group>"; };
+		29BC0C834AB659B0929B46B9F0E2C9F8 /* NSAttributedString+HTML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+HTML.swift"; path = "Source/Extensions/NSAttributedString+HTML.swift"; sourceTree = "<group>"; };
+		29FEFC929769BF49BE7D411082FB89EB /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
+		2A92CD39820A071654B253BA355FAA5B /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
+		2BBAA2D6581D4510D08A7F5E13FFF151 /* scanners.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanners.c; path = Source/cmark/scanners.c; sourceTree = "<group>"; };
+		2C25A09CEE398DABE2098779E5ACE9A2 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		307AC0A2B8772BBEC465E66296E5454C /* Down-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Down-umbrella.h"; sourceTree = "<group>"; };
+		33F6D5DA38FC822CDBA82DDE946AB799 /* cmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark.c; path = Source/cmark/cmark.c; sourceTree = "<group>"; };
+		36B93AB833601533A78A7334D1E7021E /* render.c */ = {isa = PBXFileReference; includeInIndex = 1; name = render.c; path = Source/cmark/render.c; sourceTree = "<group>"; };
+		3C60D31D21F6446F6D1DA799B865B864 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6C3362A9AA1E1FB99F540BEB9E81DE /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
+		4084A3A20B63BC03BF52A0B0A17263B9 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		408E15C73686A513E4CEAA94FE78BC3A /* references.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = references.h; path = Source/cmark/references.h; sourceTree = "<group>"; };
+		420D735B5B43B1C3FEE11E58DDA6ADCB /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		432250C2A4139280B8DA78DD717575CB /* commonmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = commonmark.c; path = Source/cmark/commonmark.c; sourceTree = "<group>"; };
+		4348E3570C9F6D323A975AF741135DAC /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44237BEE611A06B3AF8375A06C928E99 /* node.c */ = {isa = PBXFileReference; includeInIndex = 1; name = node.c; path = Source/cmark/node.c; sourceTree = "<group>"; };
+		45D109D48CDC86811C0DBC0C3B2A5CEA /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		4903030D05B6EBC17015381B0EC3BEC6 /* cmark_ctype.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark_ctype.c; path = Source/cmark/cmark_ctype.c; sourceTree = "<group>"; };
+		4B5085BCF13F897B6CED89A903E4B8D8 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		4C07953B62D7BA32EC141AAB706BD425 /* entities.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = entities.inc; path = Source/cmark/entities.inc; sourceTree = "<group>"; };
+		4C573B37047B5BC67B5D364419BD67DB /* latex.c */ = {isa = PBXFileReference; includeInIndex = 1; name = latex.c; path = Source/cmark/latex.c; sourceTree = "<group>"; };
+		4DF5F9903F889BF4AEE785A9994FAA55 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
+		4E9D15BD87FB5BDD3955409337A2A66B /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		51FCFF2EFD8CA89B19E6B3FE6FECDC34 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
 		52580098A3FB05EAEF33A12BC987E5E8 /* Pods-General-git-test-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-General-git-test-client.release.xcconfig"; sourceTree = "<group>"; };
-		5AC6D7A798B673DD50AF228B09A99FF6 /* DownRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownRenderable.swift; path = Source/Renderers/DownRenderable.swift; sourceTree = "<group>"; };
-		5B57955AC8542676B003EA5AD5796089 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		5C0BEDADD2E5ABAE41A38BBA9D6F5A7C /* Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Down.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D13FB44471F6264FBBDBFC88971094C /* DownGroffRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownGroffRenderable.swift; path = Source/Renderers/DownGroffRenderable.swift; sourceTree = "<group>"; };
-		5ED67129D54914C9EBE692F95736CDDB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F09879F7C27002FB06A25584DF7BEFA /* DownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownView.swift; path = Source/Views/DownView.swift; sourceTree = "<group>"; };
-		5FA88F0E18029EF50E1A383001FAC33A /* commonmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = commonmark.c; path = Source/cmark/commonmark.c; sourceTree = "<group>"; };
-		5FAF10CF456C79616B77DB2906D8A4D9 /* COPYING */ = {isa = PBXFileReference; includeInIndex = 1; name = COPYING; path = Source/cmark/COPYING; sourceTree = "<group>"; };
-		671BB733052AFB4F5EFA541861B8375E /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
-		6E56D5F04B7FE33A289BAD2FC3E0F0DF /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		70327EC76A24AE4B835CCF740BC0E12B /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
-		7216EC3F91FC49A75025532B0CD6E463 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72E51A6F38AD2A85E5900DD234681118 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireObjectMapper.swift; path = AlamofireObjectMapper/AlamofireObjectMapper.swift; sourceTree = "<group>"; };
-		743055D0A5A42A191D30E53CCD01CC6C /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7686722E5769187FFE881D0D7B3E72D1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		790C74377F9018B42492CA6D8AEB9A8E /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
-		796DCDC102C5AFBDD56E1C34C3EB9195 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		7BFDEA0F295B2A8949069B583E550F85 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = module.modulemap; path = Source/cmark/module.modulemap; sourceTree = "<group>"; };
-		7C1D93650A37A9CF1E05C3BE3E629C89 /* entities.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = entities.inc; path = Source/cmark/entities.inc; sourceTree = "<group>"; };
-		7C5E7C1A7D9D81793ABBC9F27590D6F7 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
-		7EA73873C9D6ABA71F3C50760ED03053 /* cmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark.c; path = Source/cmark/cmark.c; sourceTree = "<group>"; };
-		7FBA1C3A54BB9828BC0C1E2351671EA5 /* inlines.c */ = {isa = PBXFileReference; includeInIndex = 1; name = inlines.c; path = Source/cmark/inlines.c; sourceTree = "<group>"; };
-		80209EEC492F2C5C11380B0F50ACA015 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		53B9426415842F6E5326547723B5A102 /* DownAttributedStringRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownAttributedStringRenderable.swift; path = Source/Renderers/DownAttributedStringRenderable.swift; sourceTree = "<group>"; };
+		54E18E5047EB64DC1D8BA041F4790DA8 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		56386CDF2A693A571D0CE6C74275DE96 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		568CB827FBDD747EE9D4A09049045784 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		5832894778EC75379F04CF0D40BE6DF3 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		5C480C5BB9FE185B07750F98D84A74A0 /* html_unescape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = html_unescape.h; path = Source/cmark/html_unescape.h; sourceTree = "<group>"; };
+		5DBE4C8C48D21A255B8A72F4C2771F8A /* cmark_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_ctype.h; path = Source/cmark/cmark_ctype.h; sourceTree = "<group>"; };
+		5FCC19AC906F3B6516AF97A378E767E3 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		61F43113024EB023D6B3662DC4C8BF9A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		6474773BCE598B8B1BE87FE83A3EF742 /* Down-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Down-dummy.m"; sourceTree = "<group>"; };
+		65396DE60F447A3AE4AAC0B644C778B4 /* chunk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chunk.h; path = Source/cmark/chunk.h; sourceTree = "<group>"; };
+		6B0AAB64C979A4D716BCEB834E48FEC2 /* AlamofireObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		6B4E815DBB3FF4070D6B74B3A78189BA /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		6B7DE1D7892F89A293D749D5426519B8 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		6F927A7FFB8E1FAEF14A4CED27F9A23A /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		70CE5268AA1488CCE694BABD871EB35C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		70EDCFA0E90C7330AB04126790E6F0DA /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireObjectMapper.framework; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717BE933D413E8020F8F96DAF9E75F21 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
+		720E98901ED7AD9BB6E1F05FED2B6CE9 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		725D320ECB136AAFC0948537B4438695 /* Down.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Down.modulemap; sourceTree = "<group>"; };
+		769CC0466FB22DF30E006AA6B4502EE5 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		7735F4988ACE9B4F212ADAC1388A697B /* DownHTMLRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownHTMLRenderable.swift; path = Source/Renderers/DownHTMLRenderable.swift; sourceTree = "<group>"; };
+		78ED6CC6FFB006F807805E0C687DF1FD /* scanners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanners.h; path = Source/cmark/scanners.h; sourceTree = "<group>"; };
+		7ADF8C0069D731553F660075626923FF /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		7B1A48A2673E86554A78335DEFFF6689 /* DownXMLRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownXMLRenderable.swift; path = Source/Renderers/DownXMLRenderable.swift; sourceTree = "<group>"; };
+		7BB74ECC2738B70906E4A54024D0CE17 /* Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Down.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9B81B3F56677BEE46B9ACF82AF3393 /* houdini_href_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_href_e.c; path = Source/cmark/houdini_href_e.c; sourceTree = "<group>"; };
+		800717244E9DE1E44043299D0BEC658F /* String+ToHTML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+ToHTML.swift"; path = "Source/Extensions/String+ToHTML.swift"; sourceTree = "<group>"; };
+		8288891E409B24AC2AAB75223B371C03 /* case_fold_switch.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = case_fold_switch.inc; path = Source/cmark/case_fold_switch.inc; sourceTree = "<group>"; };
 		832558E89E69CFD3307BD943A9DDEB6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		866048437B7F5AB29A4CC355CC571E95 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		83DB961AE383797492B17BE51B43BC37 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844C089A8E7B099EB80D2E07797F5F30 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		87E070BC0E22A53E3CE625AD2E6472BC /* Pods-General-git-test-client-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-General-git-test-client-umbrella.h"; sourceTree = "<group>"; };
-		88D850F06000E6B9A625744742991743 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
-		89A6309A67DDC5537C0CE23460193B34 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		8A9DE0DA251A3DF89B80ABAD2B60392B /* Pods_General_git_test_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_General_git_test_client.framework; path = "Pods-General-git-test-client.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE0B7AF1861D763BC4CD20492839276 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = Source/cmark/iterator.h; sourceTree = "<group>"; };
-		8CCD2AF57A30588E61894AD51DA3B7C4 /* render.c */ = {isa = PBXFileReference; includeInIndex = 1; name = render.c; path = Source/cmark/render.c; sourceTree = "<group>"; };
-		8D6973055FC691797A1CF8D91A3506FF /* utf8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = Source/cmark/utf8.h; sourceTree = "<group>"; };
-		8DF526112C4DF430FE6C3A3BA5BF4ADE /* latex.c */ = {isa = PBXFileReference; includeInIndex = 1; name = latex.c; path = Source/cmark/latex.c; sourceTree = "<group>"; };
-		9070238E293CFFF91F15DFBDDF3DEF55 /* AlamofireObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireObjectMapper.modulemap; sourceTree = "<group>"; };
-		910699F4ECD89226F30F7C79530D08F1 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
-		91A04ACA06CD629E834EBF9D59726CE7 /* html_unescape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = html_unescape.h; path = Source/cmark/html_unescape.h; sourceTree = "<group>"; };
-		929FDEBA3F0D251DA5A8035E92D8B31A /* AlamofireObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		9369057150918A6AE238E3CCF76C440E /* NSAttributedString+HTML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+HTML.swift"; path = "Source/Extensions/NSAttributedString+HTML.swift"; sourceTree = "<group>"; };
+		895B5CB2B8E37D701B4939F5F8AB923D /* DownLaTeXRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownLaTeXRenderable.swift; path = Source/Renderers/DownLaTeXRenderable.swift; sourceTree = "<group>"; };
+		8DAE761BD026379D1BFD92DFF0AD9AC6 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		8EAC8BDDDAA2B29B9FBBA321B2EECB76 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		90276A8AC5864C767847D8A7AB414BF3 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95843244AC85FE8761B6A99BE35BF3BB /* DownOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownOptions.swift; path = "Source/Enums & Options/DownOptions.swift"; sourceTree = "<group>"; };
-		95A9021B9F96E549510DE30F9A39CF72 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		9B6BE5810FF0F563A45455CCD98752E7 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
-		9C6F173A89A6DFB2AB937454A0F1195E /* iterator.c */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.c; path = Source/cmark/iterator.c; sourceTree = "<group>"; };
-		9E76B3F1F84574AE0B749B25F1763688 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9557D98D222D1A7D4AD562DF9D620E3C /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
+		96345F73AF066E37E1C599C13DD01998 /* inlines.c */ = {isa = PBXFileReference; includeInIndex = 1; name = inlines.c; path = Source/cmark/inlines.c; sourceTree = "<group>"; };
+		97CB24EB9A15C74983D5C37A30FD7689 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		9E586A92DAB9210F2E710FC019DFDA83 /* houdini_html_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_e.c; path = Source/cmark/houdini_html_e.c; sourceTree = "<group>"; };
 		9ED793EEB96ADDBC9991225580950774 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBAE32B07D57DE4A5E2DD156A98D887 /* Pods-General-git-test-client-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-General-git-test-client-dummy.m"; sourceTree = "<group>"; };
-		A03F172DD7E8FABABE022C90742A0710 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		A43736790A0166C16843553D7CB8D8B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A52C9AF2B10BBE354417A15F98725E70 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		A10C6B6EA9B703212E5C85B98C0AD9AF /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
+		A2D19FC13A0AFC587B7827FE722CA8AA /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
+		A40AF4BF596EB8B7E0CB78B0B85CB5D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A545E8E085776E88FAA5E7580976BC6B /* buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = buffer.c; path = Source/cmark/buffer.c; sourceTree = "<group>"; };
+		A76013F2C6AC9181EDA449AE015D464F /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
 		A86A65FB12B14353FE1E868266D729FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		AA19545D29DDFC95D39D644A634C8FDE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		AB57FCEDDBCECBF3CE888CD9CDE5C06F /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		AFC23DFAC082BDAB51DE79A8868734CB /* cmark_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_ctype.h; path = Source/cmark/cmark_ctype.h; sourceTree = "<group>"; };
-		AFC8C15DAFDACDD2C84E395381E8B46F /* references.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = references.h; path = Source/cmark/references.h; sourceTree = "<group>"; };
-		B00B78C82E92F18A4D7B98700AF1EB8E /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		B078D8DEAF17C13E9BD20CC804144FE4 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		A8F5EACA260B40E86212A5C5401B11E1 /* DownOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownOptions.swift; path = "Source/Enums & Options/DownOptions.swift"; sourceTree = "<group>"; };
+		AA1ADB601BD719BA7A8FD51C3EDC19A3 /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blocks.c; path = Source/cmark/blocks.c; sourceTree = "<group>"; };
+		AA4A17339448EB8C0E53597FB83DBF6C /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
+		ADA0ED04EFB2C8C1374909C9C6DC79E7 /* utf8.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utf8.c; path = Source/cmark/utf8.c; sourceTree = "<group>"; };
 		B082EE5056CA1EB02609E9B4C3EDB61E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B17E6D0C9E147B0069A03613CBF320CF /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
-		B341C5D8D00F060D48177275717765A3 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		B3A86FB9D2623E622A1504B0B69AC124 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3EBC4E63CC4A1235E3FAB81280A804B /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
-		B5ECBC8022EAAA9DC74B964C016B1E3F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B886D964438C3D548FFE3E95BAEA6FDD /* Down.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Down.modulemap; sourceTree = "<group>"; };
-		BD0AB38F521D149D362E6B6311748C4B /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blocks.c; path = Source/cmark/blocks.c; sourceTree = "<group>"; };
-		BEAF9D5229852815D4CD65D679B86240 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		BF13B3410F3BB9D2C01135946029340F /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		B16780DF4A64729C5CB1FDA4E2C902F9 /* cmark_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_export.h; path = Source/cmark/cmark_export.h; sourceTree = "<group>"; };
+		B22E8E230652D181C09B688B3C6DE8CA /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		B37A24CCCF6A8BAB753D906DBC612BFF /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		B626763B735B212819EF4E4E0191FDC6 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		B9EACDE183907DE2F75AE2791EE96B63 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		BA72FDD547C2A1CACC363EE392F204D2 /* Down.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Down.xcconfig; sourceTree = "<group>"; };
+		BB9C74812B66FD61A536130948D94C8B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		BBAC89C37D9D9D0A64F190AB72231733 /* man.c */ = {isa = PBXFileReference; includeInIndex = 1; name = man.c; path = Source/cmark/man.c; sourceTree = "<group>"; };
+		BBBBE8A1FDFC33B4339D42BCA39ECFB2 /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = Source/cmark/parser.h; sourceTree = "<group>"; };
+		BD84B4F704712876BD460B7C9343F9B8 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		BF26C333074129E02ACE31692BEC6CD8 /* Pods-General-git-test-client.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-General-git-test-client.modulemap"; sourceTree = "<group>"; };
-		C4DE212337BECE412C95F5199AC5236D /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		C5CEBB7E4FF764CFA7C5B6B3AC39A70A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		C8F26A06E81999F887013493F4A2A23C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		CA82490BF2CAA6081821D4F719598643 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
-		CE31981C6A716FCA02E6EEB0EB5ADA2D /* buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = buffer.c; path = Source/cmark/buffer.c; sourceTree = "<group>"; };
-		CE3D55BDAEC4F54A34FA0F11AED4BFB6 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		CE7EB54141472ED33BF2C47D445AE042 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		BF465F2ED8CDEC7B7DE34069E30E0942 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		C0FAF777262B3D7850EA43241186F318 /* cmark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark.h; path = Source/cmark/cmark.h; sourceTree = "<group>"; };
+		C2ACD6307ACE8B4CC11C0A8A960C887C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4420CCA940D4245E4163281B257960B /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		C4F4481068DEA5212177E404D6A170C4 /* houdini.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = Source/cmark/houdini.h; sourceTree = "<group>"; };
+		C61AC47C303AC27CC5D692C88E3A2CFA /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		CAB56FD95BF7C0F01CC9E9CE95BA313B /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		CC5B1036FE7D1E712280AE7CA13A0129 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		CDC77E8EF9B74239B6412F77C9CD27BB /* houdini_html_u.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_u.c; path = Source/cmark/houdini_html_u.c; sourceTree = "<group>"; };
+		CDEEEF53B349FE7033DA7E6783FF98A6 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
 		CF519E271DB6E0432F3F888D6EE31FA7 /* Pods-General-git-test-client-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-General-git-test-client-acknowledgements.plist"; sourceTree = "<group>"; };
-		D028A7F47CF2106D573479FB82DCE72F /* Down-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Down-prefix.pch"; sourceTree = "<group>"; };
-		D0E0FA10962F29E7C43D6E3E73C5DC08 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
-		D57249403BE25F7AAFF09802359D1757 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		D5EF9DF5BDA5C97F3D43CD1EBFB8C7C6 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		DA4B7EA4AB42F80FB2018D743A6AFBE2 /* houdini_href_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_href_e.c; path = Source/cmark/houdini_href_e.c; sourceTree = "<group>"; };
-		DAF252AE9D4847CCB9C2C6F4A4CF04F0 /* references.c */ = {isa = PBXFileReference; includeInIndex = 1; name = references.c; path = Source/cmark/references.c; sourceTree = "<group>"; };
-		DF5FC733F84E7A7669A0E000036DA9A5 /* xml.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xml.c; path = Source/cmark/xml.c; sourceTree = "<group>"; };
-		E046E235F82C8F22FB92C3E6B3817E81 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		E177E4BEB262D6C2CC2A49AE45D498A5 /* Down.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Down.swift; path = Source/Down.swift; sourceTree = "<group>"; };
-		E1EDF0D188FFBB23D0D3FFF0899F6130 /* houdini.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = Source/cmark/houdini.h; sourceTree = "<group>"; };
-		E464F3E0EEF476778F4EE88D3CDCE703 /* debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = debug.h; path = Source/cmark/debug.h; sourceTree = "<group>"; };
-		E570C52FB5B76ACA58317DC0BA44DECC /* houdini_html_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_e.c; path = Source/cmark/houdini_html_e.c; sourceTree = "<group>"; };
-		E859A9DE8511A524C9FA02AEF4E9254F /* cmark_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_export.h; path = Source/cmark/cmark_export.h; sourceTree = "<group>"; };
-		E87A2DCFA4402B2E7D4BBDBE0C85AFFB /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
-		EA2340F4D2055563A5D9ECD22D5BDE60 /* DownView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DownView.bundle; path = Resources/DownView.bundle; sourceTree = "<group>"; };
-		EA6D884FDE063A04685B66964F756A5D /* DownErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownErrors.swift; path = "Source/Enums & Options/DownErrors.swift"; sourceTree = "<group>"; };
-		EADFFE39AEA8EC08BB6BEE4659D27DCB /* String+ToHTML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+ToHTML.swift"; path = "Source/Extensions/String+ToHTML.swift"; sourceTree = "<group>"; };
-		EC36248B6343B959837BF28FAB859D9F /* DownLaTeXRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownLaTeXRenderable.swift; path = Source/Renderers/DownLaTeXRenderable.swift; sourceTree = "<group>"; };
-		ED81F8D03A049FD5A8D4247D4C2DB99F /* scanners.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanners.c; path = Source/cmark/scanners.c; sourceTree = "<group>"; };
-		EDA7C98637DC878446DE8207E74827E2 /* inlines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inlines.h; path = Source/cmark/inlines.h; sourceTree = "<group>"; };
-		EEF4BF18A3702CCDCA02721DA2EFD6B7 /* node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = node.h; path = Source/cmark/node.h; sourceTree = "<group>"; };
-		F1518A8C9773EFD271822C108CC9F951 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
-		F63E447111C81D6F4CE06A2FD031725A /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		D06110E6D8BA71A01ADBCAEF66A3F047 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = Source/cmark/iterator.h; sourceTree = "<group>"; };
+		D0809680A058FF82894998D71D5D889F /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17A2B71087B3D8E5F9936F01E06D9EE /* utf8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = Source/cmark/utf8.h; sourceTree = "<group>"; };
+		D2F45E674C2C7ADF439B381703CA6A7D /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		D65B9C3533E56319F28927C2A3A0ED00 /* DownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownView.swift; path = Source/Views/DownView.swift; sourceTree = "<group>"; };
+		DE6CFC6AC78DC90B7D60F6A0D353D927 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		DF4337457AA54DD65519CE4B410F6AB7 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireObjectMapper.swift; path = AlamofireObjectMapper/AlamofireObjectMapper.swift; sourceTree = "<group>"; };
+		DFDBEC77361C382DF87611EA3FCB272B /* Pods_General_git_test_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_General_git_test_client.framework; path = "Pods-General-git-test-client.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E233D494F1A45C908F4D0D8E82875880 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
+		E32E63AC7A02B3897485F06582DE2F1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33F374B40AF0F348579AF1679A88002 /* render.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = render.h; path = Source/cmark/render.h; sourceTree = "<group>"; };
+		E37FF4389BFDA34479F8AA6CCDFC0BD4 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Source/cmark/buffer.h; sourceTree = "<group>"; };
+		EA8E38A8FAD86A5A66B69B42AC09EC39 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = module.modulemap; path = Source/cmark/module.modulemap; sourceTree = "<group>"; };
+		EAD32A7EE8CBC192D313BB183DD4BAAA /* AlamofireObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		EB650AB04A8B799A317A982017EB8567 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		EBD7983CB066DA4F08F3015F72BEC720 /* iterator.c */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.c; path = Source/cmark/iterator.c; sourceTree = "<group>"; };
+		ED3F4D29F349059F8C54F9BA2582D78E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F09854D9D54C3B405A90D24B95C7A589 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		F1006EC20601F6659F0B8DE6C4871A1C /* AlamofireObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireObjectMapper.modulemap; sourceTree = "<group>"; };
+		F1087410AADB338027065EA59AC70416 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		F35B09B007D733B317A00E44F1927406 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 		F64EDD7B113672CE69D946DCDE0483F9 /* Pods-General-git-test-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-General-git-test-client.debug.xcconfig"; sourceTree = "<group>"; };
-		F96D9FA31AB1199005588A14FF9741BC /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
-		FA21B2CCA36358CC844D59699AA88F40 /* cmark_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_version.h; path = Source/cmark/cmark_version.h; sourceTree = "<group>"; };
-		FEECE2A92EA8E77E1B4F989E30426DEC /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		F83083546D15B74A5182F67E719A60D1 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		F90D60AF8D661B9DAC23DBF8FFA1E7F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6BDB5140794526934C79D78157503C /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		FB7D7702172B6BD8FEA2DD1B85C95F05 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		FC813204CF2FEBE6384D16A34CE8827B /* html.c */ = {isa = PBXFileReference; includeInIndex = 1; name = html.c; path = Source/cmark/html.c; sourceTree = "<group>"; };
+		FE2EF94F37C90FDB4CDBA19C189A108C /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		FF19C608DA04C7003C22790E5684AB66 /* Pods-General-git-test-client-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-General-git-test-client-frameworks.sh"; sourceTree = "<group>"; };
-		FFFF1DF1F8430404061B2FE9F2B8ECD6 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Source/cmark/buffer.h; sourceTree = "<group>"; };
+		FF512603BD6B78726B709F391958AE2E /* DownGroffRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownGroffRenderable.swift; path = Source/Renderers/DownGroffRenderable.swift; sourceTree = "<group>"; };
+		FFB509843067E50B730B9FA71DAE0539 /* DownASTRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownASTRenderable.swift; path = Source/Renderers/DownASTRenderable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		481685FDBF6FCEFB27E95F515478987C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4502AD8B167A0A3D4C4D59837FBDA262 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8562E6EA2DA88FF69C44B2AF77E3EDDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +414,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF98FBBDC964E0CC738F6B323B4C1BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613167D898FF421A6F75D1FE5D145B9B /* Alamofire.framework in Frameworks */,
+				245DAEE5793271CA5BECA7A816092142 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D55863AC11CD93D729F336D4A1837D9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,6 +430,14 @@
 				4E144A5F6A61AACDFDFF8E00A4E5C17B /* Alamofire.framework in Frameworks */,
 				D51A0163C26006A2332C71B5140B2A2D /* Foundation.framework in Frameworks */,
 				82B33F223516A2AA7DA2985E5A954B88 /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE70466CFA36AD4C17A66967F4ED25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8782574C94CD3893B888B6A011C66A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,104 +454,188 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		2DD2C270DFD00AB569AEA1049C852368 /* Support Files */ = {
+		1D88BAE60250450F9ED9211B418F262D /* AlamofireObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				1F638434E632B9D81C1E1D9E4BE11BCE /* Info.plist */,
-				278D5440C8ABCFB7138E95380EEE38DF /* MBProgressHUD.modulemap */,
-				A52C9AF2B10BBE354417A15F98725E70 /* MBProgressHUD.xcconfig */,
-				E046E235F82C8F22FB92C3E6B3817E81 /* MBProgressHUD-dummy.m */,
-				43D69F2CA2E3565B1FB792365031DF0F /* MBProgressHUD-prefix.pch */,
-				A03F172DD7E8FABABE022C90742A0710 /* MBProgressHUD-umbrella.h */,
+				DF4337457AA54DD65519CE4B410F6AB7 /* AlamofireObjectMapper.swift */,
+				599EEFB6861252A1CE5FA4F7A81690FB /* Support Files */,
+			);
+			name = AlamofireObjectMapper;
+			path = AlamofireObjectMapper;
+			sourceTree = "<group>";
+		};
+		453E951328405867315771AB81576192 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51FCFF2EFD8CA89B19E6B3FE6FECDC34 /* AlamofireImage.modulemap */,
+				3F6C3362A9AA1E1FB99F540BEB9E81DE /* AlamofireImage.xcconfig */,
+				4DF5F9903F889BF4AEE785A9994FAA55 /* AlamofireImage-dummy.m */,
+				56386CDF2A693A571D0CE6C74275DE96 /* AlamofireImage-prefix.pch */,
+				A10C6B6EA9B703212E5C85B98C0AD9AF /* AlamofireImage-umbrella.h */,
+				C2ACD6307ACE8B4CC11C0A8A960C887C /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			path = "../Target Support Files/AlamofireImage";
 			sourceTree = "<group>";
 		};
-		43C05FA66A5D57A418D61E5B836F3EA0 /* Resources */ = {
+		46DF95239784BC9FD06F330E2ED89A41 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				EA2340F4D2055563A5D9ECD22D5BDE60 /* DownView.bundle */,
+				4084A3A20B63BC03BF52A0B0A17263B9 /* AFError.swift */,
+				70CE5268AA1488CCE694BABD871EB35C /* Alamofire.swift */,
+				B22E8E230652D181C09B688B3C6DE8CA /* DispatchQueue+Alamofire.swift */,
+				DE6CFC6AC78DC90B7D60F6A0D353D927 /* MultipartFormData.swift */,
+				769CC0466FB22DF30E006AA6B4502EE5 /* NetworkReachabilityManager.swift */,
+				568CB827FBDD747EE9D4A09049045784 /* Notifications.swift */,
+				F09854D9D54C3B405A90D24B95C7A589 /* ParameterEncoding.swift */,
+				163A8B47B9A671F3B7FD1617EB71FF25 /* Request.swift */,
+				FB7D7702172B6BD8FEA2DD1B85C95F05 /* Response.swift */,
+				10D7F897BD9A0FDF2C22940823429BCC /* ResponseSerialization.swift */,
+				61F43113024EB023D6B3662DC4C8BF9A /* Result.swift */,
+				0E3C5DD16D27517E80B6A3CCD221B788 /* ServerTrustPolicy.swift */,
+				F1087410AADB338027065EA59AC70416 /* SessionDelegate.swift */,
+				97CB24EB9A15C74983D5C37A30FD7689 /* SessionManager.swift */,
+				6B4E815DBB3FF4070D6B74B3A78189BA /* TaskDelegate.swift */,
+				257252E765C969AE70D1FF6FDD41AE28 /* Timeline.swift */,
+				6B7DE1D7892F89A293D749D5426519B8 /* Validation.swift */,
+				EE7C305194CB523D69502941E267573A /* Support Files */,
 			);
-			name = Resources;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		5126C6BBFCBC20B71F5CD41894BE2713 /* Down */ = {
+		5118817492D59DB1F20A957A5ED08708 /* Down */ = {
 			isa = PBXGroup;
 			children = (
-				BD0AB38F521D149D362E6B6311748C4B /* blocks.c */,
-				CE31981C6A716FCA02E6EEB0EB5ADA2D /* buffer.c */,
-				FFFF1DF1F8430404061B2FE9F2B8ECD6 /* buffer.h */,
-				1570277CE81EDCFBB3959A720CB50F23 /* case_fold_switch.inc */,
-				51AD3AFB46787D0D8A638D064B24DC30 /* chunk.h */,
-				7EA73873C9D6ABA71F3C50760ED03053 /* cmark.c */,
-				47157936ABA427264A8788BBA5FC48B0 /* cmark.h */,
-				00B571DA1C968FF3E29EBC0F3B1A0A63 /* cmark_ctype.c */,
-				AFC23DFAC082BDAB51DE79A8868734CB /* cmark_ctype.h */,
-				E859A9DE8511A524C9FA02AEF4E9254F /* cmark_export.h */,
-				FA21B2CCA36358CC844D59699AA88F40 /* cmark_version.h */,
-				5FA88F0E18029EF50E1A383001FAC33A /* commonmark.c */,
-				1471119F37D7F358F41AD5167D56482A /* config.h */,
-				5FAF10CF456C79616B77DB2906D8A4D9 /* COPYING */,
-				E464F3E0EEF476778F4EE88D3CDCE703 /* debug.h */,
-				0EB9EF2DFEC73F08FA407623F1A55C79 /* Down.h */,
-				E177E4BEB262D6C2CC2A49AE45D498A5 /* Down.swift */,
-				4DF0545DC4D9E99AD6FEC063FFC59DEB /* DownASTRenderable.swift */,
-				10F8122FAD5E33BB0F4DC03D0A32F554 /* DownAttributedStringRenderable.swift */,
-				3DBF9EBC3079A93719411A487BD12F8E /* DownCommonMarkRenderable.swift */,
-				EA6D884FDE063A04685B66964F756A5D /* DownErrors.swift */,
-				5D13FB44471F6264FBBDBFC88971094C /* DownGroffRenderable.swift */,
-				117B55D6F3AAF3E3CAFF3CFB26FA7083 /* DownHTMLRenderable.swift */,
-				EC36248B6343B959837BF28FAB859D9F /* DownLaTeXRenderable.swift */,
-				95843244AC85FE8761B6A99BE35BF3BB /* DownOptions.swift */,
-				5AC6D7A798B673DD50AF228B09A99FF6 /* DownRenderable.swift */,
-				5F09879F7C27002FB06A25584DF7BEFA /* DownView.swift */,
-				178DBAA3F8CE55EF142AAB50B449B454 /* DownXMLRenderable.swift */,
-				7C1D93650A37A9CF1E05C3BE3E629C89 /* entities.inc */,
-				E1EDF0D188FFBB23D0D3FFF0899F6130 /* houdini.h */,
-				DA4B7EA4AB42F80FB2018D743A6AFBE2 /* houdini_href_e.c */,
-				E570C52FB5B76ACA58317DC0BA44DECC /* houdini_html_e.c */,
-				4F3D436F471789E01FCD42C904016602 /* houdini_html_u.c */,
-				0BF32D13B3256FA465E5CF73A97B4FDA /* html.c */,
-				91A04ACA06CD629E834EBF9D59726CE7 /* html_unescape.h */,
-				7FBA1C3A54BB9828BC0C1E2351671EA5 /* inlines.c */,
-				EDA7C98637DC878446DE8207E74827E2 /* inlines.h */,
-				9C6F173A89A6DFB2AB937454A0F1195E /* iterator.c */,
-				8BE0B7AF1861D763BC4CD20492839276 /* iterator.h */,
-				8DF526112C4DF430FE6C3A3BA5BF4ADE /* latex.c */,
-				0EABD49B02C0EF7F554DC6BAE6E9067E /* man.c */,
-				7BFDEA0F295B2A8949069B583E550F85 /* module.modulemap */,
-				360B2DB8B2CDA5A866CC042A921C1619 /* node.c */,
-				EEF4BF18A3702CCDCA02721DA2EFD6B7 /* node.h */,
-				9369057150918A6AE238E3CCF76C440E /* NSAttributedString+HTML.swift */,
-				0E2E3F11C89C51521CCA20B7CC449B93 /* parser.h */,
-				DAF252AE9D4847CCB9C2C6F4A4CF04F0 /* references.c */,
-				AFC8C15DAFDACDD2C84E395381E8B46F /* references.h */,
-				8CCD2AF57A30588E61894AD51DA3B7C4 /* render.c */,
-				20F60E2FCDAA62F3FA00B5A89C487FEC /* render.h */,
-				ED81F8D03A049FD5A8D4247D4C2DB99F /* scanners.c */,
-				2BC04448AD93242B1D57F5AF71C49495 /* scanners.h */,
-				EADFFE39AEA8EC08BB6BEE4659D27DCB /* String+ToHTML.swift */,
-				496BD1578B4E7E3FFBADCA54D886DF14 /* utf8.c */,
-				8D6973055FC691797A1CF8D91A3506FF /* utf8.h */,
-				DF5FC733F84E7A7669A0E000036DA9A5 /* xml.c */,
-				43C05FA66A5D57A418D61E5B836F3EA0 /* Resources */,
-				F9FEF509B9EA328C055DA3001D67B97E /* Support Files */,
+				AA1ADB601BD719BA7A8FD51C3EDC19A3 /* blocks.c */,
+				A545E8E085776E88FAA5E7580976BC6B /* buffer.c */,
+				E37FF4389BFDA34479F8AA6CCDFC0BD4 /* buffer.h */,
+				8288891E409B24AC2AAB75223B371C03 /* case_fold_switch.inc */,
+				65396DE60F447A3AE4AAC0B644C778B4 /* chunk.h */,
+				33F6D5DA38FC822CDBA82DDE946AB799 /* cmark.c */,
+				C0FAF777262B3D7850EA43241186F318 /* cmark.h */,
+				4903030D05B6EBC17015381B0EC3BEC6 /* cmark_ctype.c */,
+				5DBE4C8C48D21A255B8A72F4C2771F8A /* cmark_ctype.h */,
+				B16780DF4A64729C5CB1FDA4E2C902F9 /* cmark_export.h */,
+				1C392C3D8D1DB781FC9C118FE8F48E72 /* cmark_version.h */,
+				432250C2A4139280B8DA78DD717575CB /* commonmark.c */,
+				14674A6601FFC8A3896A49D938218D44 /* config.h */,
+				00C04AD80CDD709A595E015A577F89F6 /* COPYING */,
+				28600D84CC8387EDB6BDD0B1661CFD13 /* debug.h */,
+				05069FB71F876EFB7EDB2ED2FBD374D3 /* Down.h */,
+				0D161D8C388EB3EC048032377B107A8F /* Down.swift */,
+				FFB509843067E50B730B9FA71DAE0539 /* DownASTRenderable.swift */,
+				53B9426415842F6E5326547723B5A102 /* DownAttributedStringRenderable.swift */,
+				22E9A99D789FE5FB207E8119728CAEA6 /* DownCommonMarkRenderable.swift */,
+				0D2A35884F9887E59804B77DB5E0E54E /* DownErrors.swift */,
+				FF512603BD6B78726B709F391958AE2E /* DownGroffRenderable.swift */,
+				7735F4988ACE9B4F212ADAC1388A697B /* DownHTMLRenderable.swift */,
+				895B5CB2B8E37D701B4939F5F8AB923D /* DownLaTeXRenderable.swift */,
+				A8F5EACA260B40E86212A5C5401B11E1 /* DownOptions.swift */,
+				0AD079E44867B395AFC435035A44DF40 /* DownRenderable.swift */,
+				D65B9C3533E56319F28927C2A3A0ED00 /* DownView.swift */,
+				7B1A48A2673E86554A78335DEFFF6689 /* DownXMLRenderable.swift */,
+				4C07953B62D7BA32EC141AAB706BD425 /* entities.inc */,
+				C4F4481068DEA5212177E404D6A170C4 /* houdini.h */,
+				7E9B81B3F56677BEE46B9ACF82AF3393 /* houdini_href_e.c */,
+				9E586A92DAB9210F2E710FC019DFDA83 /* houdini_html_e.c */,
+				CDC77E8EF9B74239B6412F77C9CD27BB /* houdini_html_u.c */,
+				FC813204CF2FEBE6384D16A34CE8827B /* html.c */,
+				5C480C5BB9FE185B07750F98D84A74A0 /* html_unescape.h */,
+				96345F73AF066E37E1C599C13DD01998 /* inlines.c */,
+				1B0D16F3F96F6BC002596E5BA9FFCC3A /* inlines.h */,
+				EBD7983CB066DA4F08F3015F72BEC720 /* iterator.c */,
+				D06110E6D8BA71A01ADBCAEF66A3F047 /* iterator.h */,
+				4C573B37047B5BC67B5D364419BD67DB /* latex.c */,
+				BBAC89C37D9D9D0A64F190AB72231733 /* man.c */,
+				EA8E38A8FAD86A5A66B69B42AC09EC39 /* module.modulemap */,
+				44237BEE611A06B3AF8375A06C928E99 /* node.c */,
+				1363246AA61C0A9F075A7F3FE43F4CE5 /* node.h */,
+				29BC0C834AB659B0929B46B9F0E2C9F8 /* NSAttributedString+HTML.swift */,
+				BBBBE8A1FDFC33B4339D42BCA39ECFB2 /* parser.h */,
+				147CAA6E3BB87CBB1D5B8BA759DDF81C /* references.c */,
+				408E15C73686A513E4CEAA94FE78BC3A /* references.h */,
+				36B93AB833601533A78A7334D1E7021E /* render.c */,
+				E33F374B40AF0F348579AF1679A88002 /* render.h */,
+				2BBAA2D6581D4510D08A7F5E13FFF151 /* scanners.c */,
+				78ED6CC6FFB006F807805E0C687DF1FD /* scanners.h */,
+				800717244E9DE1E44043299D0BEC658F /* String+ToHTML.swift */,
+				ADA0ED04EFB2C8C1374909C9C6DC79E7 /* utf8.c */,
+				D17A2B71087B3D8E5F9936F01E06D9EE /* utf8.h */,
+				2726E0271D83DB7599F1BA46A62A75DD /* xml.c */,
+				6C807E084909DF786EDA458E0136F3D6 /* Resources */,
+				9A37A63C012CD41736ED70E4684527BE /* Support Files */,
 			);
 			name = Down;
 			path = Down;
 			sourceTree = "<group>";
 		};
-		6EB513923315AE27DA55715845809454 /* Pods */ = {
+		55905509B7350FE76286C5469FB3754B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD76DCECFC776354625E6B83E00B2245 /* Alamofire */,
-				FA64170991530A2566E761DC43001754 /* AlamofireObjectMapper */,
-				5126C6BBFCBC20B71F5CD41894BE2713 /* Down */,
-				9BDDBB6B7FC4A450CFD732696CA6BE48 /* MBProgressHUD */,
-				A02BA79ECE7A4B1D4DADD7B2C62E0850 /* ObjectMapper */,
+				E32E63AC7A02B3897485F06582DE2F1C /* Info.plist */,
+				F83083546D15B74A5182F67E719A60D1 /* MBProgressHUD.modulemap */,
+				B9EACDE183907DE2F75AE2791EE96B63 /* MBProgressHUD.xcconfig */,
+				0F782AD14A00E6775D86CAD038FC247B /* MBProgressHUD-dummy.m */,
+				8DAE761BD026379D1BFD92DFF0AD9AC6 /* MBProgressHUD-prefix.pch */,
+				15624D68CF6D1A553E0EEEC4307302F6 /* MBProgressHUD-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		599EEFB6861252A1CE5FA4F7A81690FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1006EC20601F6659F0B8DE6C4871A1C /* AlamofireObjectMapper.modulemap */,
+				0B1B22F41A549CC31E65C220D0A95237 /* AlamofireObjectMapper.xcconfig */,
+				EAD32A7EE8CBC192D313BB183DD4BAAA /* AlamofireObjectMapper-dummy.m */,
+				1F8B70E0E58ECED8D882465960F27A88 /* AlamofireObjectMapper-prefix.pch */,
+				6B0AAB64C979A4D716BCEB834E48FEC2 /* AlamofireObjectMapper-umbrella.h */,
+				F90D60AF8D661B9DAC23DBF8FFA1E7F8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlamofireObjectMapper";
+			sourceTree = "<group>";
+		};
+		6666521240A3E3CC1C7978A225598635 /* AlamofireImage */ = {
+			isa = PBXGroup;
+			children = (
+				18358757FD9D87195DB549CE8D8143E3 /* AFIError.swift */,
+				717BE933D413E8020F8F96DAF9E75F21 /* Image.swift */,
+				E233D494F1A45C908F4D0D8E82875880 /* ImageCache.swift */,
+				720E98901ED7AD9BB6E1F05FED2B6CE9 /* ImageDownloader.swift */,
+				9557D98D222D1A7D4AD562DF9D620E3C /* ImageFilter.swift */,
+				FE2EF94F37C90FDB4CDBA19C189A108C /* Request+AlamofireImage.swift */,
+				29FEFC929769BF49BE7D411082FB89EB /* UIButton+AlamofireImage.swift */,
+				2A92CD39820A071654B253BA355FAA5B /* UIImage+AlamofireImage.swift */,
+				AA4A17339448EB8C0E53597FB83DBF6C /* UIImageView+AlamofireImage.swift */,
+				453E951328405867315771AB81576192 /* Support Files */,
+			);
+			name = AlamofireImage;
+			path = AlamofireImage;
+			sourceTree = "<group>";
+		};
+		6C807E084909DF786EDA458E0136F3D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16F078AB5BB7889B1008CF160563FF4A /* DownView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6CBB8EA667D58CBEE4836BF5D657E019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1716F021F00386A80CE3AE67263AFEC2 /* Alamofire.framework */,
+				4348E3570C9F6D323A975AF741135DAC /* AlamofireImage.framework */,
+				70EDCFA0E90C7330AB04126790E6F0DA /* AlamofireObjectMapper.framework */,
+				7BB74ECC2738B70906E4A54024D0CE17 /* Down.framework */,
+				D0809680A058FF82894998D71D5D889F /* MBProgressHUD.framework */,
+				83DB961AE383797492B17BE51B43BC37 /* ObjectMapper.framework */,
+				DFDBEC77361C382DF87611EA3FCB272B /* Pods_General_git_test_client.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		78ADD3212136F57E496BEB40884AE0D1 /* Targets Support Files */ = {
@@ -525,120 +661,80 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7A4E599CA04AD9ACA1AE1BB7AA1A5119 /* Frameworks */,
-				6EB513923315AE27DA55715845809454 /* Pods */,
-				E548EBF49B298D48D45E3A164F31BBFB /* Products */,
+				F8AA87F63147735D209D7EF0BBAC74A7 /* Pods */,
+				6CBB8EA667D58CBEE4836BF5D657E019 /* Products */,
 				78ADD3212136F57E496BEB40884AE0D1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		916DCD53886E2747C469A0B642BAC9B8 /* Support Files */ = {
+		9496D11D7EE86DF165EB77121A3E2ED2 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				5ED67129D54914C9EBE692F95736CDDB /* Info.plist */,
-				42484639F797B7D8BE022935EC1BE730 /* ObjectMapper.modulemap */,
-				88D850F06000E6B9A625744742991743 /* ObjectMapper.xcconfig */,
-				6E56D5F04B7FE33A289BAD2FC3E0F0DF /* ObjectMapper-dummy.m */,
-				B078D8DEAF17C13E9BD20CC804144FE4 /* ObjectMapper-prefix.pch */,
-				C4DE212337BECE412C95F5199AC5236D /* ObjectMapper-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ObjectMapper";
-			sourceTree = "<group>";
-		};
-		9947F0944E4042182DD61DA3A8EBE3E6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BEAF9D5229852815D4CD65D679B86240 /* Alamofire.modulemap */,
-				796DCDC102C5AFBDD56E1C34C3EB9195 /* Alamofire.xcconfig */,
-				D5EF9DF5BDA5C97F3D43CD1EBFB8C7C6 /* Alamofire-dummy.m */,
-				89A6309A67DDC5537C0CE23460193B34 /* Alamofire-prefix.pch */,
-				C8F26A06E81999F887013493F4A2A23C /* Alamofire-umbrella.h */,
-				7216EC3F91FC49A75025532B0CD6E463 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		9BDDBB6B7FC4A450CFD732696CA6BE48 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				D57249403BE25F7AAFF09802359D1757 /* MBProgressHUD.h */,
-				9E76B3F1F84574AE0B749B25F1763688 /* MBProgressHUD.m */,
-				2DD2C270DFD00AB569AEA1049C852368 /* Support Files */,
+				4E9D15BD87FB5BDD3955409337A2A66B /* MBProgressHUD.h */,
+				8EAC8BDDDAA2B29B9FBBA321B2EECB76 /* MBProgressHUD.m */,
+				55905509B7350FE76286C5469FB3754B /* Support Files */,
 			);
 			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		A02BA79ECE7A4B1D4DADD7B2C62E0850 /* ObjectMapper */ = {
+		9A37A63C012CD41736ED70E4684527BE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F63E447111C81D6F4CE06A2FD031725A /* CustomDateFormatTransform.swift */,
-				790C74377F9018B42492CA6D8AEB9A8E /* DataTransform.swift */,
-				7C5E7C1A7D9D81793ABBC9F27590D6F7 /* DateFormatterTransform.swift */,
-				3969A6771F268FC6C8D0823159D5C015 /* DateTransform.swift */,
-				02FED1D300B44A87059A61B59A40901B /* DictionaryTransform.swift */,
-				671BB733052AFB4F5EFA541861B8375E /* EnumOperators.swift */,
-				B17E6D0C9E147B0069A03613CBF320CF /* EnumTransform.swift */,
-				BF13B3410F3BB9D2C01135946029340F /* FromJSON.swift */,
-				F1518A8C9773EFD271822C108CC9F951 /* HexColorTransform.swift */,
-				1B9E158BADA724B2ACD1E871B8A618B7 /* ImmutableMappable.swift */,
-				CE7EB54141472ED33BF2C47D445AE042 /* ISO8601DateTransform.swift */,
-				910699F4ECD89226F30F7C79530D08F1 /* Map.swift */,
-				D0E0FA10962F29E7C43D6E3E73C5DC08 /* MapError.swift */,
-				CA82490BF2CAA6081821D4F719598643 /* Mappable.swift */,
-				1AC47C018A66716F4B1A84BD781F9162 /* Mapper.swift */,
-				70327EC76A24AE4B835CCF740BC0E12B /* NSDecimalNumberTransform.swift */,
-				F96D9FA31AB1199005588A14FF9741BC /* Operators.swift */,
-				9B6BE5810FF0F563A45455CCD98752E7 /* ToJSON.swift */,
-				80209EEC492F2C5C11380B0F50ACA015 /* TransformOf.swift */,
-				B3EBC4E63CC4A1235E3FAB81280A804B /* TransformOperators.swift */,
-				E87A2DCFA4402B2E7D4BBDBE0C85AFFB /* TransformType.swift */,
-				03A9586CD00F20AADD43718FC46EE57A /* URLTransform.swift */,
-				916DCD53886E2747C469A0B642BAC9B8 /* Support Files */,
+				725D320ECB136AAFC0948537B4438695 /* Down.modulemap */,
+				BA72FDD547C2A1CACC363EE392F204D2 /* Down.xcconfig */,
+				6474773BCE598B8B1BE87FE83A3EF742 /* Down-dummy.m */,
+				0A50C20C21CAC3C7B0154FFE04376339 /* Down-prefix.pch */,
+				307AC0A2B8772BBEC465E66296E5454C /* Down-umbrella.h */,
+				A40AF4BF596EB8B7E0CB78B0B85CB5D4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Down";
+			sourceTree = "<group>";
+		};
+		B06CE81B8B663C8722027A0500521B03 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				C4420CCA940D4245E4163281B257960B /* CustomDateFormatTransform.swift */,
+				BF465F2ED8CDEC7B7DE34069E30E0942 /* DataTransform.swift */,
+				19ECDB333586A4E53A2C9A691E3ABB14 /* DateFormatterTransform.swift */,
+				54E18E5047EB64DC1D8BA041F4790DA8 /* DateTransform.swift */,
+				4B5085BCF13F897B6CED89A903E4B8D8 /* DictionaryTransform.swift */,
+				6F927A7FFB8E1FAEF14A4CED27F9A23A /* EnumOperators.swift */,
+				0C63CF9E59E006E3DD8CD2FCFF907595 /* EnumTransform.swift */,
+				D2F45E674C2C7ADF439B381703CA6A7D /* FromJSON.swift */,
+				5832894778EC75379F04CF0D40BE6DF3 /* HexColorTransform.swift */,
+				B626763B735B212819EF4E4E0191FDC6 /* ImmutableMappable.swift */,
+				2C25A09CEE398DABE2098779E5ACE9A2 /* ISO8601DateTransform.swift */,
+				FB6BDB5140794526934C79D78157503C /* Map.swift */,
+				A2D19FC13A0AFC587B7827FE722CA8AA /* MapError.swift */,
+				C61AC47C303AC27CC5D692C88E3A2CFA /* Mappable.swift */,
+				0F71B8A07799A85FCB09D696E93C1304 /* Mapper.swift */,
+				BD84B4F704712876BD460B7C9343F9B8 /* NSDecimalNumberTransform.swift */,
+				45D109D48CDC86811C0DBC0C3B2A5CEA /* Operators.swift */,
+				90276A8AC5864C767847D8A7AB414BF3 /* ToJSON.swift */,
+				420D735B5B43B1C3FEE11E58DDA6ADCB /* TransformOf.swift */,
+				A76013F2C6AC9181EDA449AE015D464F /* TransformOperators.swift */,
+				CDEEEF53B349FE7033DA7E6783FF98A6 /* TransformType.swift */,
+				CC5B1036FE7D1E712280AE7CA13A0129 /* URLTransform.swift */,
+				C512A50757C3C625DB76405387F6FC9D /* Support Files */,
 			);
 			name = ObjectMapper;
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
-		C118B6D346E1344ACDCB7CD27C3BC71A /* Support Files */ = {
+		C512A50757C3C625DB76405387F6FC9D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9070238E293CFFF91F15DFBDDF3DEF55 /* AlamofireObjectMapper.modulemap */,
-				3E4C4EEF2F958775B9E806F76DB067BB /* AlamofireObjectMapper.xcconfig */,
-				1AA4560433E0AA40D860F9AEF668F029 /* AlamofireObjectMapper-dummy.m */,
-				929FDEBA3F0D251DA5A8035E92D8B31A /* AlamofireObjectMapper-prefix.pch */,
-				16513B9622B7F464BC11789AE2608CFF /* AlamofireObjectMapper-umbrella.h */,
-				001EF0776087896EDE96200647391C8C /* Info.plist */,
+				0CDBBB80EC570B26333C936C674891CD /* Info.plist */,
+				CAB56FD95BF7C0F01CC9E9CE95BA313B /* ObjectMapper.modulemap */,
+				5FCC19AC906F3B6516AF97A378E767E3 /* ObjectMapper.xcconfig */,
+				7ADF8C0069D731553F660075626923FF /* ObjectMapper-dummy.m */,
+				F35B09B007D733B317A00E44F1927406 /* ObjectMapper-prefix.pch */,
+				EB650AB04A8B799A317A982017EB8567 /* ObjectMapper-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AlamofireObjectMapper";
-			sourceTree = "<group>";
-		};
-		CD76DCECFC776354625E6B83E00B2245 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				866048437B7F5AB29A4CC355CC571E95 /* AFError.swift */,
-				4A1CF5254D055C00C927C76EC80CF829 /* Alamofire.swift */,
-				45C39BD0C0C9B9BAD3253D88A6593166 /* DispatchQueue+Alamofire.swift */,
-				CE3D55BDAEC4F54A34FA0F11AED4BFB6 /* MultipartFormData.swift */,
-				C5CEBB7E4FF764CFA7C5B6B3AC39A70A /* NetworkReachabilityManager.swift */,
-				B341C5D8D00F060D48177275717765A3 /* Notifications.swift */,
-				AA19545D29DDFC95D39D644A634C8FDE /* ParameterEncoding.swift */,
-				7686722E5769187FFE881D0D7B3E72D1 /* Request.swift */,
-				5B57955AC8542676B003EA5AD5796089 /* Response.swift */,
-				26653BB2EC801BF84818D997885F928B /* ResponseSerialization.swift */,
-				95A9021B9F96E549510DE30F9A39CF72 /* Result.swift */,
-				4A3EE3D1BA50110CCE7E331E88CB3D55 /* ServerTrustPolicy.swift */,
-				AB57FCEDDBCECBF3CE888CD9CDE5C06F /* SessionDelegate.swift */,
-				FEECE2A92EA8E77E1B4F989E30426DEC /* SessionManager.swift */,
-				4B36BFD9EF38AD3071D4F530F433EACD /* TaskDelegate.swift */,
-				B00B78C82E92F18A4D7B98700AF1EB8E /* Timeline.swift */,
-				4271DA2BDCEBE29993F2DA0F144F1CA1 /* Validation.swift */,
-				9947F0944E4042182DD61DA3A8EBE3E6 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
+			path = "../Target Support Files/ObjectMapper";
 			sourceTree = "<group>";
 		};
 		D9EF7DCE8733E2591AB3906923E36828 /* Pods-General-git-test-client */ = {
@@ -659,41 +755,31 @@
 			path = "Target Support Files/Pods-General-git-test-client";
 			sourceTree = "<group>";
 		};
-		E548EBF49B298D48D45E3A164F31BBFB /* Products */ = {
+		EE7C305194CB523D69502941E267573A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5ECBC8022EAAA9DC74B964C016B1E3F /* Alamofire.framework */,
-				39309CA41B40A02965F612AF3B1CF494 /* AlamofireObjectMapper.framework */,
-				5C0BEDADD2E5ABAE41A38BBA9D6F5A7C /* Down.framework */,
-				B3A86FB9D2623E622A1504B0B69AC124 /* MBProgressHUD.framework */,
-				743055D0A5A42A191D30E53CCD01CC6C /* ObjectMapper.framework */,
-				8A9DE0DA251A3DF89B80ABAD2B60392B /* Pods_General_git_test_client.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F9FEF509B9EA328C055DA3001D67B97E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B886D964438C3D548FFE3E95BAEA6FDD /* Down.modulemap */,
-				479BE498F50EF01D3594D936BC966A11 /* Down.xcconfig */,
-				2FF001F66BF916487FF75DBC1E074B41 /* Down-dummy.m */,
-				D028A7F47CF2106D573479FB82DCE72F /* Down-prefix.pch */,
-				2CFA2F9CB802826890A03A983A473D1E /* Down-umbrella.h */,
-				A43736790A0166C16843553D7CB8D8B3 /* Info.plist */,
+				B37A24CCCF6A8BAB753D906DBC612BFF /* Alamofire.modulemap */,
+				0E7B8A9C855FF0842FAA028D62BB0A27 /* Alamofire.xcconfig */,
+				ED3F4D29F349059F8C54F9BA2582D78E /* Alamofire-dummy.m */,
+				BB9C74812B66FD61A536130948D94C8B /* Alamofire-prefix.pch */,
+				844C089A8E7B099EB80D2E07797F5F30 /* Alamofire-umbrella.h */,
+				3C60D31D21F6446F6D1DA799B865B864 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Down";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		FA64170991530A2566E761DC43001754 /* AlamofireObjectMapper */ = {
+		F8AA87F63147735D209D7EF0BBAC74A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				72E51A6F38AD2A85E5900DD234681118 /* AlamofireObjectMapper.swift */,
-				C118B6D346E1344ACDCB7CD27C3BC71A /* Support Files */,
+				46DF95239784BC9FD06F330E2ED89A41 /* Alamofire */,
+				6666521240A3E3CC1C7978A225598635 /* AlamofireImage */,
+				1D88BAE60250450F9ED9211B418F262D /* AlamofireObjectMapper */,
+				5118817492D59DB1F20A957A5ED08708 /* Down */,
+				9496D11D7EE86DF165EB77121A3E2ED2 /* MBProgressHUD */,
+				B06CE81B8B663C8722027A0500521B03 /* ObjectMapper */,
 			);
-			name = AlamofireObjectMapper;
-			path = AlamofireObjectMapper;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -708,11 +794,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25FD6D40A884DD40ED3E9404CD271FEF /* Headers */ = {
+		3572BA0CB1804A82ABD2A72EFF8B1B1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431F5C370FFA87881060920C108FB2CB /* Pods-General-git-test-client-umbrella.h in Headers */,
+				CFCD28EE5FB5417AA4BE23F3EE9E61C6 /* Pods-General-git-test-client-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +853,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB21FD03B7703901958C3CE43325DAE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EDA9ED83F4442303A46839027E152E /* AlamofireImage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -784,7 +878,7 @@
 			);
 			name = ObjectMapper;
 			productName = ObjectMapper;
-			productReference = 743055D0A5A42A191D30E53CCD01CC6C /* ObjectMapper.framework */;
+			productReference = 83DB961AE383797492B17BE51B43BC37 /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
@@ -801,7 +895,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = B3A86FB9D2623E622A1504B0B69AC124 /* MBProgressHUD.framework */;
+			productReference = D0809680A058FF82894998D71D5D889F /* MBProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		43134A787828ADAA327E8EB54C1E5F6B /* Down */ = {
@@ -819,7 +913,30 @@
 			);
 			name = Down;
 			productName = Down;
-			productReference = 5C0BEDADD2E5ABAE41A38BBA9D6F5A7C /* Down.framework */;
+			productReference = 7BB74ECC2738B70906E4A54024D0CE17 /* Down.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C32235464FB934E885BED054B696A36 /* Pods-General-git-test-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8C144AB3D1455737DFF3F5EAB3FC9B /* Build configuration list for PBXNativeTarget "Pods-General-git-test-client" */;
+			buildPhases = (
+				DE95580ECC42E633899166E1DDBA00FA /* Sources */,
+				EFEE70466CFA36AD4C17A66967F4ED25 /* Frameworks */,
+				3572BA0CB1804A82ABD2A72EFF8B1B1E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6749234BF58E16E5E0E6C19BFEEE9CE1 /* PBXTargetDependency */,
+				99CA68DA5C19823CE72A8546FE20DFD8 /* PBXTargetDependency */,
+				A7E397783BC8B04F68C3AD977059AF97 /* PBXTargetDependency */,
+				D054B85FFACF6154B76820724DE832EF /* PBXTargetDependency */,
+				95A748ECB9E9830FA11C9BA0097CFB3B /* PBXTargetDependency */,
+				0584A183E52FC42265E312B1B692EEB3 /* PBXTargetDependency */,
+			);
+			name = "Pods-General-git-test-client";
+			productName = "Pods-General-git-test-client";
+			productReference = DFDBEC77361C382DF87611EA3FCB272B /* Pods_General_git_test_client.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -836,7 +953,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = B5ECBC8022EAAA9DC74B964C016B1E3F /* Alamofire.framework */;
+			productReference = 1716F021F00386A80CE3AE67263AFEC2 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9502FB01641FBABB78522037E882757B /* AlamofireObjectMapper */ = {
@@ -855,29 +972,25 @@
 			);
 			name = AlamofireObjectMapper;
 			productName = AlamofireObjectMapper;
-			productReference = 39309CA41B40A02965F612AF3B1CF494 /* AlamofireObjectMapper.framework */;
+			productReference = 70EDCFA0E90C7330AB04126790E6F0DA /* AlamofireObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2ECC10F204D43AB32BB81B4A14E40D5 /* Pods-General-git-test-client */ = {
+		9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCB4F35E88E68F8CA8196B2BF6D86828 /* Build configuration list for PBXNativeTarget "Pods-General-git-test-client" */;
+			buildConfigurationList = 01F2198AF9DCCF3700AE9DD21E64D480 /* Build configuration list for PBXNativeTarget "AlamofireImage" */;
 			buildPhases = (
-				0867F51080497985D799FE869818CAE3 /* Sources */,
-				481685FDBF6FCEFB27E95F515478987C /* Frameworks */,
-				25FD6D40A884DD40ED3E9404CD271FEF /* Headers */,
+				89780FCE56CA2BB731B3A99F5FC88440 /* Sources */,
+				BF98FBBDC964E0CC738F6B323B4C1BB8 /* Frameworks */,
+				EB21FD03B7703901958C3CE43325DAE9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				318CCC607DF5FA35A67AEF53A2942FD3 /* PBXTargetDependency */,
-				780C896FFF8272CC93736965FC11CA1F /* PBXTargetDependency */,
-				0C5DA46319049D25993A1FFB8AB592FE /* PBXTargetDependency */,
-				DC89FE2CEB58DBB42CEBA7085719BAEE /* PBXTargetDependency */,
-				4F6A54423993A29F04B9F38776B51811 /* PBXTargetDependency */,
+				8937A2057A0DAADF003B7C65E7CE115D /* PBXTargetDependency */,
 			);
-			name = "Pods-General-git-test-client";
-			productName = "Pods-General-git-test-client";
-			productReference = 8A9DE0DA251A3DF89B80ABAD2B60392B /* Pods_General_git_test_client.framework */;
+			name = AlamofireImage;
+			productName = AlamofireImage;
+			productReference = 4348E3570C9F6D323A975AF741135DAC /* AlamofireImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -897,16 +1010,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E548EBF49B298D48D45E3A164F31BBFB /* Products */;
+			productRefGroup = 6CBB8EA667D58CBEE4836BF5D657E019 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */,
 				9502FB01641FBABB78522037E882757B /* AlamofireObjectMapper */,
 				43134A787828ADAA327E8EB54C1E5F6B /* Down */,
 				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
 				2F5622F3B18DF497981AB58C6D1FC72F /* ObjectMapper */,
-				A2ECC10F204D43AB32BB81B4A14E40D5 /* Pods-General-git-test-client */,
+				5C32235464FB934E885BED054B696A36 /* Pods-General-git-test-client */,
 			);
 		};
 /* End PBXProject section */
@@ -923,14 +1037,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0867F51080497985D799FE869818CAE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFA5CAEC08BBB8CB3464F3FE0F28CD72 /* Pods-General-git-test-client-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47AA244DE0C8B2C0F0A585D845356E59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -953,6 +1059,23 @@
 				D5686072DEC1A0E14F8C100FCC873F73 /* TaskDelegate.swift in Sources */,
 				E198F398404F07805E5189165F3C1E64 /* Timeline.swift in Sources */,
 				164781197625A3149B3BDBCAA2AC8CC3 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89780FCE56CA2BB731B3A99F5FC88440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0007F0502C85600F98BC8E62F739D2 /* AFIError.swift in Sources */,
+				18FE70ED14474EE6A49E85DE9C5E4C17 /* AlamofireImage-dummy.m in Sources */,
+				60E47009DC055C6C140154BC96B5C58C /* Image.swift in Sources */,
+				F254CF02931202CD44537EAD61D27BE8 /* ImageCache.swift in Sources */,
+				9D9717AC018F075F378E52B078CDBFB5 /* ImageDownloader.swift in Sources */,
+				9E686D93A33DD9756B0C21B68BD7D758 /* ImageFilter.swift in Sources */,
+				9DBB6831E79F70D2E8C4DFD169E228E2 /* Request+AlamofireImage.swift in Sources */,
+				A133EAE3F50C55B4E1A03A5F9D6B3A4B /* UIButton+AlamofireImage.swift in Sources */,
+				85B4114292AEC3C6DCD2F9500A064F9B /* UIImage+AlamofireImage.swift in Sources */,
+				36840E12F93D5E0D201B1D998B96EEB9 /* UIImageView+AlamofireImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,6 +1163,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE95580ECC42E633899166E1DDBA00FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E40F586CC2B0D325CAF7458AC4F9238 /* Pods-General-git-test-client-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC260FF3F4F35AA2530094D33C6A416B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1052,23 +1183,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C5DA46319049D25993A1FFB8AB592FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Down;
-			target = 43134A787828ADAA327E8EB54C1E5F6B /* Down */;
-			targetProxy = 3C1D4706DB12942ADA4B50225BBE7284 /* PBXContainerItemProxy */;
-		};
-		318CCC607DF5FA35A67AEF53A2942FD3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 1947C24836A9D4B08C13B29971B4A7EB /* PBXContainerItemProxy */;
-		};
-		4F6A54423993A29F04B9F38776B51811 /* PBXTargetDependency */ = {
+		0584A183E52FC42265E312B1B692EEB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjectMapper;
 			target = 2F5622F3B18DF497981AB58C6D1FC72F /* ObjectMapper */;
-			targetProxy = B3B174D3B350424EAAD52501F4933A7B /* PBXContainerItemProxy */;
+			targetProxy = D7994FB6DC6593B37A1840A21193B8B4 /* PBXContainerItemProxy */;
 		};
 		60F02DEEA23633EE767FA0E4412FEA85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1076,11 +1195,23 @@
 			target = 2F5622F3B18DF497981AB58C6D1FC72F /* ObjectMapper */;
 			targetProxy = C2A743750D8435124390DA2CA737665B /* PBXContainerItemProxy */;
 		};
-		780C896FFF8272CC93736965FC11CA1F /* PBXTargetDependency */ = {
+		6749234BF58E16E5E0E6C19BFEEE9CE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AlamofireObjectMapper;
-			target = 9502FB01641FBABB78522037E882757B /* AlamofireObjectMapper */;
-			targetProxy = 8130289B94E2D83538702D77D72FC42A /* PBXContainerItemProxy */;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = FE976B7861025D669BA0CDF4C76DDBAF /* PBXContainerItemProxy */;
+		};
+		8937A2057A0DAADF003B7C65E7CE115D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = A1758AA696D56310AA192B587162169A /* PBXContainerItemProxy */;
+		};
+		95A748ECB9E9830FA11C9BA0097CFB3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
+			targetProxy = 12A64FD1C03FC44878B070C56F7ABFC0 /* PBXContainerItemProxy */;
 		};
 		98235C4BCA516C9911E228A502FE834A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1088,18 +1219,30 @@
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = A04F064E4A878D0A36386C26C1925C4F /* PBXContainerItemProxy */;
 		};
-		DC89FE2CEB58DBB42CEBA7085719BAEE /* PBXTargetDependency */ = {
+		99CA68DA5C19823CE72A8546FE20DFD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
-			targetProxy = 5FA06A916A793D28A6D14C122A822F69 /* PBXContainerItemProxy */;
+			name = AlamofireImage;
+			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
+			targetProxy = 82370B887A1B805FE99FE4DB5DE8DB66 /* PBXContainerItemProxy */;
+		};
+		A7E397783BC8B04F68C3AD977059AF97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireObjectMapper;
+			target = 9502FB01641FBABB78522037E882757B /* AlamofireObjectMapper */;
+			targetProxy = 04E53853D9572EA9299CF82E3B820B5A /* PBXContainerItemProxy */;
+		};
+		D054B85FFACF6154B76820724DE832EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Down;
+			target = 43134A787828ADAA327E8EB54C1E5F6B /* Down */;
+			targetProxy = A1D13135FF1D8E4CDA21DD6CFA50899A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 796DCDC102C5AFBDD56E1C34C3EB9195 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 0E7B8A9C855FF0842FAA028D62BB0A27 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1173,7 +1316,266 @@
 			};
 			name = Debug;
 		};
-		1B22FD3698BCE10E3D1E5F5725504825 /* Debug */ = {
+		168AC353350A012966FF45AF002B7312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6C3362A9AA1E1FB99F540BEB9E81DE /* AlamofireImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlamofireImage/AlamofireImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AlamofireImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A7D61BFAF476FFEAAC1C3C5B50DD91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EACDE183907DE2F75AE2791EE96B63 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60D7D933B7F2DFAA772AB877D2752E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCC19AC906F3B6516AF97A378E767E3 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		708A3EB40A9780E5EFBACFC2C752A79A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6C3362A9AA1E1FB99F540BEB9E81DE /* AlamofireImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlamofireImage/AlamofireImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AlamofireImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		873A2860EFDAFD6D6FCCAC77051772BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA72FDD547C2A1CACC363EE392F204D2 /* Down.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Down/Down-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Down/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Down/Down.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Down;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E5E6E59AEF98B901DA4F30FDA0B0F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1B22F41A549CC31E65C220D0A95237 /* AlamofireObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AlamofireObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CCADF4D45EB042A2EF8AD2A35FC981E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1B22F41A549CC31E65C220D0A95237 /* AlamofireObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AlamofireObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3471BA9AAE4C4DAE00A39931C1B0D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCC19AC906F3B6516AF97A378E767E3 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4596DA7AD49FB2C944B7A93FFACEF62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F64EDD7B113672CE69D946DCDE0483F9 /* Pods-General-git-test-client.debug.xcconfig */;
 			buildSettings = {
@@ -1209,7 +1611,39 @@
 			};
 			name = Debug;
 		};
-		522F5096F7BA588EAD47F1F30399F520 /* Release */ = {
+		D75065D84EBB32D4AF0CA10C29B62DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EACDE183907DE2F75AE2791EE96B63 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7E80CDCA699266FD4F7B521E53F75D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52580098A3FB05EAEF33A12BC987E5E8 /* Pods-General-git-test-client.release.xcconfig */;
 			buildSettings = {
@@ -1243,232 +1677,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		5A7D61BFAF476FFEAAC1C3C5B50DD91C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A52C9AF2B10BBE354417A15F98725E70 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		60D7D933B7F2DFAA772AB877D2752E68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88D850F06000E6B9A625744742991743 /* ObjectMapper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		873A2860EFDAFD6D6FCCAC77051772BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 479BE498F50EF01D3594D936BC966A11 /* Down.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Down/Down-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Down/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Down/Down.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Down;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8E5E6E59AEF98B901DA4F30FDA0B0F32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E4C4EEF2F958775B9E806F76DB067BB /* AlamofireObjectMapper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlamofireObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AlamofireObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9CCADF4D45EB042A2EF8AD2A35FC981E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E4C4EEF2F958775B9E806F76DB067BB /* AlamofireObjectMapper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlamofireObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AlamofireObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B3471BA9AAE4C4DAE00A39931C1B0D0B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88D850F06000E6B9A625744742991743 /* ObjectMapper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D75065D84EBB32D4AF0CA10C29B62DBB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A52C9AF2B10BBE354417A15F98725E70 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1512,7 +1720,7 @@
 		};
 		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 796DCDC102C5AFBDD56E1C34C3EB9195 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 0E7B8A9C855FF0842FAA028D62BB0A27 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1545,7 +1753,7 @@
 		};
 		FA04C959B9DB8918940460D3EA32D0B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 479BE498F50EF01D3594D936BC966A11 /* Down.xcconfig */;
+			baseConfigurationReference = BA72FDD547C2A1CACC363EE392F204D2 /* Down.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1579,6 +1787,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01F2198AF9DCCF3700AE9DD21E64D480 /* Build configuration list for PBXNativeTarget "AlamofireImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708A3EB40A9780E5EFBACFC2C752A79A /* Debug */,
+				168AC353350A012966FF45AF002B7312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8C144AB3D1455737DFF3F5EAB3FC9B /* Build configuration list for PBXNativeTarget "Pods-General-git-test-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4596DA7AD49FB2C944B7A93FFACEF62 /* Debug */,
+				D7E80CDCA699266FD4F7B521E53F75D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1629,15 +1855,6 @@
 			buildConfigurations = (
 				B3471BA9AAE4C4DAE00A39931C1B0D0B /* Debug */,
 				60D7D933B7F2DFAA772AB877D2752E68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCB4F35E88E68F8CA8196B2BF6D86828 /* Build configuration list for PBXNativeTarget "Pods-General-git-test-client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1B22FD3698BCE10E3D1E5F5725504825 /* Debug */,
-				522F5096F7BA588EAD47F1F30399F520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
