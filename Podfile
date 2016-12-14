@@ -8,8 +8,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 abstract_target 'General' do
 
 	pod 'AlamofireObjectMapper'
-    pod 'SwiftyMarkdown'
     pod 'MBProgressHUD'
+    pod 'Down'
 
 	target 'git-test-client' do
   	end

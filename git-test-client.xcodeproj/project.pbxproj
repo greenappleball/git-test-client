@@ -142,6 +142,8 @@
 				F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */,
 				F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */,
 				F2BD66211DFFF26300D28B8B /* RootViewController.swift */,
+				F2BD662F1E00497200D28B8B /* DetailViewController.swift */,
+				F2BD66311E013A2700D28B8B /* WebViewController.swift */,
 				F2BD662C1E00416400D28B8B /* Main.storyboard */,
 				F249BB231DFFD6C700FF8C84 /* Assets.xcassets */,
 				F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */,
@@ -151,8 +153,6 @@
 				F2BD66281E001B8100D28B8B /* Repository.swift */,
 				F2BD662A1E0036C100D28B8B /* SearchResult.swift */,
 				F2BD66331E0143A900D28B8B /* Readme.swift */,
-				F2BD662F1E00497200D28B8B /* DetailViewController.swift */,
-				F2BD66311E013A2700D28B8B /* WebViewController.swift */,
 				F2BD66371E014A7000D28B8B /* String+adding.swift */,
 			);
 			path = "git-test-client";
