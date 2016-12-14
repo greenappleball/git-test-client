@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Alamofire
 import AlamofireImage
+import AlamofireObjectMapper
 
 class RepositoryTableViewCell: UITableViewCell {
 
@@ -36,6 +38,6 @@ class RepositoryTableViewCell: UITableViewCell {
 
         let placeholderImage = UIImage(named: "first")
         let url = URL(string: (repository.owner?.avatar_url)!)!
-        imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
+        self.imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
     }
 }
