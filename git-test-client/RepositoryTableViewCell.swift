@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireObjectMapper
+import AlamofireImage
 
 class RepositoryTableViewCell: UITableViewCell {
 
@@ -35,14 +34,8 @@ class RepositoryTableViewCell: UITableViewCell {
         self.labelName.text = repository.full_name
         self.labelDescription.text = repository.description
 
-        let request  = Alamofire.download((repository.owner?.avatar_url)!)
-        request.responseData { response in
-            switch response.result {
-            case .success(let data):
-                self.imageViewAvatar.image = UIImage(data: data)
-            case .failure:
-                print("error load avatar")
-            }
-        }
+        let placeholderImage = UIImage(named: "first")
+        let url = URL(string: (repository.owner?.avatar_url)!)!
+        imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
     }
 }
