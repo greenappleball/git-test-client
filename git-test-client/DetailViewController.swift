@@ -8,23 +8,29 @@
 
 import UIKit
 import WebKit
-import SwiftyMarkdown
+import Down
 
 class DetailViewController: UIViewController, WKNavigationDelegate {
 
     var repository: Repository?
-
-    @IBOutlet weak var textView: UITextView!
+    var webView: WKWebView!
+    
+    override func loadView() {
+        self.webView = WKWebView()
+        self.webView.navigationDelegate = self
+        self.webView.allowsBackForwardNavigationGestures = true
+        self.view = self.webView
+    }
 
     override func viewDidLoad() {
         self.title = (repository?.full_name)! + "/README"
-        self.textView.dataDetectorTypes = UIDataDetectorTypes.all
         
         let network = NetworkService()
         network.loadReadme(for: self.repository!) { readme in
             if let content = readme.content {
-                let md = SwiftyMarkdown(string: content.fromBase64()!)
-                self.textView.attributedText = md.attributedString()
+                let md = Down(markdownString: content.fromBase64()!)
+                let html = try? md.toHTML()
+                self.webView.loadHTMLString(html!, baseURL: nil)
             }
         }
     }
