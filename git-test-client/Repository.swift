@@ -17,6 +17,8 @@ class Repository: Mappable {
     var description: String?
     var owner: Owner?
     var html_url: String?
+    var forks_url: String?
+    var stargazers_url: String?
 
     // Mappable
     required init?(map: Map){
@@ -30,6 +32,9 @@ class Repository: Mappable {
         html_url <- map["html_url"]
         full_name <- map["full_name"]
         description <- map["description"]
+        forks_url <- map["forks_url"]
+        stargazers_url <- map["stargazers_url"]
+        owner <- map["owner"]
     }
 }
 

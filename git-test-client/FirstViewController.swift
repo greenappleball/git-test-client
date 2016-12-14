@@ -18,7 +18,6 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "CellIdentifier")
         self.tableView.dataSource = self.dataSource
         self.tableView.delegate = self
     }

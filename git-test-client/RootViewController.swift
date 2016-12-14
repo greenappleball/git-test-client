@@ -24,7 +24,6 @@ class RootViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "CellIdentifier")
         self.tableView.delegate = self
         self.tableView.dataSource = self.dataSource
 

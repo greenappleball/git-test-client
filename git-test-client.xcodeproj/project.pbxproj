@@ -24,6 +24,7 @@
 		F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66311E013A2700D28B8B /* WebViewController.swift */; };
 		F2BD66341E0143A900D28B8B /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66331E0143A900D28B8B /* Readme.swift */; };
 		F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66371E014A7000D28B8B /* String+adding.swift */; };
+		F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F2BD66311E013A2700D28B8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F2BD66331E0143A900D28B8B /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 		F2BD66371E014A7000D28B8B /* String+adding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+adding.swift"; sourceTree = "<group>"; };
+		F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				F2BD662F1E00497200D28B8B /* DetailViewController.swift */,
 				F2BD66311E013A2700D28B8B /* WebViewController.swift */,
 				F2BD662C1E00416400D28B8B /* Main.storyboard */,
+				F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */,
 				F249BB231DFFD6C700FF8C84 /* Assets.xcassets */,
 				F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */,
 				F249BB281DFFD6C700FF8C84 /* Info.plist */,
@@ -364,6 +367,7 @@
 				F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */,
 				F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */,
 				F2BD662B1E0036C100D28B8B /* SearchResult.swift in Sources */,
+				F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */,
 				F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */,
 				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
 				F2BD66341E0143A900D28B8B /* Readme.swift in Sources */,
