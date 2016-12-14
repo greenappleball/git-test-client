@@ -9,6 +9,7 @@ abstract_target 'General' do
 
 	pod 'AlamofireObjectMapper'
     pod 'SwiftyMarkdown'
+    pod 'MBProgressHUD'
 
 	target 'git-test-client' do
   	end
