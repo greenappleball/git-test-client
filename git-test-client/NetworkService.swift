@@ -7,13 +7,25 @@
 //
 
 import Alamofire
+import ObjectMapper
 import AlamofireObjectMapper
 
 class NetworkService: NSObject {
     
-    func loadRepositories(since: String?, completionHandler: @escaping ([Repository]) -> Void) {
-        let parameters: Parameters = ["since": since ?? "0"]
-        Alamofire.request("https://api.github.com/repositories", parameters: parameters).responseArray { (response: DataResponse<[Repository]>) in
+    var url_next = "https://api.github.com/repositories"
+
+    func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
+        if self.url_next.characters.count <= 0 {
+            completionHandler([])
+        }
+
+        Alamofire.request(self.url_next).responseArray { (response: DataResponse<[Repository]>) in
+            var links = (response.response?.allHeaderFields["Link"] as! String?)!
+            let regex = try! NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: [])
+            let replacedStr = regex.stringByReplacingMatches(in: links, options: [], range: NSRange(location: 0, length: links.characters.count), withTemplate: "\"$2\": \"$1\"")
+            let dict = ("{" + replacedStr + "}").toDictionary()
+            self.url_next = dict?["next"] as! String
+
             guard let repositories = response.result.value else {
                 return
             }

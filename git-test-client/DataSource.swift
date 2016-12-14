@@ -17,16 +17,16 @@ class DataSource: NSObject, UITableViewDataSource {
         completionHandler()
     }
 
-    func load(since: String?, completionHandler: @escaping () -> Void) {
-        network.loadRepositories(since: since) {responce in
+    func load(completionHandler: @escaping () -> Void) {
+        network.loadRepositories() {responce in
             self.repositories = responce
             completionHandler()
         }
     }
 
     func loadMore(completionHandler: @escaping () -> Void) {
-        network.loadRepositories(since: nil) {responce in
-            self.repositories = responce
+        network.loadRepositories() {responce in
+            self.repositories += responce
             completionHandler()
         }
     }

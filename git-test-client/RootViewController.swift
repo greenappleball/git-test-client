@@ -12,6 +12,15 @@ import MBProgressHUD
 class RootViewController: UITableViewController {
     var dataSource = DataSource()
     
+    //
+    func hud(with text: String?) -> MBProgressHUD {
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
+        hud.backgroundView.style = .blur
+        hud.label.text = text
+        hud.mode = .text
+        return hud
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,12 +28,9 @@ class RootViewController: UITableViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self.dataSource
 
-        let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
-        hud.backgroundView.style = .blur
-        hud.label.text = "Loading..."
-        hud.mode = .text
+        let hud = self.hud(with: "Loading...")
 
-        self.dataSource.load(since: nil, completionHandler: {
+        self.dataSource.load(completionHandler: {
             self.tableView.reloadData()
             hud.hide(animated: true)
         })
@@ -47,5 +53,16 @@ class RootViewController: UITableViewController {
         performSegue(withIdentifier: "showDetailes", sender: self)
     }
     
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastElement = self.dataSource.count() - 1
+        if indexPath.row == lastElement {
+            let hud = self.hud(with: "Loading...")
+            self.dataSource.loadMore {
+                self.tableView.reloadData()
+                hud.hide(animated: true)
+            }
+        }
+    }
+
 }
 
