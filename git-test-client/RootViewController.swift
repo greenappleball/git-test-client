@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class RootViewController: UITableViewController {
     var dataSource = DataSource()
@@ -17,8 +18,15 @@ class RootViewController: UITableViewController {
         self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "CellIdentifier")
         self.tableView.delegate = self
         self.tableView.dataSource = self.dataSource
+
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
+        hud.backgroundView.style = .blur
+        hud.label.text = "Loading..."
+        hud.mode = .text
+
         self.dataSource.load(since: nil, completionHandler: {
             self.tableView.reloadData()
+            hud.hide(animated: true)
         })
     }
     

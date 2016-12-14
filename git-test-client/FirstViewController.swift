@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
 
     var dataSource = DataSource()
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,23 +40,31 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
         }
     }
 
+    //
+    func hud(with text: String?) -> MBProgressHUD {
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
+        hud.backgroundView.style = .blur
+        hud.label.text = text
+        hud.mode = .text
+        return hud
+    }
+
     // UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetailes", sender: self)
     }
 
     // UISearchBarDelegate
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        self.dataSource.clear {
-            self.tableView.reloadData()
-        }
-    }
-
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.characters.count > 0 {
-            self.dataSource.search(by: searchText, sort: nil, order: nil, completionHandler: {
+            self.timer?.invalidate()
+            self.timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
+                let hud = self.hud(with: "Searching...")
                 self.searchBar.resignFirstResponder()
-                self.tableView.reloadData()
+                self.dataSource.search(by: searchText, sort: nil, order: nil, completionHandler: {
+                    self.tableView.reloadData()
+                    hud.hide(animated: true)
+                })
             })
         } else {
             self.dataSource.clear {

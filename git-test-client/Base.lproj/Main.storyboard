@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Serach repository-->
         <scene sceneID="mCR-7O-m78">
             <objects>
                 <tableViewController id="K0L-uG-hQn" customClass="FirstViewController" customModule="git_test_client" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="rCc-MV-kZB" kind="show" identifier="showDetailes" trigger="accessoryAction" id="lNF-Ex-KpB"/>
+                                    <segue destination="Ehy-tA-7uV" kind="show" identifier="showDetailes" trigger="accessoryAction" id="P6h-U7-eB3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="K0L-uG-hQn" id="CZu-D4-Z3i"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="WTw-9h-Wj7"/>
+                    <navigationItem key="navigationItem" title="Serach repository" id="WTw-9h-Wj7"/>
                     <connections>
                         <outlet property="searchBar" destination="wq2-R1-Jh2" id="C8E-t9-QEc"/>
                     </connections>
@@ -52,11 +52,11 @@
             </objects>
             <point key="canvasLocation" x="1012" y="-510"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="FKM-hX-B8m">
             <objects>
                 <navigationController id="5KV-Jk-FbH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="we8-t6-o6b"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="first" id="we8-t6-o6b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pKt-yb-SvS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="300" y="-509"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Public repositories-->
         <scene sceneID="TDd-dC-kyx">
             <objects>
                 <tableViewController id="5hO-RK-jgv" customClass="RootViewController" customModule="git_test_client" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,11 +95,11 @@
                             <outlet property="delegate" destination="5hO-RK-jgv" id="oPn-xW-wcA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="XvQ-2q-1gC"/>
+                    <navigationItem key="navigationItem" title="Public repositories" id="XvQ-2q-1gC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wu-H1-19K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="426"/>
+            <point key="canvasLocation" x="1012" y="161"/>
         </scene>
         <!--Title-->
         <scene sceneID="7yW-9f-62t">
@@ -118,13 +118,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fE5-gh-Xrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="426"/>
+            <point key="canvasLocation" x="1809" y="-188"/>
         </scene>
-        <!--Item-->
+        <!--Repositories-->
         <scene sceneID="rIG-ZA-UuE">
             <objects>
                 <navigationController id="a57-ib-jZc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="h0l-Fe-Jnh"/>
+                    <tabBarItem key="tabBarItem" title="Repositories" id="h0l-Fe-Jnh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y3i-xa-qwb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -135,7 +135,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yo7-PE-jhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="427"/>
+            <point key="canvasLocation" x="300" y="161"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -148,32 +148,19 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="a57-ib-jZc" kind="relationship" relationship="viewControllers" id="rWS-l7-L43"/>
-                        <segue destination="5KV-Jk-FbH" kind="relationship" relationship="viewControllers" id="Ikk-i6-9Uq"/>
+                        <segue destination="5KV-Jk-FbH" kind="relationship" relationship="viewControllers" id="gBf-FQ-RKp"/>
+                        <segue destination="a57-ib-jZc" kind="relationship" relationship="viewControllers" id="ktu-wP-cw9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="-321"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="P8i-Rc-Y02">
-            <objects>
-                <viewController id="rCc-MV-kZB" customClass="DetailViewController" customModule="git_test_client" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MfD-lE-ZGB"/>
-                        <viewControllerLayoutGuide type="bottom" id="g96-Qe-mKs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PRv-Uw-yr6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="fP1-Ii-UXG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CeT-Tp-4GK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1796" y="-510"/>
+            <point key="canvasLocation" x="-487" y="-188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="P6h-U7-eB3"/>
+    </inferredMetricsTieBreakers>
 </document>
