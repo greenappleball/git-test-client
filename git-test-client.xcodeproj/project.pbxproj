@@ -10,12 +10,17 @@
 		4E7C52032669A67F57190736 /* Pods_General_git_test_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262C0E99D3A3EA18E696AB06 /* Pods_General_git_test_client.framework */; };
 		F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */; };
 		F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */; };
-		F249BB1F1DFFD6C700FF8C84 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB1E1DFFD6C700FF8C84 /* SecondViewController.swift */; };
-		F249BB221DFFD6C700FF8C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F249BB201DFFD6C700FF8C84 /* Main.storyboard */; };
 		F249BB241DFFD6C700FF8C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F249BB231DFFD6C700FF8C84 /* Assets.xcassets */; };
 		F249BB271DFFD6C700FF8C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */; };
 		F249BB321DFFD6C700FF8C84 /* git_test_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB311DFFD6C700FF8C84 /* git_test_clientTests.swift */; };
 		F249BB3D1DFFD6C700FF8C84 /* git_test_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB3C1DFFD6C700FF8C84 /* git_test_clientUITests.swift */; };
+		F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66211DFFF26300D28B8B /* RootViewController.swift */; };
+		F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66231DFFF56300D28B8B /* NetworkService.swift */; };
+		F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66251DFFF69700D28B8B /* DataSource.swift */; };
+		F2BD66291E001B8100D28B8B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* Repository.swift */; };
+		F2BD662B1E0036C100D28B8B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD662A1E0036C100D28B8B /* SearchResult.swift */; };
+		F2BD662E1E00416400D28B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD662C1E00416400D28B8B /* Main.storyboard */; };
+		F2BD66301E00497200D28B8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD662F1E00497200D28B8B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +47,6 @@
 		F249BB171DFFD6C700FF8C84 /* git-test-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "git-test-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F249BB1E1DFFD6C700FF8C84 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F249BB211DFFD6C700FF8C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F249BB231DFFD6C700FF8C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F249BB261DFFD6C700FF8C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F249BB281DFFD6C700FF8C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,13 @@
 		F249BB381DFFD6C700FF8C84 /* git-test-clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "git-test-clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F249BB3C1DFFD6C700FF8C84 /* git_test_clientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = git_test_clientUITests.swift; sourceTree = "<group>"; };
 		F249BB3E1DFFD6C700FF8C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2BD66211DFFF26300D28B8B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F2BD66231DFFF56300D28B8B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F2BD66251DFFF69700D28B8B /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		F2BD66281E001B8100D28B8B /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F2BD662A1E0036C100D28B8B /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		F2BD662D1E00416400D28B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2BD662F1E00497200D28B8B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,11 +135,16 @@
 			children = (
 				F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */,
 				F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */,
-				F249BB1E1DFFD6C700FF8C84 /* SecondViewController.swift */,
-				F249BB201DFFD6C700FF8C84 /* Main.storyboard */,
+				F2BD66211DFFF26300D28B8B /* RootViewController.swift */,
+				F2BD662C1E00416400D28B8B /* Main.storyboard */,
 				F249BB231DFFD6C700FF8C84 /* Assets.xcassets */,
 				F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */,
 				F249BB281DFFD6C700FF8C84 /* Info.plist */,
+				F2BD66231DFFF56300D28B8B /* NetworkService.swift */,
+				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
+				F2BD66281E001B8100D28B8B /* Repository.swift */,
+				F2BD662A1E0036C100D28B8B /* SearchResult.swift */,
+				F2BD662F1E00497200D28B8B /* DetailViewController.swift */,
 			);
 			path = "git-test-client";
 			sourceTree = "<group>";
@@ -262,9 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BD662E1E00416400D28B8B /* Main.storyboard in Resources */,
 				F249BB271DFFD6C700FF8C84 /* LaunchScreen.storyboard in Resources */,
 				F249BB241DFFD6C700FF8C84 /* Assets.xcassets in Resources */,
-				F249BB221DFFD6C700FF8C84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +352,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F249BB1F1DFFD6C700FF8C84 /* SecondViewController.swift in Sources */,
 				F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */,
+				F2BD662B1E0036C100D28B8B /* SearchResult.swift in Sources */,
 				F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */,
+				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
+				F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */,
+				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
+				F2BD66291E001B8100D28B8B /* Repository.swift in Sources */,
+				F2BD66301E00497200D28B8B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,20 +395,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F249BB201DFFD6C700FF8C84 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F249BB211DFFD6C700FF8C84 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F249BB261DFFD6C700FF8C84 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F2BD662C1E00416400D28B8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2BD662D1E00416400D28B8B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -584,6 +604,7 @@
 				F249BB431DFFD6C700FF8C84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F249BB441DFFD6C700FF8C84 /* Build configuration list for PBXNativeTarget "git-test-clientTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +613,7 @@
 				F249BB461DFFD6C700FF8C84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F249BB471DFFD6C700FF8C84 /* Build configuration list for PBXNativeTarget "git-test-clientUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +622,7 @@
 				F249BB491DFFD6C700FF8C84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,39 +7,53 @@
 //
 
 import UIKit
-import Alamofire
 
-class DataSource: Mappable, UITableViewDataSource {
-    var dataSource: [AnyObject] = []
+class DataSource: NSObject, UITableViewDataSource {
     let network = NetworkService()
+    var repositories: [Repository] = []
+
+    func clear(completionHandler: @escaping () -> Void) {
+        self.repositories = []
+        completionHandler()
+    }
 
     func load(since: String?, completionHandler: @escaping () -> Void) {
-        network.loadRepos(since: since) {responce in
-            self.dataSource = responce as [AnyObject]
+        network.loadRepositories(since: since) {responce in
+            self.repositories = responce
             completionHandler()
         }
     }
 
+    func loadMore(completionHandler: @escaping () -> Void) {
+        network.loadRepositories(since: nil) {responce in
+            self.repositories = responce
+            completionHandler()
+        }
+    }
+
+    func search(by text: String?, sort: String?, order: String?, completionHandler: @escaping () -> Void) {
+        network.searchRepositories(q: text, sort: sort, order: order) { responce in
+            self.repositories = responce
+            completionHandler()
+        }
+    }
+
+    func count() -> Int {
+        return repositories.count;
+    }
+
+    func item(by indexPath: NSIndexPath?) -> Repository {
+        return self.repositories[(indexPath?.row)!]
+    }
+
+    // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count;
+        return self.count();
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
+        cell.textLabel?.text = self.repositories[indexPath.row].full_name
         return cell;
-    }
-}
-
-class WeatherResponse: Mappable {
-    var location: String?
-    var threeDayForecast: [Forecast]?
-    
-    required init?(map: Map){
-        
-    }
-    
-    func mapping(map: Map) {
-        location <- map["location"]
-        threeDayForecast <- map["three_day_forecast"]
     }
 }
