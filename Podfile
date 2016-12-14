@@ -7,7 +7,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 abstract_target 'General' do
 
-	pod 'AlamofireObjectMapper'
+    pod 'AlamofireObjectMapper'
+    pod 'AlamofireImage'
     pod 'MBProgressHUD'
     pod 'Down'
 
