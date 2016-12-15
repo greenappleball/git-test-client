@@ -12,7 +12,6 @@ import AlamofireObjectMapper
 
 class NetworkService: NSObject {
     
-    let token = "ccef102942e86395e41f8c2900c47118fde5ce7a"
     var url_next = "https://api.github.com/repositories"
 
     func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
@@ -20,8 +19,7 @@ class NetworkService: NSObject {
             completionHandler([])
         }
 
-        let parameters: Parameters = ["access_token": token]
-        Alamofire.request(self.url_next, parameters: parameters).responseArray { (response: DataResponse<[Repository]>) in
+        Alamofire.request(self.url_next).responseArray { (response: DataResponse<[Repository]>) in
             let headers = response.response?.allHeaderFields
             if var links = headers?["Link"] as? String {
                 let regex = try! NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: [])
@@ -43,7 +41,7 @@ class NetworkService: NSObject {
             return
         }
 
-        var parameters: Parameters = ["access_token": token, "q": q!]
+        var parameters: Parameters = ["q": q!]
         if sort != nil {
             parameters["sort"] = sort
         }
@@ -66,8 +64,7 @@ class NetworkService: NSObject {
             return
         }
 
-        let parameters: Parameters = ["access_token": token]
-        Alamofire.request(url + "/readme", parameters: parameters).responseObject { (response: DataResponse<Readme>) in
+        Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
             guard let result = response.result.value else {
                 return
             }
@@ -80,8 +77,7 @@ class NetworkService: NSObject {
             return
         }
         
-        let parameters: Parameters = ["access_token": token]
-        Alamofire.request(url, parameters: parameters).responseObject { (response: DataResponse<Repository>) in
+        Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
             guard let result = response.result.value else {
                 return
             }
