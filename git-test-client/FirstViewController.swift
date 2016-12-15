@@ -20,6 +20,8 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         self.tableView.dataSource = self.dataSource
         self.tableView.delegate = self
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 84
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +34,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetailes"{
+        if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Search", style: .done, target: nil, action: nil)
             let vc = segue.destination as? DetailViewController
             vc?.repository = self.dataSource.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
@@ -50,7 +52,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     // UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetailes", sender: self)
+        performSegue(withIdentifier: "showDetails", sender: self)
     }
 
     // UISearchBarDelegate

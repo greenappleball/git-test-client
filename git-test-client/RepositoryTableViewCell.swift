@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import Alamofire
 import AlamofireImage
-import AlamofireObjectMapper
 
 class RepositoryTableViewCell: UITableViewCell {
 
@@ -21,6 +19,8 @@ class RepositoryTableViewCell: UITableViewCell {
     @IBOutlet weak var labelUpdate: UILabel!
     @IBOutlet weak var imageViewAvatar: UIImageView!
     
+    static let network = NetworkService()
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -35,6 +35,13 @@ class RepositoryTableViewCell: UITableViewCell {
     func update(with repository: Repository) {
         self.labelName.text = repository.full_name
         self.labelDescription.text = repository.description
+
+        RepositoryTableViewCell.network.loadDetails(for: repository) { repository in
+            self.labelStars.text = "\(repository.stargazers_count)"
+            self.labelForks.text = "\(repository.forks_count)"
+            self.labelLanguage.text = repository.language
+            self.labelUpdate.text = repository.updated_on
+        }
 
         let placeholderImage = UIImage(named: "first")
         let url = URL(string: (repository.owner?.avatar_url)!)!

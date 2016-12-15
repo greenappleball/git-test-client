@@ -26,6 +26,8 @@ class RootViewController: UITableViewController {
 
         self.tableView.delegate = self
         self.tableView.dataSource = self.dataSource
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 84
 
         let hud = self.hud(with: "Loading...")
 
@@ -41,7 +43,7 @@ class RootViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetailes"{
+        if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? DetailViewController
             vc?.repository = self.dataSource.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
@@ -49,7 +51,7 @@ class RootViewController: UITableViewController {
     }
     // UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetailes", sender: self)
+        performSegue(withIdentifier: "showDetails", sender: self)
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

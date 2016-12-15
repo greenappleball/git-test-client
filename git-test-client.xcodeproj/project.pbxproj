@@ -17,12 +17,10 @@
 		F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66211DFFF26300D28B8B /* RootViewController.swift */; };
 		F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66231DFFF56300D28B8B /* NetworkService.swift */; };
 		F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66251DFFF69700D28B8B /* DataSource.swift */; };
-		F2BD66291E001B8100D28B8B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* Repository.swift */; };
-		F2BD662B1E0036C100D28B8B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD662A1E0036C100D28B8B /* SearchResult.swift */; };
+		F2BD66291E001B8100D28B8B /* MappedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* MappedObjects.swift */; };
 		F2BD662E1E00416400D28B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD662C1E00416400D28B8B /* Main.storyboard */; };
 		F2BD66301E00497200D28B8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD662F1E00497200D28B8B /* DetailViewController.swift */; };
 		F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66311E013A2700D28B8B /* WebViewController.swift */; };
-		F2BD66341E0143A900D28B8B /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66331E0143A900D28B8B /* Readme.swift */; };
 		F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66371E014A7000D28B8B /* String+adding.swift */; };
 		F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -63,12 +61,10 @@
 		F2BD66211DFFF26300D28B8B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F2BD66231DFFF56300D28B8B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F2BD66251DFFF69700D28B8B /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		F2BD66281E001B8100D28B8B /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		F2BD662A1E0036C100D28B8B /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		F2BD66281E001B8100D28B8B /* MappedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappedObjects.swift; sourceTree = "<group>"; };
 		F2BD662D1E00416400D28B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2BD662F1E00497200D28B8B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F2BD66311E013A2700D28B8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		F2BD66331E0143A900D28B8B /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 		F2BD66371E014A7000D28B8B /* String+adding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+adding.swift"; sourceTree = "<group>"; };
 		F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,9 +149,7 @@
 				F249BB281DFFD6C700FF8C84 /* Info.plist */,
 				F2BD66231DFFF56300D28B8B /* NetworkService.swift */,
 				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
-				F2BD66281E001B8100D28B8B /* Repository.swift */,
-				F2BD662A1E0036C100D28B8B /* SearchResult.swift */,
-				F2BD66331E0143A900D28B8B /* Readme.swift */,
+				F2BD66281E001B8100D28B8B /* MappedObjects.swift */,
 				F2BD66371E014A7000D28B8B /* String+adding.swift */,
 			);
 			path = "git-test-client";
@@ -366,15 +360,13 @@
 			files = (
 				F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */,
 				F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */,
-				F2BD662B1E0036C100D28B8B /* SearchResult.swift in Sources */,
 				F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */,
 				F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */,
 				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
-				F2BD66341E0143A900D28B8B /* Readme.swift in Sources */,
 				F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */,
 				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
 				F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */,
-				F2BD66291E001B8100D28B8B /* Repository.swift in Sources */,
+				F2BD66291E001B8100D28B8B /* MappedObjects.swift in Sources */,
 				F2BD66301E00497200D28B8B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7ADBD08F149EE770BD52128 /* Pods-General-git-test-client.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "git-test-client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -538,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E352D0150D293108085BB9B5 /* Pods-General-git-test-client.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "git-test-client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

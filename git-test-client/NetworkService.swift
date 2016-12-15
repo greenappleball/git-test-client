@@ -12,6 +12,7 @@ import AlamofireObjectMapper
 
 class NetworkService: NSObject {
     
+    let token = "ccef102942e86395e41f8c2900c47118fde5ce7a"
     var url_next = "https://api.github.com/repositories"
 
     func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
@@ -19,12 +20,15 @@ class NetworkService: NSObject {
             completionHandler([])
         }
 
-        Alamofire.request(self.url_next).responseArray { (response: DataResponse<[Repository]>) in
-            var links = (response.response?.allHeaderFields["Link"] as! String?)!
-            let regex = try! NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: [])
-            let replacedStr = regex.stringByReplacingMatches(in: links, options: [], range: NSRange(location: 0, length: links.characters.count), withTemplate: "\"$2\": \"$1\"")
-            let dict = ("{" + replacedStr + "}").toDictionary()
-            self.url_next = dict?["next"] as! String
+        let parameters: Parameters = ["access_token": token]
+        Alamofire.request(self.url_next, parameters: parameters).responseArray { (response: DataResponse<[Repository]>) in
+            let headers = response.response?.allHeaderFields
+            if var links = headers?["Link"] as? String {
+                let regex = try! NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: [])
+                let replacedStr = regex.stringByReplacingMatches(in: links, options: [], range: NSRange(location: 0, length: links.characters.count), withTemplate: "\"$2\": \"$1\"")
+                let dict = ("{" + replacedStr + "}").toDictionary()
+                self.url_next = dict?["next"] as! String
+            }
 
             guard let repositories = response.result.value else {
                 return
@@ -39,7 +43,7 @@ class NetworkService: NSObject {
             return
         }
 
-        var parameters: Parameters = ["q": q ?? "dummy"]
+        var parameters: Parameters = ["access_token": token, "q": q!]
         if sort != nil {
             parameters["sort"] = sort
         }
@@ -59,7 +63,22 @@ class NetworkService: NSObject {
             return
         }
 
-        Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
+        let parameters: Parameters = ["access_token": token]
+        Alamofire.request(url + "/readme", parameters: parameters).responseObject { (response: DataResponse<Readme>) in
+            guard let result = response.result.value else {
+                return
+            }
+            completionHandler(result)
+        }
+    }
+
+    func loadDetails(for repository: Repository, completionHandler: @escaping (Repository) -> Void) {
+        guard let url = repository.url else {
+            return
+        }
+        
+        let parameters: Parameters = ["access_token": token]
+        Alamofire.request(url, parameters: parameters).responseObject { (response: DataResponse<Repository>) in
             guard let result = response.result.value else {
                 return
             }
