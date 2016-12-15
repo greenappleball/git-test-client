@@ -54,7 +54,10 @@ class NetworkService: NSObject {
             guard let results = response.result.value else {
                 return
             }
-            completionHandler(results.items!)
+            guard let items = results.items else {
+                return
+            }
+            completionHandler(items)
         }
     }
 
