@@ -28,10 +28,11 @@ class NetworkService: NSObject {
                 self.url_next = dict?["next"] as! String
             }
 
-            guard let repositories = response.result.value else {
-                return
+            if let repositories = response.result.value {
+                completionHandler(repositories)
+            } else {
+                completionHandler([])
             }
-            completionHandler(repositories)
         }
     }
     
@@ -49,13 +50,15 @@ class NetworkService: NSObject {
             parameters["order"] = order
         }
         Alamofire.request("https://api.github.com/search/repositories", parameters: parameters).responseObject { (response: DataResponse<SearchResult>) in
-            guard let results = response.result.value else {
-                return
+            if let results = response.result.value {
+                if let items = results.items {
+                    completionHandler(items)
+                } else {
+                    completionHandler([])
+                }
+            } else {
+                completionHandler([])
             }
-            guard let items = results.items else {
-                return
-            }
-            completionHandler(items)
         }
     }
 
