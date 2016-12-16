@@ -1,8 +1,8 @@
 //
-//  DetailViewController.swift
+//  ReadMeViewController.swift
 //  git-test-client
 //
-//  Created by Dmitri Petrishin on 12/13/16.
+//  Created by Dmitri Petrishin on 12/16/16.
 //  Copyright © 2016 PI. All rights reserved.
 //
 
@@ -10,10 +10,12 @@ import UIKit
 import WebKit
 import Down
 
-class DetailViewController: UIViewController, WKNavigationDelegate {
+class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
     var repository: Repository?
     var webView: WKWebView!
+
+    var addFavorite: ((Repository) -> Void)?
     
     override func loadView() {
         self.webView = WKWebView()
@@ -23,6 +25,8 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
     }
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         self.title = (repository?.full_name)! + "/README"
         
         let network = NetworkService()
@@ -35,6 +39,12 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
         }
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showWeb"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
@@ -42,4 +52,9 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
             vc?.repository = self.repository
         }
     }
+
+    @IBAction func addFavoriteHandler(_ sender: Any) {
+        self.addFavorite!(self.repository!)
+    }
+
 }

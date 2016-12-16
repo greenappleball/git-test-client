@@ -10,7 +10,17 @@ import UIKit
 import MBProgressHUD
 
 class RootViewController: UITableViewController {
-    var dataSource = DataSource()
+    var dataSource: DataSource? {
+        get {
+            guard let ds = self.tableView.dataSource else {
+                return nil
+            }
+            return ds as? DataSource
+        }
+        set {
+            self.tableView.dataSource = newValue
+        }
+    }
     
     //
     func hud(with text: String?) -> MBProgressHUD {
@@ -21,20 +31,21 @@ class RootViewController: UITableViewController {
         return hud
     }
 
+    func load() {
+        let hud = self.hud(with: "Loading...")
+
+        self.dataSource?.load(completionHandler: {
+            self.tableView.reloadData()
+            hud.hide(animated: true)
+        })
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.delegate = self
-        self.tableView.dataSource = self.dataSource
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 84
-
-        let hud = self.hud(with: "Loading...")
-
-        self.dataSource.load(completionHandler: {
-            self.tableView.reloadData()
-            hud.hide(animated: true)
-        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,8 +56,11 @@ class RootViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
-            let vc = segue.destination as? DetailViewController
-            vc?.repository = self.dataSource.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
+            let vc = segue.destination as? ReadMeViewController
+            vc?.repository = self.dataSource?.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
+            vc?.addFavorite = { repository in
+                print("\(repository)")
+            }
         }
     }
     // UITableViewDelegate
@@ -55,10 +69,10 @@ class RootViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastElement = self.dataSource.count() - 1
+        let lastElement = (self.dataSource?.count())! - 1
         if indexPath.row == lastElement {
             let hud = self.hud(with: "Loading...")
-            self.dataSource.loadMore {
+            self.dataSource?.loadMore {
                 self.tableView.reloadData()
                 hud.hide(animated: true)
             }

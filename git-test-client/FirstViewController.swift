@@ -36,7 +36,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Search", style: .done, target: nil, action: nil)
-            let vc = segue.destination as? DetailViewController
+            let vc = segue.destination as? ReadMeViewController
             vc?.repository = self.dataSource.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
         }
     }
