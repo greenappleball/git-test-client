@@ -9,14 +9,14 @@
 import UIKit
 import WebKit
 import Down
+import ObjectMapper
 
 class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
+    @IBOutlet weak var addItem: UIBarButtonItem?
     var repository: Repository?
     var webView: WKWebView!
 
-    var addFavorite: ((Repository) -> Void)?
-    
     override func loadView() {
         self.webView = WKWebView()
         self.webView.navigationDelegate = self
@@ -54,7 +54,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     }
 
     @IBAction func addFavoriteHandler(_ sender: Any) {
-        self.addFavorite!(self.repository!)
+        DataSource.add(repository: self.repository!)
     }
 
 }

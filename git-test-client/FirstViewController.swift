@@ -13,7 +13,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
 
-    var dataSource = DataSource()
+    var dataSource = DataSource(type: .search)
     var timer: Timer?
     
     override func viewDidLoad() {

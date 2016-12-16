@@ -336,6 +336,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addItem" destination="7pa-lF-hNN" id="GGH-QG-hSL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fE5-gh-Xrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -397,7 +400,7 @@
             </objects>
             <point key="canvasLocation" x="-487" y="-188"/>
         </scene>
-        <!--Public repositories-->
+        <!--Favorites-->
         <scene sceneID="DVv-sj-IJ4">
             <objects>
                 <tableViewController id="M01-zu-MeJ" customClass="RootViewController" customModule="git_test_client" customModuleProvider="target" sceneMemberID="viewController">
@@ -525,7 +528,7 @@
                             <outlet property="delegate" destination="M01-zu-MeJ" id="XBo-7T-anf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Public repositories" id="ahT-D8-bNq"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="ahT-D8-bNq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMT-aU-I55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

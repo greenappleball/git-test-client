@@ -8,9 +8,44 @@
 
 import UIKit
 
+enum Type: Int {
+    case search = 0
+    case repos_public
+    case repos_favorites
+}
+
 class DataSource: NSObject, UITableViewDataSource {
+    var type: Type
     let network = NetworkService()
     var repositories: [Repository] = []
+
+    static func documentsPath(withComponet name: String) throws -> URL {
+        let documentDirectoryURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        return documentDirectoryURL.appendingPathComponent(name)
+    }
+
+    static func add(repository: Repository) {
+        do {
+            var repos: Array<Repository> = []
+            let path = try DataSource.documentsPath(withComponet: "favorites.txt")
+            if let text = try? String(contentsOf: path, encoding: .utf8) {
+                repos = Array<Repository>(JSONString: text, context: nil)!
+            }
+            if !repos.contains(where: { (object: Repository) -> Bool in
+                return object.id == repository.id
+            }) {
+                repos.append(repository)
+                try repos.toJSONString()?.write(to: path, atomically: true, encoding: .utf8)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+
+    init(type: Type) {
+        self.type = type
+        super.init()
+    }
 
     func clear(completionHandler: @escaping () -> Void) {
         self.repositories = []
@@ -18,9 +53,24 @@ class DataSource: NSObject, UITableViewDataSource {
     }
 
     func load(completionHandler: @escaping () -> Void) {
-        network.loadRepositories() {responce in
-            self.repositories = responce
-            completionHandler()
+        if self.type == Type.repos_favorites {
+            do {
+                var repos: Array<Repository> = []
+                let path = try DataSource.documentsPath(withComponet: "favorites.txt")
+                if let text = try? String(contentsOf: path, encoding: .utf8) {
+                    repos = Array<Repository>(JSONString: text, context: nil)!
+                }
+                self.repositories = repos
+                completionHandler()
+            } catch let error as NSError {
+                print(error.localizedDescription)
+                completionHandler()
+            }
+        } else {
+            network.loadRepositories() {responce in
+                self.repositories = responce
+                completionHandler()
+            }
         }
     }
 

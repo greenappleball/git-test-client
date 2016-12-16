@@ -21,7 +21,12 @@ class RootViewController: UITableViewController {
             self.tableView.dataSource = newValue
         }
     }
-    
+    var isFavorite: Bool {
+        get {
+            return self.dataSource?.type == Type.repos_favorites
+        }
+    }
+
     //
     func hud(with text: String?) -> MBProgressHUD {
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
@@ -48,6 +53,15 @@ class RootViewController: UITableViewController {
         self.tableView.estimatedRowHeight = 84
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if !self.isFavorite {
+            return
+        }
+        self.load()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,9 +72,7 @@ class RootViewController: UITableViewController {
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? ReadMeViewController
             vc?.repository = self.dataSource?.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
-            vc?.addFavorite = { repository in
-                print("\(repository)")
-            }
+            vc?.addItem?.isEnabled = !self.isFavorite
         }
     }
     // UITableViewDelegate
@@ -69,6 +81,10 @@ class RootViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if self.isFavorite {
+            return
+        }
+
         let lastElement = (self.dataSource?.count())! - 1
         if indexPath.row == lastElement {
             let hud = self.hud(with: "Loading...")
