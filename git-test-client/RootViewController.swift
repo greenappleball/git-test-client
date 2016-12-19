@@ -21,9 +21,12 @@ class RootViewController: UITableViewController {
             self.tableView.dataSource = newValue
         }
     }
-    var isFavorite: Bool {
+    var dataProvider: DataProvider? {
         get {
-            return self.dataSource?.type == Type.favorites
+            guard let _dataProvider = self.dataSource?.dataProvider else {
+                return nil
+            }
+            return _dataProvider
         }
     }
 
@@ -37,9 +40,13 @@ class RootViewController: UITableViewController {
     }
 
     func load() {
+        guard let provider = self.dataProvider else {
+            return
+        }
+
         let hud = self.hud(with: "Loading...")
 
-        self.dataSource?.load(completionHandler: {
+        provider.load(completionHandler: {
             self.tableView.reloadData()
             hud.hide(animated: true)
         })
@@ -56,9 +63,10 @@ class RootViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        if !self.isFavorite {
+        if !(self.dataProvider?.isFavorite)! {
             return
         }
+
         self.load()
     }
 
@@ -71,8 +79,8 @@ class RootViewController: UITableViewController {
         if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? ReadMeViewController
-            vc?.repository = self.dataSource?.item(by: self.tableView.indexPathForSelectedRow as NSIndexPath?)
-            vc?.addItem?.isEnabled = !self.isFavorite
+            vc?.repository = self.dataProvider?.item(for: self.tableView.indexPathForSelectedRow)
+            vc?.addItem?.isEnabled = !(self.dataProvider?.isFavorite)!
         }
     }
     // UITableViewDelegate
@@ -81,14 +89,14 @@ class RootViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if self.isFavorite {
+        if (self.dataProvider?.isFavorite)! {
             return
         }
 
-        let lastElement = (self.dataSource?.count())! - 1
+        let lastElement = (self.dataProvider?.count())! - 1
         if indexPath.row == lastElement {
             let hud = self.hud(with: "Loading...")
-            self.dataSource?.loadMore {
+            self.dataProvider?.loadMore {
                 self.tableView.reloadData()
                 hud.hide(animated: true)
             }

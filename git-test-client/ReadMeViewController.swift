@@ -54,7 +54,10 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     }
 
     @IBAction func addFavoriteHandler(_ sender: Any) {
-        DataSource.add(repository: self.repository!)
+        guard let repository = self.repository else {
+            return
+        }
+        DataProvider.add(repository: repository)
     }
 
 }

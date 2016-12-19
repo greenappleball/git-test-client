@@ -16,8 +16,8 @@ enum Tabs: Int {
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
-    var publicDataSource = DataSource(type: .common)
-    var favoritesDataSource = DataSource(type: .favorites)
+    var publicDataSource = DataSource(dataProvider: DataProvider(type: .common))
+    var favoritesDataSource = DataSource(dataProvider: DataProvider(type: .favorites))
 
     override func viewDidLoad() {
         super.viewDidLoad()

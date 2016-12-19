@@ -19,6 +19,7 @@
 		F293FDCC1E0808D000040792 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCB1E0808D000040792 /* Repository.swift */; };
 		F293FDCE1E08091500040792 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCD1E08091500040792 /* Owner.swift */; };
 		F293FDD01E08095300040792 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCF1E08095300040792 /* Readme.swift */; };
+		F293FDD31E080E9300040792 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDD21E080E9300040792 /* DataProvider.swift */; };
 		F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66211DFFF26300D28B8B /* RootViewController.swift */; };
 		F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66231DFFF56300D28B8B /* NetworkService.swift */; };
 		F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66251DFFF69700D28B8B /* DataSource.swift */; };
@@ -67,6 +68,7 @@
 		F293FDCB1E0808D000040792 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F293FDCD1E08091500040792 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		F293FDCF1E08095300040792 /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
+		F293FDD21E080E9300040792 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		F2BD66211DFFF26300D28B8B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F2BD66231DFFF56300D28B8B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F2BD66251DFFF69700D28B8B /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				F2BD66371E014A7000D28B8B /* String+adding.swift */,
 				F2BD66231DFFF56300D28B8B /* NetworkService.swift */,
 				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
+				F293FDD21E080E9300040792 /* DataProvider.swift */,
 				F293FDD11E0809FA00040792 /* Models */,
 			);
 			path = "git-test-client";
@@ -390,6 +393,7 @@
 				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
 				F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */,
 				F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */,
+				F293FDD31E080E9300040792 /* DataProvider.swift in Sources */,
 				F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */,
 				F293FDCC1E0808D000040792 /* Repository.swift in Sources */,
 			);
