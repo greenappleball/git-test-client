@@ -13,10 +13,10 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
 
-    var dataSource = DataSource(dataProvider: DataProvider(type: .search))
-    var dataProvider: DataProvider {
+    var dataSource = DataSource(dataProvider: NetworkDataProvider())
+    var dataProvider: NetworkDataProvider {
         get {
-            return self.dataSource.dataProvider
+            return self.dataSource.dataProvider as! NetworkDataProvider
         }
     }
     var timer: Timer?
