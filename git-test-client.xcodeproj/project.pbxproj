@@ -27,7 +27,7 @@
 		F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* SearchResult.swift */; };
 		F2BD662E1E00416400D28B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD662C1E00416400D28B8B /* Main.storyboard */; };
 		F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66311E013A2700D28B8B /* WebViewController.swift */; };
-		F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66371E014A7000D28B8B /* String+adding.swift */; };
+		F2BD66381E014A7000D28B8B /* StringAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66371E014A7000D28B8B /* StringAdditions.swift */; };
 		F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,7 @@
 		F2BD66281E001B8100D28B8B /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		F2BD662D1E00416400D28B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2BD66311E013A2700D28B8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		F2BD66371E014A7000D28B8B /* String+adding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+adding.swift"; sourceTree = "<group>"; };
+		F2BD66371E014A7000D28B8B /* StringAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAdditions.swift; sourceTree = "<group>"; };
 		F2D09D011E018B53004173C9 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,7 +160,7 @@
 				F249BB231DFFD6C700FF8C84 /* Assets.xcassets */,
 				F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */,
 				F249BB281DFFD6C700FF8C84 /* Info.plist */,
-				F2BD66371E014A7000D28B8B /* String+adding.swift */,
+				F2BD66371E014A7000D28B8B /* StringAdditions.swift */,
 				F2BD66231DFFF56300D28B8B /* NetworkService.swift */,
 				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
 				F293FDD21E080E9300040792 /* NetworkDataProvider.swift */,
@@ -394,7 +394,7 @@
 				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
 				F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */,
 				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
-				F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */,
+				F2BD66381E014A7000D28B8B /* StringAdditions.swift in Sources */,
 				F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */,
 				F293FDD31E080E9300040792 /* NetworkDataProvider.swift in Sources */,
 				F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */,
