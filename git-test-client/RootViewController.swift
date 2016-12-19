@@ -23,7 +23,7 @@ class RootViewController: UITableViewController {
     }
     var isFavorite: Bool {
         get {
-            return self.dataSource?.type == Type.repos_favorites
+            return self.dataSource?.type == Type.favorites
         }
     }
 

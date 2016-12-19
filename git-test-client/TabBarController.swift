@@ -9,16 +9,15 @@
 import UIKit
 
 enum Tabs: Int {
-    case not_interesting = 0
     case search = 1001
-    case public_repositories
-    case favorite_repositories
+    case common
+    case favorite
 }
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
-    var publicDataSource = DataSource(type: .repos_public)
-    var favoritesDataSource = DataSource(type: .repos_favorites)
+    var publicDataSource = DataSource(type: .common)
+    var favoritesDataSource = DataSource(type: .favorites)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +46,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let tag = tabBarController.tabBar.selectedItem?.tag
         let tab: Tabs = Tabs(rawValue: tag!)!
         switch tab {
-        case .public_repositories:
+        case .common:
             self.performInit(dataSource: self.publicDataSource, for: viewController)
-        case .favorite_repositories:
+        case .favorite:
             self.performInit(dataSource: self.favoritesDataSource, for: viewController)
         default:
             return

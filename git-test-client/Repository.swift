@@ -13,15 +13,15 @@ class Repository: Mappable {
     var id: Int = 0
     var url: String?
     var name: String?
-    var full_name: String?
+    var fullName: String?
     var description: String?
     var owner: Owner?
-    var html_url: String?
-    var forks_count: Int = 0
-    var stargazers_count: Int = 0
+    var htmlUrl: String?
+    var forksCount: Int = 0
+    var stargazersCount: Int = 0
     var language: String?
-    var updated_at: String?
-    var updated_on: String?
+    var updatedAt: String?
+    var updatedOn: String?
     
     static let dateFormatter = DateFormatter()
     
@@ -35,20 +35,20 @@ class Repository: Mappable {
         id <- map["id"]
         url <- map["url"]
         name <- map["name"]
-        html_url <- map["html_url"]
-        full_name <- map["full_name"]
+        htmlUrl <- map["html_url"]
+        fullName <- map["full_name"]
         description <- map["description"]
-        forks_count <- map["forks_count"]
-        stargazers_count <- map["stargazers_count"]
+        forksCount <- map["forks_count"]
+        stargazersCount <- map["stargazers_count"]
         owner <- map["owner"]
         language <- map["language"]
-        updated_at <- map["updated_at"]
+        updatedAt <- map["updated_at"]
         
-        if let updated_at_str = updated_at {
+        if let updatedAtStr = updatedAt {
             Repository.dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-            if let updated = Repository.dateFormatter.date(from: updated_at_str) {
+            if let updated = Repository.dateFormatter.date(from: updatedAtStr) {
                 Repository.dateFormatter.dateFormat = "MMM dd, yyyy"
-                updated_on = "Updated on \(Repository.dateFormatter.string(from: updated))"
+                updatedOn = "Updated on \(Repository.dateFormatter.string(from: updated))"
             }
         }
     }

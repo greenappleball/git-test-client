@@ -11,7 +11,7 @@ import ObjectMapper
 
 class SearchResult: Mappable {
     var items: [Repository]?
-    var total_count: Int?
+    var totalCount: Int?
     
     // Mappable
     required init?(map: Map){
@@ -20,6 +20,6 @@ class SearchResult: Mappable {
     
     func mapping(map: Map) {
         items <- map["items"]
-        total_count <- map["total_count"]
+        totalCount <- map["total_count"]
     }
 }

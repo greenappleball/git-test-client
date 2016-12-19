@@ -14,8 +14,8 @@ class Owner: Mappable {
     var url: String?
     var type: String?
     var login: String?
-    var html_url: String?
-    var avatar_url: String?
+    var htmlUrl: String?
+    var avatarUrl: String?
     
     required init?(map: Map){
     }
@@ -25,7 +25,7 @@ class Owner: Mappable {
         url <- map["url"]
         type <- map["type"]
         login <- map["login"]
-        html_url <- map["html_url"]
-        avatar_url <- map["avatar_url"]
+        htmlUrl <- map["html_url"]
+        avatarUrl <- map["avatar_url"]
     }
 }

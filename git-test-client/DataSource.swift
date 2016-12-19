@@ -10,8 +10,8 @@ import UIKit
 
 enum Type: Int {
     case search = 0
-    case repos_public
-    case repos_favorites
+    case common
+    case favorites
 }
 
 class DataSource: NSObject, UITableViewDataSource {
@@ -53,7 +53,7 @@ class DataSource: NSObject, UITableViewDataSource {
     }
 
     func load(completionHandler: @escaping () -> Void) {
-        if self.type == Type.repos_favorites {
+        if self.type == Type.favorites {
             do {
                 var repos: Array<Repository> = []
                 let path = try DataSource.documentsPath(withComponet: "favorites.txt")

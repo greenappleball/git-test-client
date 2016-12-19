@@ -33,18 +33,18 @@ class RepositoryTableViewCell: UITableViewCell {
     }
 
     func update(with repository: Repository) {
-        self.labelName.text = repository.full_name
+        self.labelName.text = repository.fullName
         self.labelDescription.text = repository.description
 
         RepositoryTableViewCell.network.loadDetails(for: repository) { repository in
-            self.labelStars.text = "\(repository.stargazers_count)"
-            self.labelForks.text = "\(repository.forks_count)"
+            self.labelStars.text = "\(repository.stargazersCount)"
+            self.labelForks.text = "\(repository.forksCount)"
             self.labelLanguage.text = repository.language
-            self.labelUpdate.text = repository.updated_on
+            self.labelUpdate.text = repository.updatedOn
         }
 
         let placeholderImage = UIImage(named: "first")
-        let url = URL(string: (repository.owner?.avatar_url)!)!
+        let url = URL(string: (repository.owner?.avatarUrl)!)!
         self.imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
     }
 }

@@ -27,7 +27,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = (repository?.full_name)! + "/README"
+        self.title = (repository?.fullName)! + "/README"
         
         let network = NetworkService()
         network.loadReadme(for: self.repository!) { readme in

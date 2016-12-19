@@ -15,9 +15,9 @@ class Readme: Mappable {
     var name: String?
     var size: Int?
     var url: String?
-    var git_url: String?
-    var html_url: String?
-    var download_url: String?
+    var gitUrl: String?
+    var htmlUrl: String?
+    var downloadUrl: String?
     var type: String?
     var content: String?
     // Mappable
@@ -28,12 +28,12 @@ class Readme: Mappable {
     func mapping(map: Map) {
         url <- map["url"]
         name <- map["name"]
-        html_url <- map["html_url"]
+        htmlUrl <- map["html_url"]
         sha <- map["sha"]
         size <- map["size"]
         size <- map["size"]
-        git_url <- map["git_url"]
-        download_url <- map["download_url"]
+        gitUrl <- map["git_url"]
+        downloadUrl <- map["download_url"]
         type <- map["type"]
         content <- map["content"]
     }
