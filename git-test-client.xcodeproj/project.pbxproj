@@ -16,10 +16,13 @@
 		F249BB3D1DFFD6C700FF8C84 /* git_test_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB3C1DFFD6C700FF8C84 /* git_test_clientUITests.swift */; };
 		F28373AE1E03CDBB00EB3BE5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28373AD1E03CDBB00EB3BE5 /* TabBarController.swift */; };
 		F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */; };
+		F293FDCC1E0808D000040792 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCB1E0808D000040792 /* Repository.swift */; };
+		F293FDCE1E08091500040792 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCD1E08091500040792 /* Owner.swift */; };
+		F293FDD01E08095300040792 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCF1E08095300040792 /* Readme.swift */; };
 		F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66211DFFF26300D28B8B /* RootViewController.swift */; };
 		F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66231DFFF56300D28B8B /* NetworkService.swift */; };
 		F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66251DFFF69700D28B8B /* DataSource.swift */; };
-		F2BD66291E001B8100D28B8B /* MappedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* MappedObjects.swift */; };
+		F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* SearchResult.swift */; };
 		F2BD662E1E00416400D28B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD662C1E00416400D28B8B /* Main.storyboard */; };
 		F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66311E013A2700D28B8B /* WebViewController.swift */; };
 		F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66371E014A7000D28B8B /* String+adding.swift */; };
@@ -61,10 +64,13 @@
 		F249BB3E1DFFD6C700FF8C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28373AD1E03CDBB00EB3BE5 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
+		F293FDCB1E0808D000040792 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F293FDCD1E08091500040792 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		F293FDCF1E08095300040792 /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 		F2BD66211DFFF26300D28B8B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F2BD66231DFFF56300D28B8B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F2BD66251DFFF69700D28B8B /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		F2BD66281E001B8100D28B8B /* MappedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappedObjects.swift; sourceTree = "<group>"; };
+		F2BD66281E001B8100D28B8B /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		F2BD662D1E00416400D28B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2BD66311E013A2700D28B8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F2BD66371E014A7000D28B8B /* String+adding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+adding.swift"; sourceTree = "<group>"; };
@@ -150,10 +156,10 @@
 				F249BB231DFFD6C700FF8C84 /* Assets.xcassets */,
 				F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */,
 				F249BB281DFFD6C700FF8C84 /* Info.plist */,
+				F2BD66371E014A7000D28B8B /* String+adding.swift */,
 				F2BD66231DFFF56300D28B8B /* NetworkService.swift */,
 				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
-				F2BD66281E001B8100D28B8B /* MappedObjects.swift */,
-				F2BD66371E014A7000D28B8B /* String+adding.swift */,
+				F293FDD11E0809FA00040792 /* Models */,
 			);
 			path = "git-test-client";
 			sourceTree = "<group>";
@@ -174,6 +180,17 @@
 				F249BB3E1DFFD6C700FF8C84 /* Info.plist */,
 			);
 			path = "git-test-clientUITests";
+			sourceTree = "<group>";
+		};
+		F293FDD11E0809FA00040792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66281E001B8100D28B8B /* SearchResult.swift */,
+				F293FDCB1E0808D000040792 /* Repository.swift */,
+				F293FDCD1E08091500040792 /* Owner.swift */,
+				F293FDCF1E08095300040792 /* Readme.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,17 +378,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F293FDCE1E08091500040792 /* Owner.swift in Sources */,
 				F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */,
 				F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */,
 				F28373AE1E03CDBB00EB3BE5 /* TabBarController.swift in Sources */,
 				F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */,
+				F293FDD01E08095300040792 /* Readme.swift in Sources */,
 				F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */,
 				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
 				F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */,
 				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
 				F2BD66381E014A7000D28B8B /* String+adding.swift in Sources */,
-				F2BD66291E001B8100D28B8B /* MappedObjects.swift in Sources */,
+				F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */,
 				F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */,
+				F293FDCC1E0808D000040792 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
