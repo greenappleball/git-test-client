@@ -27,14 +27,25 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = (repository?.fullName)! + "/README"
-        
         let network = NetworkService()
-        network.loadReadme(for: self.repository!) { readme in
+        guard let repos = self.repository else {
+            return
+        }
+        if let fullName = repos.fullName {
+            self.title = fullName + "/README"
+        } else {
+            self.title = "README"
+        }
+
+        network.loadReadme(for: repos) { readme in
             if let content = readme.content {
-                let md = Down(markdownString: content.fromBase64()!)
-                let html = try? md.toHTML()
-                self.webView.loadHTMLString(html!, baseURL: nil)
+                guard let htmlBase65 = content.fromBase64() else {
+                    return
+                }
+                let md = Down(markdownString: htmlBase65)
+                if let html = try? md.toHTML() {
+                    self.webView.loadHTMLString(html, baseURL: nil)
+                }
             }
         }
     }

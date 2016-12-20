@@ -14,9 +14,9 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
 
     var dataSource = DataSource(dataProvider: NetworkDataProvider())
-    var dataProvider: NetworkDataProvider {
+    var dataProvider: NetworkDataProvider? {
         get {
-            return self.dataSource.dataProvider as! NetworkDataProvider
+            return self.dataSource.dataProvider as? NetworkDataProvider
         }
     }
     var timer: Timer?
@@ -42,7 +42,10 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
         if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Search", style: .done, target: nil, action: nil)
             let vc = segue.destination as? ReadMeViewController
-            vc?.repository = self.dataProvider.item(for: self.tableView.indexPathForSelectedRow)
+            guard let indexPath = self.tableView.indexPathForSelectedRow else {
+                return
+            }
+            vc?.repository = self.dataProvider?.item(for: indexPath)
         }
     }
 
@@ -67,13 +70,13 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
             self.timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
                 let hud = self.hud(with: "Searching...")
                 self.searchBar.resignFirstResponder()
-                self.dataProvider.found(by: searchText, sort: nil, order: nil, completionHandler: {
+                self.dataProvider?.found(by: searchText, sort: nil, order: nil, completionHandler: {
                     self.tableView.reloadData()
                     hud.hide(animated: true)
                 })
             })
         } else {
-            self.dataProvider.clear {
+            self.dataProvider?.clear {
                 self.tableView.reloadData()
             }
         }

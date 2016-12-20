@@ -12,20 +12,23 @@ import AlamofireObjectMapper
 
 class NetworkService: NSObject {
     
-    var url_next = "https://api.github.com/repositories"
+    var urlNext = "https://api.github.com/repositories"
 
     func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
-        if self.url_next.characters.count <= 0 {
+        if self.urlNext.characters.count <= 0 {
             completionHandler([])
         }
 
-        Alamofire.request(self.url_next).responseArray { (response: DataResponse<[Repository]>) in
+        Alamofire.request(self.urlNext).responseArray { (response: DataResponse<[Repository]>) in
             let headers = response.response?.allHeaderFields
             if var links = headers?["Link"] as? String {
-                let regex = try! NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: [])
-                let replacedStr = regex.stringByReplacingMatches(in: links, options: [], range: NSRange(location: 0, length: links.characters.count), withTemplate: "\"$2\": \"$1\"")
-                let dict = ("{" + replacedStr + "}").toDictionary()
-                self.url_next = dict?["next"] as! String
+                if let regex = try? NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: []) {
+                    let replacedStr = regex.stringByReplacingMatches(in: links, options: [], range: NSRange(location: 0, length: links.characters.count), withTemplate: "\"$2\": \"$1\"")
+                    let dict = ("{" + replacedStr + "}").toDictionary()
+                    if let next = dict?["next"] as? String {
+                        self.urlNext = next
+                    }
+                }
             }
 
             if let repositories = response.result.value {
@@ -37,12 +40,12 @@ class NetworkService: NSObject {
     }
     
     func searchRepositories(q: String?, sort: String?, order: String?, completionHandler: @escaping ([Repository]) -> Void) {
-        guard q != nil else {
+        guard let query = q else {
             completionHandler([])
             return
         }
 
-        var parameters: Parameters = ["q": q!]
+        var parameters: Parameters = ["q": query]
         if sort != nil {
             parameters["sort"] = sort
         }

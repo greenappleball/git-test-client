@@ -43,8 +43,15 @@ class RepositoryTableViewCell: UITableViewCell {
             self.labelUpdate.text = repository.updatedOn
         }
 
-        let placeholderImage = UIImage(named: "first")
-        let url = URL(string: (repository.owner?.avatarUrl)!)!
-        self.imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
+        if let owner = repository.owner {
+            guard let avatarUrl = owner.avatarUrl else {
+                return
+            }
+            guard let url = URL(string: avatarUrl) else {
+                return
+            }
+            let placeholderImage = UIImage(named: "first")
+            self.imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
+        }
     }
 }

@@ -25,16 +25,18 @@ class DataProvider: NSObject {
     // Adds new `repository` to local storage in `favorites.txt`
     static func add(repository: Repository) {
         do {
-            var repos: Array<Repository> = []
+            var repositories: Array<Repository> = []
             let path = try DataProvider.documentsPath(withComponet: "favorites.txt")
             if let text = try? String(contentsOf: path, encoding: .utf8) {
-                repos = Array<Repository>(JSONString: text, context: nil)!
+                if let cache = Array<Repository>(JSONString: text, context: nil) {
+                    repositories = cache
+                }
             }
-            if !repos.contains(where: { (object: Repository) -> Bool in
+            if !repositories.contains(where: { (object: Repository) -> Bool in
                 return object.id == repository.id
             }) {
-                repos.append(repository)
-                try repos.toJSONString()?.write(to: path, atomically: true, encoding: .utf8)
+                repositories.append(repository)
+                try repositories.toJSONString()?.write(to: path, atomically: true, encoding: .utf8)
             }
         } catch let error as NSError {
             print(error.localizedDescription)
@@ -47,11 +49,13 @@ class DataProvider: NSObject {
 
     func load(completionHandler: @escaping () -> Void) {
         do {
-            var repos: Array<Repository> = []
+            var repositories: Array<Repository> = []
             let path = try DataProvider.documentsPath(withComponet: "favorites.txt")
             if let text = try? String(contentsOf: path, encoding: .utf8) {
-                repos = Array<Repository>(JSONString: text, context: nil)!
-                self.repositories = repos
+                if let cache = Array<Repository>(JSONString: text, context: nil) {
+                    repositories = cache
+                }
+                self.repositories = repositories
             }
             completionHandler()
         } catch let error as NSError {
@@ -74,8 +78,8 @@ class DataProvider: NSObject {
     }
 
     // Returns `Repository` for `indexPath`
-    func item(for indexPath: IndexPath?) -> Repository {
-        return self.repositories[(indexPath?.row)!]
+    func item(for indexPath: IndexPath) -> Repository {
+        return self.repositories[indexPath.row]
     }
 
     // Clear `repositories` array

@@ -25,8 +25,13 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = URL(string: (self.repository?.htmlUrl)!)!
-        self.webView.load(URLRequest(url: url))
+        guard let repository = self.repository, let htmlUrl = repository.htmlUrl else {
+            return
+        }
+
+        if let url = URL(string: htmlUrl) {
+            self.webView.load(URLRequest(url: url))
+        }
     }
 
     override func didReceiveMemoryWarning() {

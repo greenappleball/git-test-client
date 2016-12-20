@@ -23,8 +23,14 @@ class DataSource: NSObject, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as! RepositoryTableViewCell
-        cell.update(with: self.dataProvider.item(for: indexPath))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
+        let item = self.dataProvider.item(for: indexPath)
+
+        if let repositoryTableViewCell = cell as? RepositoryTableViewCell {
+            repositoryTableViewCell.update(with: item)
+        } else {
+            cell.textLabel?.text = item.fullName
+        }
         return cell
     }
 }

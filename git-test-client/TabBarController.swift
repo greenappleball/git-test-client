@@ -43,16 +43,19 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     // UITabBarControllerDelegate
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        let tag = tabBarController.tabBar.selectedItem?.tag
-        let tab: Tabs = Tabs(rawValue: tag!)!
-        switch tab {
-        case .common:
-            self.performInit(dataSource: self.publicDataSource, for: viewController)
-        case .favorite:
-            self.performInit(dataSource: self.favoritesDataSource, for: viewController)
-        default:
+        guard let tag = tabBarController.tabBar.selectedItem?.tag else {
             return
         }
-        
+
+        if let tab: Tabs = Tabs(rawValue: tag) {
+            switch tab {
+            case .common:
+                self.performInit(dataSource: self.publicDataSource, for: viewController)
+            case .favorite:
+                self.performInit(dataSource: self.favoritesDataSource, for: viewController)
+            default:
+                return
+            }
+        }
     }
 }

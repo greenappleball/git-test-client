@@ -63,7 +63,7 @@ class RootViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        if !(self.dataProvider?.isFavorite)! {
+        guard let provider = self.dataProvider, provider.isFavorite else {
             return
         }
 
@@ -79,8 +79,16 @@ class RootViewController: UITableViewController {
         if segue.identifier == "showDetails"{
             self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? ReadMeViewController
-            vc?.repository = self.dataProvider?.item(for: self.tableView.indexPathForSelectedRow)
-            vc?.addItem?.isEnabled = !(self.dataProvider?.isFavorite)!
+
+            guard let provider = self.dataProvider else {
+                return
+            }
+            vc?.addItem?.isEnabled = !provider.isFavorite
+
+            guard let indexPath = self.tableView.indexPathForSelectedRow else {
+                return
+            }
+            vc?.repository = provider.item(for: indexPath)
         }
     }
     // UITableViewDelegate
@@ -89,11 +97,11 @@ class RootViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if (self.dataProvider?.isFavorite)! {
+        guard let provider = self.dataProvider, !provider.isFavorite else {
             return
         }
 
-        let lastElement = (self.dataProvider?.count())! - 1
+        let lastElement = provider.count() - 1
         if indexPath.row == lastElement {
             let hud = self.hud(with: "Loading...")
             self.dataProvider?.loadMore {
