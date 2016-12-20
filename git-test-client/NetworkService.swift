@@ -12,6 +12,7 @@ import AlamofireObjectMapper
 
 class NetworkService: NSObject {
     
+    var request: DataRequest?
     var urlNext = "https://api.github.com/repositories"
 
     func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
@@ -19,7 +20,7 @@ class NetworkService: NSObject {
             completionHandler([])
         }
 
-        Alamofire.request(self.urlNext).responseArray { (response: DataResponse<[Repository]>) in
+        self.request = Alamofire.request(self.urlNext).responseArray { (response: DataResponse<[Repository]>) in
             let headers = response.response?.allHeaderFields
             if var links = headers?["Link"] as? String {
                 if let regex = try? NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: []) {
@@ -52,7 +53,8 @@ class NetworkService: NSObject {
         if order != nil {
             parameters["order"] = order
         }
-        Alamofire.request("https://api.github.com/search/repositories", parameters: parameters).responseObject { (response: DataResponse<SearchResult>) in
+        self.cancel()
+        self.request = Alamofire.request("https://api.github.com/search/repositories", parameters: parameters).responseObject { (response: DataResponse<SearchResult>) in
             if let results = response.result.value {
                 if let items = results.items {
                     completionHandler(items)
@@ -70,7 +72,7 @@ class NetworkService: NSObject {
             return
         }
 
-        Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
+        self.request = Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
             guard let result = response.result.value else {
                 return
             }
@@ -83,11 +85,15 @@ class NetworkService: NSObject {
             return
         }
         
-        Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
+        self.request = Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
             guard let result = response.result.value else {
                 return
             }
             completionHandler(result)
         }
+    }
+
+    func cancel() {
+        self.request?.cancel()
     }
 }

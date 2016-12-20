@@ -64,12 +64,20 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     }
 
     // UISearchBarDelegate
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.dataProvider?.cancel()
         if searchText.characters.count > 0 {
             self.timer?.invalidate()
             self.timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
                 let hud = self.hud(with: "Searching...")
-                self.searchBar.resignFirstResponder()
                 self.dataProvider?.found(by: searchText, sort: nil, order: nil, completionHandler: {
                     self.tableView.reloadData()
                     hud.hide(animated: true)

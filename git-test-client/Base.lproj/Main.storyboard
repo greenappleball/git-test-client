@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="wq2-R1-Jh2">
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="wq2-R1-Jh2">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -559,6 +559,6 @@
         <image name="star" width="284" height="284"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4zq-Ie-TgT"/>
+        <segue reference="gO6-gc-x34"/>
     </inferredMetricsTieBreakers>
 </document>

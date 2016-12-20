@@ -32,4 +32,8 @@ class NetworkDataProvider: DataProvider {
             completionHandler()
         }
     }
+
+    func cancel() {
+        network.cancel()
+    }
 }

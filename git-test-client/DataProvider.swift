@@ -90,10 +90,12 @@ class DataProvider: NSObject {
         }
     }
 
+    // Do nothing for local storage
     func loadMore(completionHandler: @escaping () -> Void) {
         completionHandler()
     }
 
+    // Do nothing for local storage
     func found(by text: String?, sort: String?, order: String?, completionHandler: @escaping () -> Void) {
         completionHandler()
     }
