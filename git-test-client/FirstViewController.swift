@@ -16,21 +16,21 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     var dataSource = DataSource(dataProvider: NetworkDataProvider())
     var dataProvider: NetworkDataProvider? {
         get {
-            return self.dataSource.dataProvider as? NetworkDataProvider
+            return dataSource.dataProvider as? NetworkDataProvider
         }
     }
     var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.dataSource = self.dataSource
-        self.tableView.delegate = self
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 84
+        tableView.dataSource = dataSource
+        tableView.delegate = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 84
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.searchBar.resignFirstResponder()
+        searchBar.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,18 +40,18 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails"{
-            self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Search", style: .done, target: nil, action: nil)
+            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Search", style: .done, target: nil, action: nil)
             let vc = segue.destination as? ReadMeViewController
-            guard let indexPath = self.tableView.indexPathForSelectedRow else {
+            guard let indexPath = tableView.indexPathForSelectedRow else {
                 return
             }
-            vc?.repository = self.dataProvider?.item(for: indexPath)
+            vc?.repository = dataProvider?.item(for: indexPath)
         }
     }
 
     //
     func hud(with text: String?) -> MBProgressHUD {
-        let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
+        let hud = MBProgressHUD.showAdded(to: view, animated: true);
         hud.backgroundView.style = .blur
         hud.label.text = text
         hud.mode = .text
@@ -73,10 +73,10 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.dataProvider?.cancel()
+        dataProvider?.cancel()
         if searchText.characters.count > 0 {
-            self.timer?.invalidate()
-            self.timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
+            timer?.invalidate()
+            timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
                 let hud = self.hud(with: "Searching...")
                 self.dataProvider?.found(by: searchText, sort: nil, order: nil, completionHandler: {
                     self.tableView.reloadData()
@@ -84,7 +84,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
                 })
             })
         } else {
-            self.dataProvider?.clear {
+            dataProvider?.clear {
                 self.tableView.reloadData()
             }
         }

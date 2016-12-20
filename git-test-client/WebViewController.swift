@@ -16,21 +16,21 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
     
     override func loadView() {
-        self.webView = WKWebView()
-        self.webView.navigationDelegate = self
-        self.webView.allowsBackForwardNavigationGestures = true
-        self.view = self.webView
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
+        view = webView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let repository = self.repository, let htmlUrl = repository.htmlUrl else {
+        guard let repository = repository, let htmlUrl = repository.htmlUrl else {
             return
         }
 
         if let url = URL(string: htmlUrl) {
-            self.webView.load(URLRequest(url: url))
+            webView.load(URLRequest(url: url))
         }
     }
 

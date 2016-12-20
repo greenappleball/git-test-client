@@ -82,7 +82,7 @@ class DataProvider: NSObject {
     func load(completionHandler: @escaping () -> Void) {
         do {
             let pathUrl = try DataProvider.pathUrlWithFilename("favorites.txt")
-            self.repositories = DataProvider.cachedRepositories(by: pathUrl)
+            repositories = DataProvider.cachedRepositories(by: pathUrl)
             completionHandler()
         } catch let error as NSError {
             print(error.localizedDescription)
@@ -102,17 +102,17 @@ class DataProvider: NSObject {
 
     // Returns count of repositories
     func count() -> Int {
-        return self.repositories.count;
+        return repositories.count;
     }
 
     // Returns `Repository` for `indexPath`
     func item(for indexPath: IndexPath) -> Repository {
-        return self.repositories[indexPath.row]
+        return repositories[indexPath.row]
     }
 
     // Clear `repositories` array
     func clear(completionHandler: @escaping () -> Void) {
-        self.repositories = []
+        repositories = []
         completionHandler()
     }
 

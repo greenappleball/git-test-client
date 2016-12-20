@@ -33,8 +33,8 @@ class RepositoryTableViewCell: UITableViewCell {
     }
 
     func update(with repository: Repository) {
-        self.labelName.text = repository.fullName
-        self.labelDescription.text = repository.description
+        labelName.text = repository.fullName
+        labelDescription.text = repository.description
 
         RepositoryTableViewCell.network.loadDetails(for: repository) { repository in
             self.labelStars.text = "\(repository.stargazersCount)"
@@ -51,7 +51,7 @@ class RepositoryTableViewCell: UITableViewCell {
                 return
             }
             let placeholderImage = UIImage(named: "first")
-            self.imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
+            imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
         }
     }
 }

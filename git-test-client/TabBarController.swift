@@ -21,7 +21,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
+        delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,9 +50,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         if let tab: Tabs = Tabs(rawValue: tag) {
             switch tab {
             case .common:
-                self.performInit(dataSource: self.publicDataSource, for: viewController)
+                performInit(dataSource: publicDataSource, for: viewController)
             case .favorite:
-                self.performInit(dataSource: self.favoritesDataSource, for: viewController)
+                performInit(dataSource: favoritesDataSource, for: viewController)
             default:
                 return
             }

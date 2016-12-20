@@ -18,26 +18,26 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
 
     override func loadView() {
-        self.webView = WKWebView()
-        self.webView.navigationDelegate = self
-        self.webView.allowsBackForwardNavigationGestures = true
-        self.view = self.webView
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
+        view = webView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let network = NetworkService()
-        guard let repos = self.repository else {
+        guard let repos = repository else {
             return
         }
         if let fullName = repos.fullName {
-            self.title = fullName + "/README"
+            title = fullName + "/README"
         } else {
-            self.title = "README"
+            title = "README"
         }
 
-        self.addItem?.title = DataProvider.isFavoriteRepository(repos) ? "-" : "+"
+        addItem?.title = DataProvider.isFavoriteRepository(repos) ? "-" : "+"
 
         network.loadReadme(for: repos) { readme in
             if let content = readme.content {
@@ -60,14 +60,14 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showWeb"{
-            self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
+            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? WebViewController
-            vc?.repository = self.repository
+            vc?.repository = repository
         }
     }
 
     @IBAction func addFavoriteHandler(_ sender: UIBarButtonItem) {
-        guard let repository = self.repository else {
+        guard let repository = repository else {
             return
         }
         if DataProvider.isFavoriteRepository(repository) {

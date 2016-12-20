@@ -16,11 +16,11 @@ class NetworkService: NSObject {
     var urlNext = "https://api.github.com/repositories"
 
     func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
-        if self.urlNext.characters.count <= 0 {
+        if urlNext.characters.count <= 0 {
             completionHandler([])
         }
 
-        self.request = Alamofire.request(self.urlNext).responseArray { (response: DataResponse<[Repository]>) in
+        request = Alamofire.request(urlNext).responseArray { (response: DataResponse<[Repository]>) in
             let headers = response.response?.allHeaderFields
             if var links = headers?["Link"] as? String {
                 if let regex = try? NSRegularExpression(pattern: "<([^\\s]+)>; rel=\"([^\\s]+)\"", options: []) {
@@ -53,8 +53,8 @@ class NetworkService: NSObject {
         if order != nil {
             parameters["order"] = order
         }
-        self.cancel()
-        self.request = Alamofire.request("https://api.github.com/search/repositories", parameters: parameters).responseObject { (response: DataResponse<SearchResult>) in
+        cancel()
+        request = Alamofire.request("https://api.github.com/search/repositories", parameters: parameters).responseObject { (response: DataResponse<SearchResult>) in
             if let results = response.result.value {
                 if let items = results.items {
                     completionHandler(items)
@@ -72,7 +72,7 @@ class NetworkService: NSObject {
             return
         }
 
-        self.request = Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
+        request = Alamofire.request(url + "/readme").responseObject { (response: DataResponse<Readme>) in
             guard let result = response.result.value else {
                 return
             }
@@ -85,7 +85,7 @@ class NetworkService: NSObject {
             return
         }
         
-        self.request = Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
+        request = Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
             guard let result = response.result.value else {
                 return
             }
@@ -94,6 +94,6 @@ class NetworkService: NSObject {
     }
 
     func cancel() {
-        self.request?.cancel()
+        request?.cancel()
     }
 }

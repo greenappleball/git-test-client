@@ -19,12 +19,12 @@ class DataSource: NSObject, UITableViewDataSource {
 
     // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataProvider.count()
+        return dataProvider.count()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
-        let item = self.dataProvider.item(for: indexPath)
+        let item = dataProvider.item(for: indexPath)
 
         if let repositoryTableViewCell = cell as? RepositoryTableViewCell {
             repositoryTableViewCell.update(with: item)

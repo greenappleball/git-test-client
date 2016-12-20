@@ -18,11 +18,11 @@ extension String {
     }
 
     func toBase64() -> String {
-        return Data(self.utf8).base64EncodedString()
+        return Data(utf8).base64EncodedString()
     }
 
     func toDictionary() -> [String: Any]? {
-        if let data = self.data(using: .utf8) {
+        if let data = data(using: .utf8) {
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
             } catch {
