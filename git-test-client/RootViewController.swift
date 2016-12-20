@@ -22,12 +22,10 @@ class RootViewController: UITableViewController {
         }
     }
     var dataProvider: DataProvider? {
-        get {
-            guard let _dataProvider = dataSource?.dataProvider else {
-                return nil
-            }
-            return _dataProvider
+        guard let _dataProvider = dataSource?.dataProvider else {
+            return nil
         }
+        return _dataProvider
     }
 
     //

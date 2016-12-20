@@ -11,9 +11,7 @@ import Foundation
 class DataProvider: NSObject {
     var repositories: [Repository] = []
     var isFavorite: Bool {
-        get {
-            return !(self is NetworkDataProvider)
-        }
+        return !(self is NetworkDataProvider)
     }
 
     // Returns documents path with appending path component `name`

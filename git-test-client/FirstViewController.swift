@@ -15,9 +15,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     var dataSource = DataSource(dataProvider: NetworkDataProvider())
     var dataProvider: NetworkDataProvider? {
-        get {
-            return dataSource.dataProvider as? NetworkDataProvider
-        }
+        return dataSource.dataProvider as? NetworkDataProvider
     }
     var timer: Timer?
     
