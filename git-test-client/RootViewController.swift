@@ -83,7 +83,6 @@ class RootViewController: UITableViewController {
             guard let provider = self.dataProvider else {
                 return
             }
-            vc?.addItem?.isEnabled = !provider.isFavorite
 
             guard let indexPath = self.tableView.indexPathForSelectedRow else {
                 return

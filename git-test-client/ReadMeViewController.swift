@@ -37,6 +37,8 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             self.title = "README"
         }
 
+        self.addItem?.title = DataProvider.isFavoriteRepository(repos) ? "-" : "+"
+
         network.loadReadme(for: repos) { readme in
             if let content = readme.content {
                 guard let htmlBase65 = content.fromBase64() else {
@@ -64,11 +66,17 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
         }
     }
 
-    @IBAction func addFavoriteHandler(_ sender: Any) {
+    @IBAction func addFavoriteHandler(_ sender: UIBarButtonItem) {
         guard let repository = self.repository else {
             return
         }
-        DataProvider.add(repository: repository)
+        if DataProvider.isFavoriteRepository(repository) {
+            DataProvider.removeFromFavoriteRepository(repository)
+            sender.title = "+"
+        } else {
+            DataProvider.addToFavoriteRepository(repository)
+            sender.title = "-"
+        }
     }
 
 }

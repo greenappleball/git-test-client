@@ -22,21 +22,43 @@ class DataProvider: NSObject {
         return documentDirectoryURL.appendingPathComponent(name)
     }
 
-    // Adds new `repository` to local storage in `favorites.txt`
-    static func add(repository: Repository) {
+    static func pathUrlWithFilename(_ filename: String) throws -> URL {
+        return try DataProvider.documentsPath(withComponet: filename)
+    }
+
+    static func cachedRepositories(by pathUrl: URL) -> Array<Repository> {
         do {
-            var repositories: Array<Repository> = []
-            let path = try DataProvider.documentsPath(withComponet: "favorites.txt")
-            if let text = try? String(contentsOf: path, encoding: .utf8) {
-                if let cache = Array<Repository>(JSONString: text, context: nil) {
-                    repositories = cache
-                }
+            let text = try String(contentsOf: pathUrl, encoding: .utf8)
+            guard let repositories = Array<Repository>(JSONString: text, context: nil) else {
+                return []
             }
-            if !repositories.contains(where: { (object: Repository) -> Bool in
-                return object.id == repository.id
-            }) {
-                repositories.append(repository)
-                try repositories.toJSONString()?.write(to: path, atomically: true, encoding: .utf8)
+            return repositories
+        } catch let error as NSError {
+            print(error.localizedDescription)
+            return []
+        }
+    }
+
+    static func isRepositories(_ repositories: Array<Repository>, contains repository: Repository) -> Bool {
+        return repositories.contains(where: { (object: Repository) -> Bool in return object.id == repository.id })
+    }
+
+    static func isFavoriteRepository(_ repository: Repository) -> Bool {
+        guard let path = try? DataProvider.pathUrlWithFilename("favorites.txt") else {
+            return false
+        }
+        let cache = DataProvider.cachedRepositories(by: path)
+        return DataProvider.isRepositories(cache, contains: repository)
+    }
+
+    // Adds new `repository` to local storage in `favorites.txt`
+    static func addToFavoriteRepository(_ repository: Repository) {
+        do {
+            let pathUrl = try DataProvider.pathUrlWithFilename("favorites.txt")
+            var cache = DataProvider.cachedRepositories(by: pathUrl)
+            if !DataProvider.isRepositories(cache, contains: repository) {
+                cache.append(repository)
+                try cache.toJSONString()?.write(to: pathUrl, atomically: true, encoding: .utf8)
             }
         } catch let error as NSError {
             print(error.localizedDescription)
@@ -44,19 +66,23 @@ class DataProvider: NSObject {
     }
 
     // Removes `repository` from local storage in `favorites.txt`
-    static func remove(repository: Repository) {
+    static func removeFromFavoriteRepository(_ repository: Repository) {
+        do {
+            let pathUrl = try DataProvider.pathUrlWithFilename("favorites.txt")
+            var cache = DataProvider.cachedRepositories(by: pathUrl)
+            if let index = cache.index(where: { (object: Repository) -> Bool in object.id == repository.id }) {
+                cache.remove(at: index)
+                try cache.toJSONString()?.write(to: pathUrl, atomically: true, encoding: .utf8)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
     }
 
     func load(completionHandler: @escaping () -> Void) {
         do {
-            var repositories: Array<Repository> = []
-            let path = try DataProvider.documentsPath(withComponet: "favorites.txt")
-            if let text = try? String(contentsOf: path, encoding: .utf8) {
-                if let cache = Array<Repository>(JSONString: text, context: nil) {
-                    repositories = cache
-                }
-                self.repositories = repositories
-            }
+            let pathUrl = try DataProvider.pathUrlWithFilename("favorites.txt")
+            self.repositories = DataProvider.cachedRepositories(by: pathUrl)
             completionHandler()
         } catch let error as NSError {
             print(error.localizedDescription)
