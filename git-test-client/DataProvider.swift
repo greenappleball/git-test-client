@@ -26,10 +26,10 @@ class DataProvider: NSObject {
         return try documentsPath(withComponet: filename)
     }
 
-    static func cachedRepositories(by pathUrl: URL) -> Array<Repository> {
+    static func cachedRepositories(by pathUrl: URL) -> [Repository] {
         do {
             let text = try String(contentsOf: pathUrl, encoding: .utf8)
-            guard let repositories = Array<Repository>(JSONString: text, context: nil) else {
+            guard let repositories = [Repository](JSONString: text, context: nil) else {
                 return []
             }
             return repositories
@@ -39,7 +39,7 @@ class DataProvider: NSObject {
         }
     }
 
-    static func isRepositories(_ repositories: Array<Repository>, contains repository: Repository) -> Bool {
+    static func isRepositories(_ repositories: [Repository], contains repository: Repository) -> Bool {
         return repositories.contains(where: { (object: Repository) -> Bool in return object.id == repository.id })
     }
 
