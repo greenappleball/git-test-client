@@ -23,7 +23,7 @@ class DataProvider: NSObject {
     }
 
     static func pathUrlWithFilename(_ filename: String) throws -> URL {
-        return try DataProvider.documentsPath(withComponet: filename)
+        return try documentsPath(withComponet: filename)
     }
 
     static func cachedRepositories(by pathUrl: URL) -> Array<Repository> {
@@ -44,19 +44,19 @@ class DataProvider: NSObject {
     }
 
     static func isFavoriteRepository(_ repository: Repository) -> Bool {
-        guard let path = try? DataProvider.pathUrlWithFilename("favorites.txt") else {
+        guard let path = try? pathUrlWithFilename("favorites.txt") else {
             return false
         }
-        let cache = DataProvider.cachedRepositories(by: path)
-        return DataProvider.isRepositories(cache, contains: repository)
+        let cache = cachedRepositories(by: path)
+        return isRepositories(cache, contains: repository)
     }
 
     // Adds new `repository` to local storage in `favorites.txt`
     static func addToFavoriteRepository(_ repository: Repository) {
         do {
-            let pathUrl = try DataProvider.pathUrlWithFilename("favorites.txt")
-            var cache = DataProvider.cachedRepositories(by: pathUrl)
-            if !DataProvider.isRepositories(cache, contains: repository) {
+            let pathUrl = try pathUrlWithFilename("favorites.txt")
+            var cache = cachedRepositories(by: pathUrl)
+            if !isRepositories(cache, contains: repository) {
                 cache.append(repository)
                 try cache.toJSONString()?.write(to: pathUrl, atomically: true, encoding: .utf8)
             }
@@ -68,8 +68,8 @@ class DataProvider: NSObject {
     // Removes `repository` from local storage in `favorites.txt`
     static func removeFromFavoriteRepository(_ repository: Repository) {
         do {
-            let pathUrl = try DataProvider.pathUrlWithFilename("favorites.txt")
-            var cache = DataProvider.cachedRepositories(by: pathUrl)
+            let pathUrl = try pathUrlWithFilename("favorites.txt")
+            var cache = cachedRepositories(by: pathUrl)
             if let index = cache.index(where: { (object: Repository) -> Bool in object.id == repository.id }) {
                 cache.remove(at: index)
                 try cache.toJSONString()?.write(to: pathUrl, atomically: true, encoding: .utf8)
