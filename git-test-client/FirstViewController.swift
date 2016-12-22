@@ -43,15 +43,6 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
         }
     }
 
-    //
-    func hud(with text: String?) -> MBProgressHUD {
-        let hud = MBProgressHUD.showAdded(to: view, animated: true);
-        hud.backgroundView.style = .blur
-        hud.label.text = text
-        hud.mode = .text
-        return hud
-    }
-
     // UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetails", sender: self)
@@ -71,7 +62,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
         if searchText.characters.count > 0 {
             timer?.invalidate()
             timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
-                let hud = self.hud(with: "Searching...")
+                let hud = MBProgressHUD.showTextHUDInView(self.view, with: "Searching...")
                 self.dataProvider?.found(by: searchText, sort: nil, order: nil, completionHandler: {
                     self.tableView.reloadData()
                     hud.hide(animated: true)

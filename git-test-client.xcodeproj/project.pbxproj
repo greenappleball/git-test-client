@@ -16,6 +16,7 @@
 		F249BB3D1DFFD6C700FF8C84 /* git_test_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB3C1DFFD6C700FF8C84 /* git_test_clientUITests.swift */; };
 		F28373AE1E03CDBB00EB3BE5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28373AD1E03CDBB00EB3BE5 /* TabBarController.swift */; };
 		F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */; };
+		F28DDF4B1E0C1CE100830F99 /* MBProgressHUDAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DDF4A1E0C1CE100830F99 /* MBProgressHUDAdditions.swift */; };
 		F293FDCC1E0808D000040792 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCB1E0808D000040792 /* Repository.swift */; };
 		F293FDCE1E08091500040792 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCD1E08091500040792 /* Owner.swift */; };
 		F293FDD01E08095300040792 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCF1E08095300040792 /* Readme.swift */; };
@@ -66,6 +67,7 @@
 		F249BB3E1DFFD6C700FF8C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28373AD1E03CDBB00EB3BE5 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
+		F28DDF4A1E0C1CE100830F99 /* MBProgressHUDAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDAdditions.swift; sourceTree = "<group>"; };
 		F293FDCB1E0808D000040792 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F293FDCD1E08091500040792 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		F293FDCF1E08095300040792 /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
@@ -160,7 +162,7 @@
 				F249BB231DFFD6C700FF8C84 /* Assets.xcassets */,
 				F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */,
 				F249BB281DFFD6C700FF8C84 /* Info.plist */,
-				F2BD66371E014A7000D28B8B /* StringAdditions.swift */,
+				F28DDF4C1E0C1E3200830F99 /* Extensions */,
 				F2BD66231DFFF56300D28B8B /* NetworkService.swift */,
 				F2BD66251DFFF69700D28B8B /* DataSource.swift */,
 				F293FDD21E080E9300040792 /* NetworkDataProvider.swift */,
@@ -186,6 +188,15 @@
 				F249BB3E1DFFD6C700FF8C84 /* Info.plist */,
 			);
 			path = "git-test-clientUITests";
+			sourceTree = "<group>";
+		};
+		F28DDF4C1E0C1E3200830F99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66371E014A7000D28B8B /* StringAdditions.swift */,
+				F28DDF4A1E0C1CE100830F99 /* MBProgressHUDAdditions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		F293FDD11E0809FA00040792 /* Models */ = {
@@ -384,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28DDF4B1E0C1CE100830F99 /* MBProgressHUDAdditions.swift in Sources */,
 				F293FDCE1E08091500040792 /* Owner.swift in Sources */,
 				F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */,
 				F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */,

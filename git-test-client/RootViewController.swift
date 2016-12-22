@@ -30,20 +30,12 @@ class RootViewController: UITableViewController {
 
 
     //
-    func hud(with text: String?) -> MBProgressHUD {
-        let hud = MBProgressHUD.showAdded(to: view, animated: true);
-        hud.backgroundView.style = .blur
-        hud.label.text = text
-        hud.mode = .text
-        return hud
-    }
-
     func load() {
         guard let provider = dataProvider else {
             return
         }
 
-        let hud = self.hud(with: "Loading...")
+        let hud = MBProgressHUD.showTextHUDInView(self.view)
 
         provider.load(completionHandler: {
             self.tableView.reloadData()
@@ -96,7 +88,7 @@ class RootViewController: UITableViewController {
 
         let lastElement = provider.count() - 1
         if indexPath.row == lastElement {
-            let hud = self.hud(with: "Loading...")
+            let hud = MBProgressHUD.showTextHUDInView(self.view)
             dataProvider?.loadMore {
                 tableView.reloadData()
                 hud.hide(animated: true)
