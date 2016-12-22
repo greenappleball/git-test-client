@@ -15,6 +15,7 @@ class NetworkService: NSObject {
     var request: DataRequest?
     var urlNext = "https://api.github.com/repositories"
 
+
     func loadRepositories(completionHandler: @escaping ([Repository]) -> Void) {
         if urlNext.characters.count <= 0 {
             completionHandler([])
@@ -96,4 +97,6 @@ class NetworkService: NSObject {
     func cancel() {
         request?.cancel()
     }
+
+
 }

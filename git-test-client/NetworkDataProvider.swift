@@ -12,6 +12,7 @@ class NetworkDataProvider: DataProvider {
 
     let network = NetworkService()
 
+
     override func load(completionHandler: @escaping () -> Void) {
         network.loadRepositories() {responce in
             self.repositories = responce
@@ -36,4 +37,6 @@ class NetworkDataProvider: DataProvider {
     func cancel() {
         network.cancel()
     }
+
+
 }

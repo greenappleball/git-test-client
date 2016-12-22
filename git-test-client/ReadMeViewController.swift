@@ -17,6 +17,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     var repository: Repository?
     var webView: WKWebView!
 
+
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -51,11 +52,6 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -78,5 +74,6 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             sender.title = "-"
         }
     }
+
 
 }

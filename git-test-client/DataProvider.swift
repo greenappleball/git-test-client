@@ -14,6 +14,7 @@ class DataProvider: NSObject {
         return !(self is NetworkDataProvider)
     }
 
+
     // Returns documents path with appending path component `name`
     static func documentsPath(withComponet name: String) throws -> URL {
         let documentDirectoryURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -113,5 +114,6 @@ class DataProvider: NSObject {
         repositories = []
         completionHandler()
     }
+
 
 }

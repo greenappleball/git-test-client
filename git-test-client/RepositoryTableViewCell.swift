@@ -21,16 +21,6 @@ class RepositoryTableViewCell: UITableViewCell {
     
     static let network = NetworkService()
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
     func update(with repository: Repository) {
         labelName.text = repository.fullName
@@ -54,4 +44,6 @@ class RepositoryTableViewCell: UITableViewCell {
             imageViewAvatar.af_setImage(withURL: url, placeholderImage: placeholderImage)
         }
     }
+
+
 }

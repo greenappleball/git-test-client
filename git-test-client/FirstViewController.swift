@@ -19,6 +19,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     }
     var timer: Timer?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
@@ -29,11 +30,6 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         searchBar.resignFirstResponder()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -23,11 +23,6 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func performInit(dataSource: DataSource, for viewController: UIViewController) {
         if let nv: UINavigationController = viewController as? UINavigationController {

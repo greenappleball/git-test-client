@@ -12,6 +12,7 @@ class DataSource: NSObject, UITableViewDataSource {
 
     var dataProvider: DataProvider
 
+
     init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
         super.init()
@@ -33,4 +34,6 @@ class DataSource: NSObject, UITableViewDataSource {
         }
         return cell
     }
+
+
 }

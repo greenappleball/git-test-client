@@ -14,7 +14,8 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     var repository: Repository?
 
     var webView: WKWebView!
-    
+
+
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -34,9 +35,5 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 }
