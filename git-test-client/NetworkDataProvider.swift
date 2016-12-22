@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkDataProvider: DataProvider {
 
-    let network = NetworkService()
+    let network = NetworkService.sharedInstance
 
 
     override func load(completionHandler: @escaping () -> Void) {

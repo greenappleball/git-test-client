@@ -28,7 +28,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let network = NetworkService()
+        let network = NetworkService.sharedInstance
         guard let repos = repository else {
             return
         }

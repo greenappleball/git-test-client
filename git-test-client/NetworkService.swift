@@ -11,7 +11,8 @@ import ObjectMapper
 import AlamofireObjectMapper
 
 class NetworkService: NSObject {
-    
+
+    static let sharedInstance = NetworkService()
     var request: DataRequest?
     var urlNext = "https://api.github.com/repositories"
 
