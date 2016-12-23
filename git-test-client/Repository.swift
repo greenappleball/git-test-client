@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 class Repository: Mappable {
+
     var id: Int = 0
     var url: String?
     var name: String?
@@ -24,7 +25,7 @@ class Repository: Mappable {
     var updatedOn: String?
     
     static let dateFormatter = DateFormatter()
-    
+    var isDetailed = false
     
     // Mappable
     required init?(map: Map){
@@ -52,4 +53,19 @@ class Repository: Mappable {
             }
         }
     }
+
+    func loadDetails(completionHandler: @escaping (_ repository: Repository) -> Void) {
+        guard !isDetailed else {
+            return
+        }
+
+        NetworkService.sharedInstance.loadDetails(for: self) { [weak self] repository in
+            self?.stargazersCount = repository.stargazersCount
+            self?.forksCount = repository.forksCount
+            self?.language = repository.language
+            self?.isDetailed = true
+            completionHandler(self!)
+        }
+    }
+
 }

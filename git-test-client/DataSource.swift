@@ -28,7 +28,10 @@ class DataSource: NSObject, UITableViewDataSource {
         let item = dataProvider.item(for: indexPath)
 
         if let repositoryTableViewCell = cell as? RepositoryTableViewCell {
-            repositoryTableViewCell.update(with: item)
+            repositoryTableViewCell.updateWithRepository(item)
+            item.loadDetails(completionHandler: { [weak repositoryTableViewCell] repository in
+                repositoryTableViewCell?.updateWithRepository(repository)
+            })
         } else {
             cell.textLabel?.text = item.fullName
         }

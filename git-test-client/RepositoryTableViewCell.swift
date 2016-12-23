@@ -22,16 +22,14 @@ class RepositoryTableViewCell: UITableViewCell {
     static let network = NetworkService.sharedInstance
 
 
-    func update(with repository: Repository) {
+    func updateWithRepository(_ repository: Repository) {
         labelName.text = repository.fullName
         labelDescription.text = repository.description
 
-        RepositoryTableViewCell.network.loadDetails(for: repository) { repository in
-            self.labelStars.text = "\(repository.stargazersCount)"
-            self.labelForks.text = "\(repository.forksCount)"
-            self.labelLanguage.text = repository.language
-            self.labelUpdate.text = repository.updatedOn
-        }
+        labelStars.text = "\(repository.stargazersCount)"
+        labelForks.text = "\(repository.forksCount)"
+        labelLanguage.text = repository.language
+        labelUpdate.text = repository.updatedOn
 
         if let owner = repository.owner {
             guard let avatarUrl = owner.avatarUrl else {
