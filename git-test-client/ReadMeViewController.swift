@@ -14,7 +14,7 @@ import ObjectMapper
 class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
     @IBOutlet weak var addItem: UIBarButtonItem?
-    var repository: Repository?
+    var repository: Repository!
     var webView: WKWebView!
 
 

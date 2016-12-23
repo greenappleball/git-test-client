@@ -11,7 +11,7 @@ import WebKit
 
 class WebViewController: UIViewController, WKNavigationDelegate {
 
-    var repository: Repository?
+    var repository: Repository!
 
     var webView: WKWebView!
 
