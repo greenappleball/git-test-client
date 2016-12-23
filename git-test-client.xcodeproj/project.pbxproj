@@ -17,6 +17,7 @@
 		F28373AE1E03CDBB00EB3BE5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28373AD1E03CDBB00EB3BE5 /* TabBarController.swift */; };
 		F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */; };
 		F28DDF4B1E0C1CE100830F99 /* MBProgressHUDAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DDF4A1E0C1CE100830F99 /* MBProgressHUDAdditions.swift */; };
+		F28DDF4E1E0D2AE400830F99 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DDF4D1E0D2AE400830F99 /* Formatters.swift */; };
 		F293FDCC1E0808D000040792 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCB1E0808D000040792 /* Repository.swift */; };
 		F293FDCE1E08091500040792 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCD1E08091500040792 /* Owner.swift */; };
 		F293FDD01E08095300040792 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCF1E08095300040792 /* Readme.swift */; };
@@ -68,6 +69,7 @@
 		F28373AD1E03CDBB00EB3BE5 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
 		F28DDF4A1E0C1CE100830F99 /* MBProgressHUDAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDAdditions.swift; sourceTree = "<group>"; };
+		F28DDF4D1E0D2AE400830F99 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		F293FDCB1E0808D000040792 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F293FDCD1E08091500040792 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		F293FDCF1E08095300040792 /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				F293FDD21E080E9300040792 /* NetworkDataProvider.swift */,
 				F293FDD41E082AFB00040792 /* DataProvider.swift */,
 				F293FDD11E0809FA00040792 /* Models */,
+				F28DDF4D1E0D2AE400830F99 /* Formatters.swift */,
 			);
 			path = "git-test-client";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				F2BD66261DFFF69700D28B8B /* DataSource.swift in Sources */,
 				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
 				F2BD66381E014A7000D28B8B /* StringAdditions.swift in Sources */,
+				F28DDF4E1E0D2AE400830F99 /* Formatters.swift in Sources */,
 				F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */,
 				F293FDD31E080E9300040792 /* NetworkDataProvider.swift in Sources */,
 				F28373B21E03E6C800EB3BE5 /* ReadMeViewController.swift in Sources */,

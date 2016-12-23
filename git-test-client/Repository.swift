@@ -21,10 +21,15 @@ class Repository: Mappable {
     var forksCount: Int = 0
     var stargazersCount: Int = 0
     var language: String?
-    var updatedAt: String?
+    var updatedAt: Date? {
+        willSet {
+            if let value = newValue {
+                updatedOn = "Updated on \(Formatters.Date.medium.string(from: value))"
+            }
+        }
+    }
     var updatedOn: String?
     
-    static let dateFormatter = DateFormatter()
     var isDetailed = false
     
     // Mappable
@@ -43,15 +48,7 @@ class Repository: Mappable {
         stargazersCount <- map["stargazers_count"]
         owner <- map["owner"]
         language <- map["language"]
-        updatedAt <- map["updated_at"]
-        
-        if let updatedAtStr = updatedAt {
-            Repository.dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-            if let updated = Repository.dateFormatter.date(from: updatedAtStr) {
-                Repository.dateFormatter.dateFormat = "MMM dd, yyyy"
-                updatedOn = "Updated on \(Repository.dateFormatter.string(from: updated))"
-            }
-        }
+        updatedAt <- (map["updated_at"], ISO8601DateTransform())
     }
 
     func loadDetails(completionHandler: @escaping (_ repository: Repository) -> Void) {
