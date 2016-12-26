@@ -177,7 +177,6 @@
 				F2D1525A1E112838004C96C7 /* FavoritesManager.swift */,
 				F28DDF511E0D486700830F99 /* DataProvider.swift */,
 				F293FDD11E0809FA00040792 /* Models */,
-				F28DDF4D1E0D2AE400830F99 /* Formatters.swift */,
 				F28DDF5B1E1109E200830F99 /* Definitions */,
 			);
 			path = "git-test-client";
@@ -213,6 +212,7 @@
 		F28DDF5B1E1109E200830F99 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
+				F28DDF4D1E0D2AE400830F99 /* Formatters.swift */,
 				F28DDF571E0D664700830F99 /* Storage.swift */,
 				F28DDF591E11086000830F99 /* Errors.swift */,
 			);
