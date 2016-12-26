@@ -88,7 +88,8 @@ class NetworkService: NSObject {
         }
         
         request = Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
-            guard let result = response.result.value else {
+            guard let result = response.result.value, result.id != 0 else {
+                completionHandler(repository)
                 return
             }
             completionHandler(result)

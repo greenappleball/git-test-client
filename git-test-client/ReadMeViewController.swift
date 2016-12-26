@@ -36,7 +36,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             title = "README"
         }
 
-        addItem?.title = repos.isFavorite() ? "-" : "+"
+        addItem?.title = FavoritesDataProvider.isFavoriteRepository(repos) ? "-" : "+"
 
         let network = NetworkService.sharedInstance
         network.loadReadme(for: repos) { readme in
@@ -65,11 +65,11 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
         guard let repository = repository else {
             return
         }
-        if repository.isFavorite() {
-            repository.removeFromFavorite()
+        if FavoritesDataProvider.isFavoriteRepository(repository) {
+            FavoritesDataProvider.removeFromFavoriteRepository(repository)
             sender.title = "+"
         } else {
-            repository.addToFavorite()
+            FavoritesDataProvider.addToFavoriteRepository(repository)
             sender.title = "-"
         }
     }

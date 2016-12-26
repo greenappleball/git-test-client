@@ -21,6 +21,10 @@ class NetworkDataProvider: DataProvider {
         network.loadRepositories() { responce in completionHandler(responce) }
     }
     
+    internal func loadRepositoryDetails(_ repository: Repository, completionHandler: @escaping (_ repository: Repository) -> Void) {
+        network.loadDetails(for: repository) { repository in completionHandler(repository) }
+    }
+
     internal func loadMore(completionHandler: @escaping (_ repositories: [Repository]) -> Void) {
         network.loadRepositories() { responce in completionHandler(responce) }
     }
