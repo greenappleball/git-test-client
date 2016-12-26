@@ -1,20 +1,20 @@
 //
-//  RootViewController.swift
+//  FavoritesViewController.swift
 //  git-test-client
 //
-//  Created by Dmitri Petrishin on 12/13/16.
+//  Created by Dmitri Petrishin on 12/23/16.
 //  Copyright © 2016 PI. All rights reserved.
 //
 
 import UIKit
 import MBProgressHUD
 
-class RootViewController: UITableViewController {
+class FavoritesViewController: UITableViewController {
 
     let dataSource = DataSource()
-    let dataProvider = NetworkDataProvider()
-
-
+    let dataProvider = FavoritesDataProvider()
+    
+    
     //
     func load() {
         let hud = MBProgressHUD.showTextHUDInView(self.view)
@@ -25,7 +25,7 @@ class RootViewController: UITableViewController {
             hud.hide(animated: true)
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,14 +33,17 @@ class RootViewController: UITableViewController {
         tableView.dataSource = dataSource
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 84
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         load()
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails"{
             navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? ReadMeViewController
-
             guard let indexPath = tableView.indexPathForSelectedRow else {
                 return
             }
@@ -51,19 +54,6 @@ class RootViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetails", sender: self)
     }
-    
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastElement = dataSource.count() - 1
-        if indexPath.row == lastElement {
-            let hud = MBProgressHUD.showTextHUDInView(self.view)
-            dataProvider.loadMore { [weak self] repositories in
-                self?.dataSource.repositories += repositories
-                self?.tableView.reloadData()
-                hud.hide(animated: true)
-            }
-        }
-    }
 
 
 }
-

@@ -12,30 +12,21 @@ class NetworkDataProvider: DataProvider {
 
     let network = NetworkService.sharedInstance
 
+    // DataProvider
+    internal func cancel() {
+        network.cancel()
+    }
 
-    override func load(completionHandler: @escaping () -> Void) {
-        network.loadRepositories() {responce in
-            self.repositories = responce
-            completionHandler()
-        }
+    internal func load(completionHandler: @escaping (_ repositories: [Repository]) -> Void) {
+        network.loadRepositories() { responce in completionHandler(responce) }
     }
     
-    override func loadMore(completionHandler: @escaping () -> Void) {
-        network.loadRepositories() {responce in
-            self.repositories += responce
-            completionHandler()
-        }
+    internal func loadMore(completionHandler: @escaping (_ repositories: [Repository]) -> Void) {
+        network.loadRepositories() { responce in completionHandler(responce) }
     }
 
-    override func found(by text: String?, sort: String?, order: String?, completionHandler: @escaping () -> Void) {
-        network.searchRepositories(q: text, sort: sort, order: order) { responce in
-            self.repositories = responce
-            completionHandler()
-        }
-    }
-
-    func cancel() {
-        network.cancel()
+    internal func searchTerm(_ term: String?, sort: String?, order: String?, completionHandler: @escaping (_ repositories: [Repository]) -> Void) {
+        network.searchRepositories(q: term, sort: sort, order: order) { responce in completionHandler(responce) }
     }
 
 

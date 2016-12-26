@@ -18,8 +18,6 @@ class RepositoryTableViewCell: UITableViewCell {
     @IBOutlet weak var labelForks: UILabel!
     @IBOutlet weak var labelUpdate: UILabel!
     @IBOutlet weak var imageViewAvatar: UIImageView!
-    
-    static let network = NetworkService.sharedInstance
 
 
     func updateWithRepository(_ repository: Repository) {

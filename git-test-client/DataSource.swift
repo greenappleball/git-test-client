@@ -10,22 +10,32 @@ import UIKit
 
 class DataSource: NSObject, UITableViewDataSource {
 
-    var dataProvider: DataProvider
+    var repositories: [Repository] = []
 
-
-    init(dataProvider: DataProvider) {
-        self.dataProvider = dataProvider
-        super.init()
+    // Returns count of repositories
+    func count() -> Int {
+        return repositories.count;
+    }
+    
+    // Returns `Repository` for `indexPath`
+    func item(for indexPath: IndexPath) -> Repository {
+        return repositories[indexPath.row]
+    }
+    
+    // Clear `repositories` array
+    func clear(completionHandler: @escaping () -> Void) {
+        repositories = []
+        completionHandler()
     }
 
     // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataProvider.count()
+        return count()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
-        let item = dataProvider.item(for: indexPath)
+        let item = self.item(for: indexPath)
 
         if let repositoryTableViewCell = cell as? RepositoryTableViewCell {
             repositoryTableViewCell.updateWithRepository(item)

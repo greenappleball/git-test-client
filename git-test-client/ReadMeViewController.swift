@@ -9,7 +9,6 @@
 import UIKit
 import WebKit
 import Down
-import ObjectMapper
 
 class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
@@ -28,7 +27,6 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let network = NetworkService.sharedInstance
         guard let repos = repository else {
             return
         }
@@ -38,8 +36,9 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             title = "README"
         }
 
-        addItem?.title = DataProvider.isFavoriteRepository(repos) ? "-" : "+"
+        addItem?.title = repos.isFavorite() ? "-" : "+"
 
+        let network = NetworkService.sharedInstance
         network.loadReadme(for: repos) { readme in
             if let content = readme.content {
                 guard let htmlBase65 = content.fromBase64() else {
@@ -55,7 +54,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showWeb"{
+        if segue.identifier == "showWeb" {
             navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
             let vc = segue.destination as? WebViewController
             vc?.repository = repository
@@ -66,11 +65,11 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
         guard let repository = repository else {
             return
         }
-        if DataProvider.isFavoriteRepository(repository) {
-            DataProvider.removeFromFavoriteRepository(repository)
+        if repository.isFavorite() {
+            repository.removeFromFavorite()
             sender.title = "+"
         } else {
-            DataProvider.addToFavoriteRepository(repository)
+            repository.addToFavorite()
             sender.title = "-"
         }
     }

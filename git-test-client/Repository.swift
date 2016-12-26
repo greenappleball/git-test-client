@@ -65,4 +65,48 @@ class Repository: Mappable {
         }
     }
 
+    // favorites manager
+    func isRepositories(_ repositories: [Repository], contains repository: Repository) -> Bool {
+        return repositories.contains(where: { (object: Repository) -> Bool in return object.id == repository.id })
+    }
+
+    func isFavorite() -> Bool {
+        guard let urlCache = Storage.Path.favorites else {
+            return false
+        }
+        let cache = FavoritesDataProvider.cachedRepositories(by: urlCache)
+        return isRepositories(cache, contains: self)
+    }
+
+    func addToFavorite() {
+        do {
+            guard let urlCache = Storage.Path.favorites else {
+                throw Errors.Internal.wrongCachePath
+            }
+            var cache = FavoritesDataProvider.cachedRepositories(by: urlCache)
+            if !isRepositories(cache, contains: self) {
+                cache.append(self)
+                try cache.toJSONString()?.write(to: urlCache, atomically: true, encoding: .utf8)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+
+    func removeFromFavorite() {
+        do {
+            guard let urlCache = Storage.Path.favorites else {
+                throw Errors.Internal.wrongCachePath
+            }
+            var cache = FavoritesDataProvider.cachedRepositories(by: urlCache)
+            if let index = cache.index(where: { (object: Repository) -> Bool in object.id == self.id }) {
+                cache.remove(at: index)
+                try cache.toJSONString()?.write(to: urlCache, atomically: true, encoding: .utf8)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+
+
 }

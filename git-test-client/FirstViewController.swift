@@ -11,19 +11,16 @@ import MBProgressHUD
 
 class FirstViewController: UITableViewController, UISearchBarDelegate {
 
+    let dataSource = DataSource()
+    let dataProvider = NetworkDataProvider()
+    var timer: Timer?
     @IBOutlet weak var searchBar: UISearchBar!
 
-    var dataSource = DataSource(dataProvider: NetworkDataProvider())
-    var dataProvider: NetworkDataProvider? {
-        return dataSource.dataProvider as? NetworkDataProvider
-    }
-    var timer: Timer?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = dataSource
         tableView.delegate = self
+        tableView.dataSource = dataSource
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 84
     }
@@ -39,7 +36,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
             guard let indexPath = tableView.indexPathForSelectedRow else {
                 return
             }
-            vc?.repository = dataProvider?.item(for: indexPath)
+            vc?.repository = dataSource.item(for: indexPath)
         }
     }
 
@@ -58,18 +55,19 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        dataProvider?.cancel()
+        dataProvider.cancel()
         if searchText.characters.count > 0 {
             timer?.invalidate()
-            timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { _ in
-                let hud = MBProgressHUD.showTextHUDInView(self.view, with: "Searching...")
-                self.dataProvider?.found(by: searchText, sort: nil, order: nil, completionHandler: {
-                    self.tableView.reloadData()
+            timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false, block: { [weak self] _ in
+                let hud = MBProgressHUD.showTextHUDInView((self?.view)!, with: "Searching...")
+                self?.dataProvider.searchTerm(searchText, sort: nil, order: nil, completionHandler: { [weak self] repositories in
+                    self?.dataSource.repositories = repositories
+                    self?.tableView.reloadData()
                     hud.hide(animated: true)
                 })
             })
         } else {
-            dataProvider?.clear {
+            dataSource.clear {
                 self.tableView.reloadData()
             }
         }
