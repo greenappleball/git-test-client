@@ -17,7 +17,7 @@ class RootViewController: UITableViewController {
 
     //
     func load() {
-        let hud = MBProgressHUD.showTextHUDInView(self.view)
+        let hud = MBProgressHUD.showTextHUDInView(self.navigationController?.view ?? self.view)
 
         dataProvider.load { [weak self] repositories in
             self?.repositories = repositories
