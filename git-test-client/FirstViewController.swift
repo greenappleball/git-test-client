@@ -12,32 +12,46 @@ import MBProgressHUD
 class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     var repositories: [Repository] = []
-    let dataProvider = NetworkDataProvider()
+    var dataProvider: DataProvider!
     var timer: Timer?
-    @IBOutlet weak var searchBar: UISearchBar!
+    var searchBar: UISearchBar!
 
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    init(dataProvider: DataProvider) {
+        self.dataProvider = dataProvider
+        super.init(style: .plain)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        self.dataProvider = NetworkDataProvider()
+        super.init(coder: aDecoder)
+    }
+
+    func setupSearchBar() {
+        searchBar = UISearchBar(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 44))
+        searchBar.showsCancelButton = true
+        searchBar.delegate = self
+    }
+
+    func setupTableView() {
+        tableView.tableHeaderView = searchBar
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 84
+
+        tableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupSearchBar()
+        setupTableView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         searchBar.resignFirstResponder()
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetails"{
-            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Search", style: .done, target: nil, action: nil)
-            let vc = segue.destination as? ReadMeViewController
-            guard let indexPath = tableView.indexPathForSelectedRow else {
-                return
-            }
-            vc?.repository = repositories[indexPath.row]
-        }
     }
 
     // UITableViewDataSource
@@ -59,7 +73,11 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
 
     // UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetails", sender: self)
+        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
+        guard let vc = ReadMeViewController(repository: repositories[indexPath.row]) else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     // UISearchBarDelegate

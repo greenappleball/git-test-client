@@ -16,6 +16,15 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
 
 
+    init?(repository: Repository) {
+        self.repository = repository
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -26,6 +35,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Web source"
         guard let repository = repository, let htmlUrl = repository.htmlUrl else {
             return
         }

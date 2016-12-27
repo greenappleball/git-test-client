@@ -12,10 +12,25 @@ import Down
 
 class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
-    @IBOutlet weak var addItem: UIBarButtonItem?
+    var addItem: UIBarButtonItem?
     var repository: Repository!
     var webView: WKWebView!
 
+
+    init?(repository: Repository) {
+        self.repository = repository
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    func rightBarButtonItems() -> [UIBarButtonItem] {
+        let webItem = UIBarButtonItem.init(barButtonSystemItem: .bookmarks, target: self, action: #selector(bookmarkButtonHandler(_:)))
+        addItem = UIBarButtonItem.init(title: "-", style: .done, target: self, action: #selector(addFavoriteHandler(_:)))
+        return [webItem, addItem!]
+    }
 
     override func loadView() {
         webView = WKWebView()
@@ -36,6 +51,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             title = "README"
         }
 
+        navigationItem.rightBarButtonItems = rightBarButtonItems()
         addItem?.title = FavoritesDataProvider.isFavoriteRepository(repos) ? "-" : "+"
 
         let network = NetworkService.sharedInstance
@@ -53,11 +69,10 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     }
     
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showWeb" {
-            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
-            let vc = segue.destination as? WebViewController
-            vc?.repository = repository
+    func bookmarkButtonHandler(_ sender: UIBarButtonItem) {
+        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
+        if let vc = WebViewController(repository: repository) {
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 

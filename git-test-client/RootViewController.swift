@@ -12,10 +12,20 @@ import MBProgressHUD
 class RootViewController: UITableViewController {
 
     var repositories: [Repository] = []
-    let dataProvider = NetworkDataProvider()
+    var dataProvider: DataProvider!
 
 
     //
+    init(dataProvider: DataProvider) {
+        self.dataProvider = dataProvider
+        super.init(style: .plain)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        self.dataProvider = NetworkDataProvider()
+        super.init(coder: aDecoder)
+    }
+
     func load() {
         let hud = MBProgressHUD.showTextHUDInView(self.navigationController?.view ?? self.view)
 
@@ -33,19 +43,10 @@ class RootViewController: UITableViewController {
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 84
+
+        tableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
+
         load()
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetails"{
-            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
-            let vc = segue.destination as? ReadMeViewController
-
-            guard let indexPath = tableView.indexPathForSelectedRow else {
-                return
-            }
-            vc?.repository = repositories[indexPath.row]
-        }
     }
 
     // UITableViewDataSource
@@ -70,7 +71,11 @@ class RootViewController: UITableViewController {
 
     // UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetails", sender: self)
+        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
+        guard let vc = ReadMeViewController(repository: repositories[indexPath.row]) else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
