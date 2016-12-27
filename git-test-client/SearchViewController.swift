@@ -9,10 +9,10 @@
 import UIKit
 import MBProgressHUD
 
-class FirstViewController: UITableViewController, UISearchBarDelegate {
+class SearchViewController: UITableViewController, UISearchBarDelegate {
 
     var repositories: [Repository] = []
-    var dataProvider: DataProvider!
+    let dataProvider: DataProvider
     var timer: Timer?
     var searchBar: UISearchBar!
 
@@ -20,14 +20,14 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
     init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
         super.init(style: .plain)
+		self.title = "Search"
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        self.dataProvider = NetworkDataProvider()
-        super.init(coder: aDecoder)
-    }
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
-    func setupSearchBar() {
+	func setupSearchBar() {
         searchBar = UISearchBar(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 44))
         searchBar.showsCancelButton = true
         searchBar.delegate = self
@@ -49,7 +49,7 @@ class FirstViewController: UITableViewController, UISearchBarDelegate {
         setupSearchBar()
         setupTableView()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         searchBar.resignFirstResponder()
     }

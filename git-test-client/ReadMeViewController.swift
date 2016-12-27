@@ -13,7 +13,7 @@ import Down
 class ReadMeViewController: UIViewController, WKNavigationDelegate {
 
     var addItem: UIBarButtonItem?
-    var repository: Repository!
+    let repository: Repository
     var webView: WKWebView!
 
 
@@ -23,7 +23,7 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 
     func rightBarButtonItems() -> [UIBarButtonItem] {
@@ -42,20 +42,17 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let repos = repository else {
-            return
-        }
-        if let fullName = repos.fullName {
+        if let fullName = repository.fullName {
             title = fullName + "/README"
         } else {
             title = "README"
         }
 
         navigationItem.rightBarButtonItems = rightBarButtonItems()
-        addItem?.title = FavoritesDataProvider.isFavoriteRepository(repos) ? "-" : "+"
+        addItem?.title = FavoritesDataProvider.isFavoriteRepository(repository) ? "-" : "+"
 
         let network = NetworkService.sharedInstance
-        network.loadReadme(for: repos) { readme in
+        network.loadReadme(for: repository) { readme in
             if let content = readme.content {
                 guard let htmlBase65 = content.fromBase64() else {
                     return
@@ -67,19 +64,15 @@ class ReadMeViewController: UIViewController, WKNavigationDelegate {
             }
         }
     }
-    
+
 
     func bookmarkButtonHandler(_ sender: UIBarButtonItem) {
         navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
-        if let vc = WebViewController(repository: repository) {
-            navigationController?.pushViewController(vc, animated: true)
-        }
+        let vc = WebViewController(repository: repository)
+		navigationController?.pushViewController(vc, animated: true)
     }
 
     @IBAction func addFavoriteHandler(_ sender: UIBarButtonItem) {
-        guard let repository = repository else {
-            return
-        }
         if FavoritesDataProvider.isFavoriteRepository(repository) {
             FavoritesDataProvider.removeFromFavoriteRepository(repository)
             sender.title = "+"

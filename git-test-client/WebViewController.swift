@@ -11,18 +11,18 @@ import WebKit
 
 class WebViewController: UIViewController, WKNavigationDelegate {
 
-    var repository: Repository!
+    var repository: Repository
 
     var webView: WKWebView!
 
 
-    init?(repository: Repository) {
+    init(repository: Repository) {
         self.repository = repository
         super.init(nibName: nil, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func loadView() {
@@ -36,7 +36,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
 
         title = "Web source"
-        guard let repository = repository, let htmlUrl = repository.htmlUrl else {
+        guard let htmlUrl = repository.htmlUrl else {
             return
         }
 

@@ -9,22 +9,21 @@
 import UIKit
 import MBProgressHUD
 
-class RootViewController: UITableViewController {
+class PublicReposViewController: UITableViewController {
 
     var repositories: [Repository] = []
-    var dataProvider: DataProvider!
-
+    var dataProvider: DataProvider
 
     //
     init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
         super.init(style: .plain)
+		self.title = "Repositories"
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        self.dataProvider = NetworkDataProvider()
-        super.init(coder: aDecoder)
-    }
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
     func load() {
         let hud = MBProgressHUD.showTextHUDInView(self.navigationController?.view ?? self.view)
@@ -77,7 +76,7 @@ class RootViewController: UITableViewController {
         }
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastElement = repositories.count - 1
         if indexPath.row == lastElement {
@@ -89,7 +88,5 @@ class RootViewController: UITableViewController {
             }
         }
     }
-
-
 }
 

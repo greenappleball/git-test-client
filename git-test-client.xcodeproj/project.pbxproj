@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4E7C52032669A67F57190736 /* Pods_General_git_test_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262C0E99D3A3EA18E696AB06 /* Pods_General_git_test_client.framework */; };
+		633749E41E12988300D943D3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633749E31E12988300D943D3 /* UIViewController+Additions.swift */; };
 		F249BB1B1DFFD6C700FF8C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */; };
-		F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */; };
+		F249BB1D1DFFD6C700FF8C84 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB1C1DFFD6C700FF8C84 /* SearchViewController.swift */; };
 		F249BB241DFFD6C700FF8C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F249BB231DFFD6C700FF8C84 /* Assets.xcassets */; };
 		F249BB271DFFD6C700FF8C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F249BB251DFFD6C700FF8C84 /* LaunchScreen.storyboard */; };
 		F249BB321DFFD6C700FF8C84 /* git_test_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249BB311DFFD6C700FF8C84 /* git_test_clientTests.swift */; };
@@ -26,7 +27,7 @@
 		F293FDD01E08095300040792 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDCF1E08095300040792 /* Readme.swift */; };
 		F293FDD31E080E9300040792 /* NetworkDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDD21E080E9300040792 /* NetworkDataProvider.swift */; };
 		F293FDD51E082AFB00040792 /* FavoritesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293FDD41E082AFB00040792 /* FavoritesDataProvider.swift */; };
-		F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66211DFFF26300D28B8B /* RootViewController.swift */; };
+		F2BD66221DFFF26300D28B8B /* PublicReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66211DFFF26300D28B8B /* PublicReposViewController.swift */; };
 		F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66231DFFF56300D28B8B /* NetworkService.swift */; };
 		F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66281E001B8100D28B8B /* SearchResult.swift */; };
 		F2BD66321E013A2700D28B8B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66311E013A2700D28B8B /* WebViewController.swift */; };
@@ -55,11 +56,12 @@
 
 /* Begin PBXFileReference section */
 		262C0E99D3A3EA18E696AB06 /* Pods_General_git_test_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_General_git_test_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		633749E31E12988300D943D3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		A7ADBD08F149EE770BD52128 /* Pods-General-git-test-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General-git-test-client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-General-git-test-client/Pods-General-git-test-client.debug.xcconfig"; sourceTree = "<group>"; };
 		E352D0150D293108085BB9B5 /* Pods-General-git-test-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General-git-test-client.release.xcconfig"; path = "Pods/Target Support Files/Pods-General-git-test-client/Pods-General-git-test-client.release.xcconfig"; sourceTree = "<group>"; };
 		F249BB171DFFD6C700FF8C84 /* git-test-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "git-test-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F249BB1C1DFFD6C700FF8C84 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F249BB231DFFD6C700FF8C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F249BB261DFFD6C700FF8C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F249BB281DFFD6C700FF8C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		F293FDCF1E08095300040792 /* Readme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 		F293FDD21E080E9300040792 /* NetworkDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataProvider.swift; sourceTree = "<group>"; };
 		F293FDD41E082AFB00040792 /* FavoritesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesDataProvider.swift; sourceTree = "<group>"; };
-		F2BD66211DFFF26300D28B8B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F2BD66211DFFF26300D28B8B /* PublicReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicReposViewController.swift; sourceTree = "<group>"; };
 		F2BD66231DFFF56300D28B8B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F2BD66281E001B8100D28B8B /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		F2BD66311E013A2700D28B8B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -160,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				F249BB1A1DFFD6C700FF8C84 /* AppDelegate.swift */,
-				F249BB1C1DFFD6C700FF8C84 /* FirstViewController.swift */,
-				F2BD66211DFFF26300D28B8B /* RootViewController.swift */,
+				F249BB1C1DFFD6C700FF8C84 /* SearchViewController.swift */,
+				F2BD66211DFFF26300D28B8B /* PublicReposViewController.swift */,
 				F28DDF4F1E0D339A00830F99 /* FavoritesViewController.swift */,
 				F2BD66311E013A2700D28B8B /* WebViewController.swift */,
 				F28373B11E03E6C800EB3BE5 /* ReadMeViewController.swift */,
@@ -178,6 +180,7 @@
 				F28DDF511E0D486700830F99 /* DataProvider.swift */,
 				F293FDD11E0809FA00040792 /* Models */,
 				F28DDF5B1E1109E200830F99 /* Definitions */,
+				633749E31E12988300D943D3 /* UIViewController+Additions.swift */,
 			);
 			path = "git-test-client";
 			sourceTree = "<group>";
@@ -424,10 +427,11 @@
 				F2D09D021E018B53004173C9 /* RepositoryTableViewCell.swift in Sources */,
 				F293FDD01E08095300040792 /* Readme.swift in Sources */,
 				F28DDF581E0D664700830F99 /* Storage.swift in Sources */,
-				F249BB1D1DFFD6C700FF8C84 /* FirstViewController.swift in Sources */,
+				F249BB1D1DFFD6C700FF8C84 /* SearchViewController.swift in Sources */,
+				633749E41E12988300D943D3 /* UIViewController+Additions.swift in Sources */,
 				F2BD66241DFFF56300D28B8B /* NetworkService.swift in Sources */,
 				F28DDF501E0D339A00830F99 /* FavoritesViewController.swift in Sources */,
-				F2BD66221DFFF26300D28B8B /* RootViewController.swift in Sources */,
+				F2BD66221DFFF26300D28B8B /* PublicReposViewController.swift in Sources */,
 				F2BD66381E014A7000D28B8B /* StringAdditions.swift in Sources */,
 				F28DDF4E1E0D2AE400830F99 /* Formatters.swift in Sources */,
 				F2BD66291E001B8100D28B8B /* SearchResult.swift in Sources */,

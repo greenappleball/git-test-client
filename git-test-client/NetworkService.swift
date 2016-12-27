@@ -10,7 +10,7 @@ import Alamofire
 import ObjectMapper
 import AlamofireObjectMapper
 
-class NetworkService: NSObject {
+class NetworkService {
 
     static let sharedInstance = NetworkService()
     var request: DataRequest?
@@ -41,7 +41,7 @@ class NetworkService: NSObject {
             }
         }
     }
-    
+
     func searchRepositories(q: String?, sort: String?, order: String?, completionHandler: @escaping ([Repository]) -> Void) {
         guard let query = q else {
             completionHandler([])
@@ -86,8 +86,9 @@ class NetworkService: NSObject {
         guard let url = repository.url else {
             return
         }
-        
+
         request = Alamofire.request(url).responseObject { (response: DataResponse<Repository>) in
+			print("request")
             guard let result = response.result.value, result.id != 0 else {
                 completionHandler(repository)
                 return

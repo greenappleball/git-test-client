@@ -12,20 +12,19 @@ import MBProgressHUD
 class FavoritesViewController: UITableViewController {
 
     var repositories: [Repository] = []
-    var dataProvider: DataProvider!
-    
-    
+    var dataProvider: DataProvider
+
     //
     init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
         super.init(style: .plain)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        self.dataProvider = NetworkDataProvider()
-        super.init(coder: aDecoder)
+		self.title = "Favorites"
     }
 
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+	
     func load() {
         let hud = MBProgressHUD.showTextHUDInView(self.view)
 
@@ -35,7 +34,7 @@ class FavoritesViewController: UITableViewController {
             hud.hide(animated: true)
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,12 +45,12 @@ class FavoritesViewController: UITableViewController {
 
         tableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         load()
     }
-    
+
     // UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repositories.count
