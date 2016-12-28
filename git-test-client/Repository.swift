@@ -25,10 +25,12 @@ class Repository: Mappable {
         willSet {
             if let value = newValue {
                 updatedOn = "Updated on \(Formatters.Date.medium.string(from: value))"
+                isDetailed = true
             }
         }
     }
     var updatedOn: String?
+    var isDetailed = false
     
     // Mappable
     required init?(map: Map){
