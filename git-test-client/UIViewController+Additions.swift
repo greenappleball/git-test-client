@@ -21,6 +21,7 @@ extension UIViewController {
 			nc.tabBarItem = UITabBarItem(title: self.title, image: image, selectedImage: nil)
 		}
 	}
+
     func addChild(viewController controller: UIViewController) {
         addChildViewController(controller)
         controller.view.frame = view.bounds

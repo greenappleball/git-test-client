@@ -97,7 +97,7 @@ class RepositoriesViewController: UITableViewController {
     }
 
     func load() {
-        let hud = MBProgressHUD.showTextHUDInView(self.view)
+        let hud = MBProgressHUD.showTextHUDInView(view)
 
         dataProvider.load { [weak self] repositories in
             self?.repositories = repositories
@@ -107,7 +107,7 @@ class RepositoriesViewController: UITableViewController {
     }
 
     func loadMore()  {
-        let hud = MBProgressHUD.showTextHUDInView(self.view)
+        let hud = MBProgressHUD.showTextHUDInView(navigationController?.view ?? view)
         dataProvider.loadMore { [weak self] repositories in
             self?.repositories += repositories
             self?.tableView.reloadData()
