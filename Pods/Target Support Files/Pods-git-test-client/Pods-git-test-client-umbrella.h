@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double AlamofireVersionNumber;
-FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
+FOUNDATION_EXPORT double Pods_git_test_clientVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_git_test_clientVersionString[];
 
