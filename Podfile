@@ -5,14 +5,15 @@ inhibit_all_warnings!
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-abstract_target 'General' do
-
+def common
     pod 'AlamofireObjectMapper'
     pod 'AlamofireImage'
+    pod 'Alamofire', '~> 4.0'
     pod 'MBProgressHUD'
     pod 'Down'
-
-	target 'git-test-client' do
-  	end
-
 end
+
+target 'git-test-client' do
+    common
+end
+
