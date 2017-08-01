@@ -14,6 +14,7 @@ def common
 
     pod 'RxSwift', '~> 3.4'
     pod 'RxCocoa', '~> 3.4'
+    pod 'RxDataSources', '~> 1.0'
 end
 
 target 'git-test-client' do
