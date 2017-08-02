@@ -9,10 +9,15 @@
 import UIKit
 import MBProgressHUD
 
+import RxCocoa
+import RxSwift
+
 class RepositoriesViewController: UITableViewController {
 
-    var repositories: [Repository] = []
+    var repositories = Variable<[Repository]>([])
     let dataProvider: DataProvider
+
+    let bag = DisposeBag()
 
     var refreshMoreAction: (() -> Void)?
 
@@ -31,64 +36,53 @@ class RepositoriesViewController: UITableViewController {
 
 	func setupTableView() {
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.delegate = nil
+        tableView.dataSource = nil
         tableView.estimatedRowHeight = 84
-
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
-	}
+
+        let tv = self.tableView!
+        repositories.asObservable()
+            .bind(to: tv.rx.items(cellIdentifier: "CellIdentifier")) { [unowned self] (index, item: Repository, cell: RepositoryTableViewCell) in
+                cell.updateWithRepository(item)
+                self.loadDetails(of: item, completionHandler: { [unowned cell] repository in
+                    cell.updateWithRepository(repository)
+                })
+            }
+            .addDisposableTo(bag)
+
+        tv.rx.modelSelected(Repository.self)
+            .subscribe(onNext: { [unowned self] item in
+                self.loadDetails(of: item, completionHandler: { [unowned self] repository in
+                    self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
+                    guard let vc = ReadMeViewController(repository: repository) else {
+                        return
+                    }
+                    self.navigationController?.pushViewController(vc, animated: true)
+                })
+            })
+            .addDisposableTo(bag)
+        
+        tv.rx.didEndDisplayingCell
+            .subscribe(onNext: { [unowned self] (cell: UITableViewCell, indexPath: IndexPath) in
+                let lastElement = self.repositories.value.count - 1
+                if indexPath.row == lastElement {
+                    self.refreshMoreAction?()
+                }
+            })
+            .addDisposableTo(bag)
+    }
 
 	override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
     }
 
-    // MARK: - Table view data source
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repositories.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
-        let item = repositories[indexPath.row]
-
-        if let repositoryTableViewCell = cell as? RepositoryTableViewCell {
-            repositoryTableViewCell.updateWithRepository(item)
-            loadDetails(of: item, completionHandler: { [weak repositoryTableViewCell] repository in
-                repositoryTableViewCell?.updateWithRepository(repository)
-            })
-        } else {
-            cell.textLabel?.text = item.fullName
-        }
-        return cell
-    }
-
-    // MARK: - Table view delegate
-
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = repositories[indexPath.row]
-        loadDetails(of: item, completionHandler: { [weak self] repository in
-            self?.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .done, target: nil, action: nil)
-            guard let vc = ReadMeViewController(repository: repository) else {
-                return
-            }
-            self?.navigationController?.pushViewController(vc, animated: true)
-        })
-    }
-
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastElement = repositories.count - 1
-        if indexPath.row == lastElement {
-            refreshMoreAction?()
-        }
-    }
-
     // MARK: -
 
     func clear() {
-        repositories = []
+        repositories.value = []
         tableView.reloadData()
     }
 
@@ -100,7 +94,7 @@ class RepositoriesViewController: UITableViewController {
         let hud = MBProgressHUD.showTextHUDInView(view)
 
         dataProvider.load { [weak self] repositories in
-            self?.repositories = repositories
+            self?.repositories.value = repositories
             self?.tableView.reloadData()
             hud.hide(animated: true)
         }
@@ -109,7 +103,7 @@ class RepositoriesViewController: UITableViewController {
     func loadMore()  {
         let hud = MBProgressHUD.showTextHUDInView(navigationController?.view ?? view)
         dataProvider.loadMore { [weak self] repositories in
-            self?.repositories += repositories
+            self?.repositories.value += repositories
             self?.tableView.reloadData()
             hud.hide(animated: true)
         }
@@ -131,8 +125,7 @@ class RepositoriesViewController: UITableViewController {
     func searchTerm(_ term: String) {
         let hud = MBProgressHUD.showTextHUDInView(view, with: "Searching...")
         dataProvider.searchTerm(term, sort: nil, order: nil, completionHandler: { [weak self] repositories in
-            self?.repositories = repositories
-            self?.tableView.reloadData()
+            self?.repositories.value = repositories
             hud.hide(animated: true)
         })
     }
